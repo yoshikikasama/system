@@ -100,12 +100,12 @@ IG(Internet Gateway)をVPCに付与することで外部通信できるように
 
 ### SSHでのEC2インスタンスへの接続
 ~~~
-ssh -I <KEYFILE> <USER_NAME>@<PUBLIC_IP>
+ssh -i <KEYFILE> <USER_NAME>@<PUBLIC_IP>
 
 KEYFILE 	接続に利用するキーペアの鍵ファイル。
 USER_NAME	接続したいEC2のユーザー名。
 PUBLIC_IP	接続したいEC2のパブリックIPアドレス。
-
+-i(identity)秘密鍵ファイル
 Amazon Linuxのデフォルトユーザーは「ec2-user」
 ~~~
 
@@ -447,4 +447,9 @@ REST
 SPA
 ~~~
 シングルページアプリケーション。単一のwebページでコンテンツ切り替えを行う。ページ遷移の必要がない。ブラウザ上で必要な変更を行うため、処理時間が早くなる。
+~~~
+
+httpd
+~~~
+apatch serverのことを指す。
 ~~~
