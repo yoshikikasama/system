@@ -26,13 +26,45 @@ AZにある物理インフラを仮想化してユーザーにインフラ機能
 ・Auto Scaling・・・EC2インスタンスを自動で増やしたり、減らしたり調整してくれるサービス。<br>
 ・AWS Lambda・・・サーバなしでプログラミングコードだけを保存し、実行することができるサービス。<br>
 ・Amazon Lightsail・・・仮想サーバー、ストレージ、データベース、及びネットワーキングのまとまった構成を低価格で提供するサービス。<br>
-・AWS Fargate・・・コンテナ向けサーバーレスコンピューティング。<br>
-■操作ツール
+・AWS Fargate・・・コンテナ向けサーバーレスコンピューティング。<br><br>
+■操作ツール<br>
 ・AWSマネジメントコンソール・・・webブラウザベースのAWSリソースを操作するGUIツール。<br>
 ・AWS CLI・・・AWS操作を実行するコマンドラインツール。<br>
 ・AWS CloudShell・・・AWS CLI, PowerShell, ECS CLI, SAM CLIが利用可能なブラウザベースのシェルツール。<br>
 ・EC2 Instance Connect・・・EC2コンソール画面からSSHなどを利用してEC2インスタンスへのシンプルで安全な接続を提供。<br>
-・AWS Copilot・・・ECS向けのコマンドラインツール<br>
+・AWS Copilot・・・ECS向けのコマンドラインツール<br><br>
+■ストレージ<br>
+・Amazon simple storage service(S3)・・・中長期に頻繁に利用するデータを大量に保存するためのオブジェクト型ストレージサービス。<br>
+・Amazon Elastic Block Store(EBS)・・・EC2にネットワークを介してアタッチして利用するEC2インスタンス専用のブロック型ストレージ。<br>
+・インスタンスストア・・・EC2に物理的に接続されているブロック型ストレージ。データの一時保存用ストレージ。<br>
+・Amazon Elastic File System(EFS)・・・ディレクトリ構造でファイルデータを保存するのに向いているNFSファイルシステムを提供するサービス。<br>
+・Amazon S3 Glacier・・・S3と同じ可用性と耐久性を有しつつ、より価格の安いストレージサービス。データのアーカイブや長期バックアップに利用する。<br>
+・Amazon FSx・・・4タイプのファイルストレージを構成できるサービス。機能豊富で高性能なファイルシステムのクラウド上での起動、実行およびスケーリングを簡単かつコスト効率の高いものにする。<br>
+・AWS Storeaga Gateway・・・オンプレミス環境のストレージをAmazon S3へと拡張するハイブリッドストレージサービス。<br><br>
+■データベース(リレーショナル型)<br>
+・Amazon RDS・・・MySQL、PostgreSQL、Oracle、SQL Server、MariaDBと互換 性のあるリレーショナルデータベースサービス<br>
+・Amazon Aurora・・・MySQL および PostgreSQL と互換性のある分散・高速化された 高性能リレーショナルデータベース<br>
+・Amazon Redshift・・・AWS上で業務データ解析基盤を提供するデータウェアハウス<br>
+・Amazon RDS Custom・・・基盤となるOSやDB環境へのアクセスが可能なマネージドデータ ベースサービス。SQL ServerとOracle版が対応可能<br>
+・Amazon RDS on Outposts・・・RDSなどのフルマネージド型のデータベースインスタンスをオン プレミス環境にデプロイすることができる。<br><br>
+■データベース(NoSQL型)<br>
+・Amazon DynamoDB・・・規模に関係なく数ミリ秒台のパフォーマンスを実現するキーバ リュー型およびドキュメント型のNoSQLデータベース<br>
+・Amazon ElastiCache・・・Redis または Memcachedと互換性のある完全マネージド型のイ ンメモリデータストア<br>
+・Amazon DocumentDB・・・ミッションクリティカルなMongoDB のワークロードを運用する ための、スケーラブルかつ高い耐久性のフルマネージド型の NoSQL型データベース<br>
+・Amazon Keyspaces・・・Apache Cassandra向けのフルマネージド型のNoSQL型データ ベースサービス<br>
+・Amazon Neptune・・・ID グラフ、ナレッジグラフ、不正検出などのグラフのユース ケースを強力にサポートする高速のグラフデータベース<br>
+・Amazon Timestream (時系列DB)・・・IoT および運用アプリケーションに適した、高速かつスケーラブ ルなサーバーレス時系列データベースサービス<br><br>
+■ネットワーキングとコンテンツ配信<br>
+・Amazon VPC・・・IP アドレス範囲の選択、サブネットの作成、ルートテーブルや ネットワークゲートウェイを設定することで、仮想ネットワーキ ング環境を構築するサービス<br>
+・Amazon Route 53・・・ドメイン登録とルーティングを実施するDNSサーバーの機能を提 供するサービス<br>
+・Amazon CloudFront・・・エッジロケーションを利用して低レイテンシーの高速転送により 世界中にコンテンツを配信するコンテンツ配信ネットワーク (CDN) サービス<br>
+・AWS Global Accelerator・・・エッジロケーションを利用して、アプリケーションへのユーザー のトラフィックのパフォーマンスを最大 60% 向上させるネット ワーキングサービス<br><br>
+■開発支援サービス(Docker環境自動化)<br>
+・Amazon ECS・・・Dockerコンテナーに基づいた開発環境の提供とアプリケーショ ン開発・展開を支援するコンテナオーケストレーションサービス<br>
+・Amazon EKS・・・AWS で Kubernetesを利用したDockerを簡単に実行できるよう にするマネージド型サービス<br>
+・Amazon ECR・・・Amazon Elastic Container Registry (ECR) は、フルマネージ ド Docker コンテナレジストリ。コンテナソフトウェアをどこに でも簡単に保存、共有、デプロイできる<br>
+・AWS Fargate・・・ECSとEKS用のコンテナ向けサーバーレスコンピューティング<br>
+・ECS / EKS Anywhere・・・オンプレミス環境でECSとEKSを実行する<br>
 ### セキュリティ
 ---
 ■AWSの責任者共有モデルについて理解する。<br>
