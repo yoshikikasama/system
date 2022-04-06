@@ -21,6 +21,7 @@ S3のバッチオペレーション<br>
 
 ■AWS RDSの概要
 
+AWS RDS・・・managed relational dbで、db engineをAmazon Aurora, mysql, mariadb, oracle, postgresql, microsoft sql serverといった6種類から選択できる。<br>
 特徴・・・RDS自体がマネージド型の高可用なのに加え、マルチAZによるMaster/Slave構成を容易に構築することができる。<br>
 マスター・・・普段利用するDB<br>
 スレーブ・・・もしもの時に利用できる待機DB<br>
