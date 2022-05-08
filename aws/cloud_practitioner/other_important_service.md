@@ -24,3 +24,25 @@
 - AWS Direct Connect: AWSとデータセンター、オフィスとの間にプライベート接続を確立する専用線サービス。
 - Amazon API Gateway: Restful APIおよびWebSocket APIを作成・管理する。
 - AWS Storage Gateway: オンプレミスから実質無制限のクラウドストレージへのアクセスを提供する。
+
+■データベース
+- Amazon RDS: マネージドリレーショナルDB.
+- Amazon Aurora: NoSQL型の分散高速処理とRDBとしてのデータ操作性を両立させたこと。高性能かつ低価格。  
+&nbsp;&nbsp;高い並列処理性能によって大量の読み書きをするのに適したDB
+- Amazon DynamoDB: key-valueおよびドキュメント型のNoSQL型のDB。ビッグデータ処理向けか大量データが必要なアプリケーション向け(セッション管理など)に利用する。
+- Amazon ElasticCache: Redis(single thread)またはMemcached(multi thread)に互換性のある完全マネージド型のインメモリ・キャッシュDB
+    - インメモリキャッシュ: メモリを活用して高速にキャッシュへのアクセスを可能にしたDBの仕組み。
+- Amazon Redshift: 高速かつシンプルで、費用対効果の高いDWH
+
+■identity, security, compliance
+- AWS Identity & Access Management(IAM): AWSのサービスやリソースへのアクセスを安全に管理するアクセス管理サービス。
+- Amazon GuardDuty: 悪意のある操作や不正な動作を継続的にモニタリングする脅威検出サービス。
+- Amazon Inspector: 自動化されたセキュリティ評価サービスで、AWS上にデプロイされたアプリのセキュリティとコンプライアンスを向上させる。
+- AWS Key Management Service: 暗号キーを作成、管理し、幅広いAWSのサービスやアプリケーションの使用を制御する。
+- AWS CloudHSM: 不正使用防止策がとられている専用HWモジュールにより、暗号キーを保護するサービス。
+- AWS WAF: 一般的なwebの脆弱性からwebアプリケーションまたはAPIを保護するwebアプリケーションfirewall
+- AWS Shield: マネージド型の分散サービス妨害(DDoS)保護サービス。
+- AWS Artifact: AWSのコンプライアンスレポートにオンデマンドでアクセスできる無料のセルフサービスポータル。
+- CloudTrail: AWSユーザーの行動ログを取得し、ガバナンス、コンプライアンス、および運用とリスクの監査を行えるように支援する。
+- CloudWatch: AWSリソースとAWSで実行するアプリケーションに対して、さまざまなメトリクスやログを収集・追跡するモニタリングサービス。
+
