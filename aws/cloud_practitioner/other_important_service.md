@@ -46,3 +46,18 @@
 - CloudTrail: AWSユーザーの行動ログを取得し、ガバナンス、コンプライアンス、および運用とリスクの監査を行えるように支援する。
 - CloudWatch: AWSリソースとAWSで実行するアプリケーションに対して、さまざまなメトリクスやログを収集・追跡するモニタリングサービス。
 
+■準備系サービス(management controlを適切にするための準備の段階)
+- AWS Control Tower:ベストプラクティスに沿って複数アカウントのAWS環境を設定および管理するサービス
+- AWS Organizations: 複数のAWSアカウント全体の一元管理と一括請求
+- AWS Budgets: 予算の閾値を超えた時にアラートを発信するカスタム予算を設定
+- AWS License Manager: ソフトウェアベンダーからのソフトウェアライセンスを簡単に管理するサービス
+- AWS Well-Architected Tool: AWSのアーキテクチャ設計原則の確認とワークロードの見直しと改善を支援
+
+■展開系サービス(AWSのサービスを自動で展開したり、展開方法をtemplate化したりする)
+- AWS CloudFormation: AWSクラウド環境内の全インフラリソースを記述して展開する環境自動設定サービス
+- AWS Elastic Beanstalk: webアプリケーションの定番構成の構築・デプロイの自動化サービス
+- AWS OpsWorks: OpsWorksはChefやまたはPuppetを使用してアプリケーションを設定および運用するための設定管理サービス
+- AWS Service Catalog: AWS上でデプロイされているITサービスの一元的な管理を実施するサービス
+- AWS Marketplace: EC2インスタンスの起動に使用できるAMIなど、AWSで実行されるソフトウェアを購入できるオンラインストア
+
+■操作系サービス(AWS管理を実際に操作して実行するサービス)
