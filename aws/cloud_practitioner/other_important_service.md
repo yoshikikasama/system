@@ -56,8 +56,15 @@
 ■展開系サービス(AWSのサービスを自動で展開したり、展開方法をtemplate化したりする)
 - AWS CloudFormation: AWSクラウド環境内の全インフラリソースを記述して展開する環境自動設定サービス
 - AWS Elastic Beanstalk: webアプリケーションの定番構成の構築・デプロイの自動化サービス
-- AWS OpsWorks: OpsWorksはChefやまたはPuppetを使用してアプリケーションを設定および運用するための設定管理サービス
+- AWS OpsWorks: OpsWorksはChefやまたはPuppetを使用して高度なインフラ設定および運用するための設定管理サービス
+    - Chef: さまざまな形式のインフラへのサーバやアプリケーションの展開を用意にする環境自動化フレームワーク
 - AWS Service Catalog: AWS上でデプロイされているITサービスの一元的な管理を実施するサービス
 - AWS Marketplace: EC2インスタンスの起動に使用できるAMIなど、AWSで実行されるソフトウェアを購入できるオンラインストア
 
-■操作系サービス(AWS管理を実際に操作して実行するサービス)
+■操作系サービス(運用管理に使用するDashboardや可視化をするようなサービス)
+- Amazon ClouldWatch: アプリケーションを監視し、リソース使用率の最適化を行い、運用上の健全性を統括的に把握するモニタリングサービス
+- AWS CloudTrail: ユーザーアクティビティとAPI使用状況の追跡するログ取得サービス
+- AWS Config: AWSリソースのリポジトリ情報からリソース変更履歴や構成変更を管理するサービス
+- AWS Systems Manager: AWSの様々なサービスの運用データを確認でき、AWSリソース全体に関わるタスクを自動化する運用支援サービス
+- AWS Personal Health Dashboard: AWSサービス状態をパーソナライズされた表示する
+- AWS サポート: AWSによるサポートサービス。
