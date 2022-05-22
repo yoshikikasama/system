@@ -114,5 +114,9 @@ SSH接続: 22番ポート。
 
 ## 43.
 
+- public subentを設置するには: サブネットを作成するとデフォルトではprivate subnetになる。VPCに配置したインターネットゲートウェイへのルートを  
+&nbsp;ルートテーブルに設定することでpublic subnetとして機能する。
 
+## 45.
 
+- AWS Personal Health Dashboard: アカウントに影響する可能性があるAWSリソースに対する異常と正常が確認できるヘルスイベントの情報が表示される。
