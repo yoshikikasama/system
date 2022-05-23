@@ -120,3 +120,7 @@ SSH接続: 22番ポート。
 ## 45.
 
 - AWS Personal Health Dashboard: アカウントに影響する可能性があるAWSリソースに対する異常と正常が確認できるヘルスイベントの情報が表示される。
+
+## 61.
+
+- Amazon Direct Connect Gateway: 複数のAWSリージョンを連携できる。
