@@ -53,3 +53,5 @@
 - CloudHSM:クラウドベースのハードウェアセキュリティモジュール (HSM) です。これにより、業界標準に従ったデバイスを利用して、AWS クラウドで暗号化キーを管理することができます。
 
 ## 12.
+- ![Screen Shot 2022-08-03 at 7 59 33](https://user-images.githubusercontent.com/61643054/182487719-ff340de6-b8cd-4e37-8c0e-fe87f23e073e.png)
+
