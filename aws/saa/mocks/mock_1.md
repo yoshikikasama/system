@@ -131,6 +131,7 @@
 ## 30.
 - VPCエンドポイント: PrivateLink を使用する AWS サービスや VPC エンドポイントサービスに VPC をプライベートに接続する機能。
     - インタフェースエンドポイント(PrivateLink型):サポートされるサービスを宛先とするトラフィックのエントリポイントとして機能するプライベート IP アドレスを持つ Elastic Network Interface 。
-    - 
+    - ![Screen Shot 2022-08-06 at 20 28 04](https://user-images.githubusercontent.com/61643054/183247124-f3d11921-715e-4b1c-8d84-25d6541cbef4.png)
     - ゲートウェイエンドポイント:サポートされるAWSサービスを宛先とするトラフィックのルートテーブルで、ルートのターゲットとして指定するゲートウェイです。Amazon S3とDynamoDBとの連携に利用される。VPC にインターネットゲートウェイや NAT デバイスを必要とせずに、Amazon S3 および DynamoDB への信頼性の高い接続を提供します。ゲートウェイエンドポイントは AWS PrivateLink を有効化しません。
+    - ![Screen Shot 2022-08-06 at 20 31 52](https://user-images.githubusercontent.com/61643054/183247138-50549999-83ad-42dc-8e81-b4d6d309aa84.png)
 - エンドポイント: VPC のインスタンスとサービスの間で通信を可能にする VPC コンポーネント。
