@@ -417,7 +417,7 @@
 ## 112.
 - AWS Snowmobile: 特に超大容量データ(1エクサバイト)を AWS に移動することを目的としたコンテナサイズのトレーラー。
 - Direct Connect: オンプレミス環境との専用線接続サービス。
-- 
+- <img width="580" alt="Screen Shot 2022-08-14 at 17 05 12" src="https://user-images.githubusercontent.com/61643054/184528109-dff0b489-2d7c-4f0d-a000-b0004e8b35d4.png">
 
 
 ## 114.
