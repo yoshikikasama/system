@@ -34,3 +34,5 @@
 ## 6.
 - EC2インスタンスのパブリックIPアドレス: デフォルトではインスタンスの停止後に解放される。ドメイン名にマッピングされていた以前のIPアドレスが無効になりアクセスができなくなる。
 - EIP(Elastic IPアドレス): AWS内で使える固定IPアドレス。
+    - <img width="563" alt="Screen Shot 2022-08-19 at 7 13 41" src="https://user-images.githubusercontent.com/61643054/185504537-4f1688e3-fe94-4d32-a35b-82cf714a89d1.png">
+ 
