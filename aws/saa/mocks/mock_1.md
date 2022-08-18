@@ -30,3 +30,7 @@
     - Fargate起動タイプ: バックエンドインフラストラクチャをプロビジョニングおよび管理する必要なく、コンテナ化されたアプリケーションを実行できます。 タスク定義を登録するだけで、Fargateがコンテナを起動します。これにより、コンテナ起動にの面倒なインスタンス設定が必要がなくなる。
     - <img width="575" alt="Screen Shot 2022-08-18 at 21 05 55" src="https://user-images.githubusercontent.com/61643054/185390809-987339ab-5697-4057-8342-33aca219457a.png">
     - <img width="614" alt="Screen Shot 2022-08-18 at 21 05 45" src="https://user-images.githubusercontent.com/61643054/185390863-e06480bb-cf33-46da-9ab0-ce104bde4c62.png">
+
+## 6.
+- EC2インスタンスのパブリックIPアドレス: デフォルトではインスタンスの停止後に解放される。ドメイン名にマッピングされていた以前のIPアドレスが無効になりアクセスができなくなる。
+- EIP(Elastic IPアドレス): AWS内で使える固定IPアドレス。
