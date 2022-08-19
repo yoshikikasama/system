@@ -63,3 +63,4 @@
 
 ## 11.
 - CloudFormation: テンプレートを利用して、AWSリソースを常に一定の設定をJSONファイルなどからプロビジョニングすることができます。 これによりテスト環境などのAWSリソース環境をテンプレート化して、自動化することが可能。
+- <img width="560" alt="Screen Shot 2022-08-19 at 23 02 06" src="https://user-images.githubusercontent.com/61643054/185635955-9a4a3a80-2b43-4ee9-940e-2b80f28d3d3f.png">
