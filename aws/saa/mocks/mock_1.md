@@ -102,4 +102,4 @@
 - EBSボリューム:
     - スループット最適化HDD: ビッグデータ処理用 and 高いスループット処理性能 and コスト最適化
     - プロビジョンドIOPS SSD: ビッグデータ処理用 and 高いスループット処理性能 and 高コスト
-    - 
+    - ![Screen Shot 2022-08-20 at 14 28 00](https://user-images.githubusercontent.com/61643054/185730407-c50e5a36-63fd-4d53-95bf-b110039f3cfa.png)
