@@ -96,4 +96,5 @@
 ## 18.
 - S3の静的webホスティング:
     - シンプルなwebページの作成に利用できる。
-    
+    - ![Screen Shot 2022-08-20 at 14 14 23](https://user-images.githubusercontent.com/61643054/185730064-61375bbf-5bda-4c2a-8866-d10389d3f7f2.png)
+
