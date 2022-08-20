@@ -111,6 +111,7 @@
 ## 21.
 - VPCピアリング: ２つのVPC間をネットワーク接続し、トラフィックをプライベートにルーティングする。
 - NATゲートウェイ: プライベートIPアドレスをパブリックIPアドレスに変換することで、プライベートサブネット内のインスタンスからインターネットへの返信を可能にするゲートウェイ。
-    - 
+    - <img width="1136" alt="Screen Shot 2022-08-20 at 15 35 01" src="https://user-images.githubusercontent.com/61643054/185732587-c92f3cb1-5df4-4200-aaee-539d44c5ef31.png">
 - インターネットゲートウェイ: VPC とインターネットとの間の通信を可能にする VPC コンポーネント。
-    - 
+    - <img width="1135" alt="Screen Shot 2022-08-20 at 15 33 37" src="https://user-images.githubusercontent.com/61643054/185732592-8c501de4-2213-43a4-a24f-3d246b72c83a.png">
+
