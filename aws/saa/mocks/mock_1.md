@@ -188,3 +188,7 @@
 
 ## 45.
 - Amazon Aurora: 標準的なMySQLデータベースと比べて最大で 5 倍、標準的な PostgreSQL データベースと比べて最大で 3 倍高速です。また、商用データベースと同等のセキュリティ、可用性、信頼性を、10 分の 1 のコストで実現します。
+    - ![Screen Shot 2022-08-21 at 18 24 02](https://user-images.githubusercontent.com/61643054/185784527-b7cbd2a2-9fa3-4a1a-a8d6-a30472d5d606.png)
+    - ![Screen Shot 2022-08-21 at 18 24 08](https://user-images.githubusercontent.com/61643054/185784534-14a2e65b-64db-4456-94ca-6d670b58aed5.png)
+  
+    - ![Screen Shot 2022-08-21 at 18 24 02](https://user-images.githubusercontent.com/61643054/185784527-b7cbd2a2-9fa3-4a1a-a8d6-a30472d5d606.png)
