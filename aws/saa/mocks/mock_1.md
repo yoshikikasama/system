@@ -134,9 +134,12 @@
 - peak load: 最大需要量。
 
 ## 28.
-- CloudFront: グローバルなコンテンツ配信処理を高速化するケースに利用するサービス。
+- CloudFront: 低レイテンシーの高速転送により視聴者に安全にコンテンツを配信する高速コンテンツ配信ネットワーク (CDN) サービス。
+- 
 
 ## 29.
 - VM Import/Export: 既存のオンプレミス環境にあるサーバーを利用した仮想マシン群をAWSクラウドにインポートすることができる。
 - AWS Migration tools:
     - ![Screen Shot 2022-08-21 at 15 48 54](https://user-images.githubusercontent.com/61643054/185779289-083442d4-605a-47c7-bb8e-d23e419cd456.png)
+
+
