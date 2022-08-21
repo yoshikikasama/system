@@ -155,4 +155,4 @@
 ## 35.
 - Amazon FSx for Windows: フルマネージド型のネイティブ Microsoft Windows ファイルシステムを提供するAWSサービス。
 - AWSのファイルシステム:
-    - 
+    - ![Screen Shot 2022-08-21 at 16 29 29](https://user-images.githubusercontent.com/61643054/185780559-b63d4daa-18f2-4c04-8a37-b91df6604c44.png)
