@@ -119,4 +119,4 @@
 
 ## 24.
 - S3のライフサイクル管理:
-    - 
+    - ![Screen Shot 2022-08-21 at 11 26 10](https://user-images.githubusercontent.com/61643054/185772679-b3327550-d892-45f2-b73e-78847ccb9a53.png)
