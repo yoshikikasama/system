@@ -110,3 +110,13 @@
 
 ## 21.
 - VPCピアリング: ２つのVPC間をネットワーク接続し、トラフィックをプライベートにルーティングする。
+
+## 22.
+- AWS OpsWorks: Chef や Puppet のマネージド型インスタンスを利用できるようになる構成管理サービスです。Chef や Puppet は、コードを使用してサーバーの構成を自動化できるようにするためのオートメーションプラットフォームです。OpsWorks では、Chef や Puppet を使用して、Amazon EC2 インスタンスやオンプレミスのコンピューティング環境でのサーバーの設定、デプロイ、管理を自動化できます。OpsWorks には、AWS Opsworks for Chef Automate、AWS OpsWorks for Puppet Enterprise、AWS OpsWorks Stacks の 3 つのバージョンがあります。AWS OpsWorks スタックのサポート範囲は、Amazon EC2 インスタンス、Amazon EBS ボリューム、Elastic IP、Amazon CloudWatch メトリクスなど、アプリケーション志向の AWS リソースに限られています。
+- スタック: データベース、アプリケーションなど、全インスタンスの構成を管理する単位。
+- レイヤー: どんなパッケージをインストールするかのレシピを指定
+- Elastic BeanStalk: AWS上でwebアプリを動かすために必要なサーバを立てたりネットワークの設定をしたりAutoScallingの設定をしたりデータベースの設定をしたりと複雑な初期設定を自動で行ってくれるサービス。
+
+## 24.
+- S3のライフサイクル管理:
+    - 
