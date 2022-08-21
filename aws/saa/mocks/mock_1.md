@@ -135,7 +135,7 @@
 
 ## 28.
 - CloudFront: 低レイテンシーの高速転送により視聴者に安全にコンテンツを配信する高速コンテンツ配信ネットワーク (CDN) サービス。
-- 
+- ![Screen Shot 2022-08-21 at 15 53 15](https://user-images.githubusercontent.com/61643054/185779439-c2f6b1c7-9706-48b6-ade0-0a4ca2f30980.png)
 
 ## 29.
 - VM Import/Export: 既存のオンプレミス環境にあるサーバーを利用した仮想マシン群をAWSクラウドにインポートすることができる。
