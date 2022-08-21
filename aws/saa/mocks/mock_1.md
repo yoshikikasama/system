@@ -128,4 +128,4 @@
 
 ## 26.
 - Amazon SQS(Simple Queue Service): Queueサービスでプロセス処理の分散処理管理に使用される。
-- 
+- ![Screen Shot 2022-08-21 at 12 14 18](https://user-images.githubusercontent.com/61643054/185773743-5fb87e71-51c2-46f1-a9e2-5e1b16578c44.png)
