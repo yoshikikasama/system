@@ -247,4 +247,5 @@
 
 ## 61.
 - SQSのキュー一覧:
-    - ![Screen Shot 2022-08-22 at 22 31 35](https://user-images.githubusercontent.com/61643054/185938455-9be4a32a-827f-43ea-b9ff-727310194d92.png)
+    - 
+
