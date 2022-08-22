@@ -251,4 +251,4 @@
 
 ## 62.
 - ゲートウェイ一覧:
-    - 
+    - ![Screen Shot 2022-08-22 at 23 00 45](https://user-images.githubusercontent.com/61643054/185939807-37c53a91-b27f-4177-a47d-847b1bfbb3b3.png)
