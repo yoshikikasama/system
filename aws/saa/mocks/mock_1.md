@@ -214,3 +214,4 @@
 
 ## 51.
 - DynamoDB: 小規模データ + 高速処理 + NoSQL
+    -  ![Screen Shot 2022-08-22 at 22 05 06](https://user-images.githubusercontent.com/61643054/185928314-2232571b-e5ea-4615-be68-e8a69565a1d8.png)
