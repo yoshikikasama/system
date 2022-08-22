@@ -260,4 +260,9 @@
 ## 64.
 - SQS:
     - メッセージ重複排除IDを利用することで重複メッセージを防ぐことが可能。特定のメッセージ重複排除 ID を持つメッセージが正常に送信された場合に、5分間の重複排除間隔の間、同じ ID を持つ送信メッセージは配信されない。
-    - 
+    - ![Screen Shot 2022-08-22 at 23 07 46](https://user-images.githubusercontent.com/61643054/185941510-91579275-5f26-452a-83f3-b99542636b25.png)
+
+## 65.
+- API Gateway:
+    - ![Screen Shot 2022-08-22 at 23 12 11](https://user-images.githubusercontent.com/61643054/185942397-36e443ed-0278-4a5e-b953-26f2aa44842d.png)
+- Lambdaの関数URL: API Gatewayを省略したパブリックに公開するAPIや、簡易な認証実装でも差し支えの無いAPIを AWSLambdaで実装することができるサービス。 
