@@ -130,3 +130,7 @@
 - AWS Lambda: 最大11GBまでデータ容量を扱える。
 - DynamoDBのユースケース:
     - ![Screen Shot 2022-08-24 at 22 54 29](https://user-images.githubusercontent.com/61643054/186437088-b1846241-f79a-4aef-8a1d-ad3141bc4b45.png)
+
+## 40.
+- Auto Scaling Group:
+    - 
