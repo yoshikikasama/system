@@ -205,4 +205,6 @@
     - ![Screen Shot 2022-08-25 at 6 12 42](https://user-images.githubusercontent.com/61643054/186524722-ea6c42f3-ae8a-4436-b0ea-ebaa700ce686.png)
 
 ## 61.
-- 
+- ![Screen Shot 2022-08-25 at 6 18 02](https://user-images.githubusercontent.com/61643054/186525519-be837e47-63cf-4514-8216-b9f8aaa43589.png)
+- ![Screen Shot 2022-08-25 at 6 18 09](https://user-images.githubusercontent.com/61643054/186525536-b0201440-2ce7-45d8-b611-bb3f875e7f50.png)
+
