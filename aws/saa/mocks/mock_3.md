@@ -186,4 +186,4 @@
         - データストア
         - 資格情報
         - ポリシーと設定
-    - 
+    - ![Screen Shot 2022-08-25 at 5 50 18](https://user-images.githubusercontent.com/61643054/186520862-f2b60d2f-3088-4499-ae51-0e9dd04f5381.png)
