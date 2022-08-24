@@ -156,4 +156,4 @@
 
 ## 48.
 - EBSストレージ一覧:
-    - 
+    - ![Screen Shot 2022-08-25 at 5 31 32](https://user-images.githubusercontent.com/61643054/186517786-dbebe5f5-0a24-4a73-9ce6-e3dc58f6fbf0.png)
