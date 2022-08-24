@@ -135,5 +135,18 @@
 - Auto Scaling Group:
     - ![Screen Shot 2022-08-24 at 23 01 16](https://user-images.githubusercontent.com/61643054/186438482-9ab2dc96-24c4-4f8b-b411-9fe038e16144.png)
 
-## 41.
+## 42.
+- AWS Certificate Manager（ACM）: AWS サービスとユーザーの内部接続リソースで使用するパブリックまたはプライベートの SSL/TLS 証明書を作成・登録・管理することができます。
 
+## 43.
+- VPCにCIDRを追加するときの規則:
+    -  許容ブロックサイズは、「/ 28」サブネットマスクから「/ 16」のサブネットマスクまでです。
+    -  CIDRブロックは、VPCに関連付けられている既存のCIDRブロックと重複してはいけません。
+
+## 44.
+- AWS SAM(Serverless Application Model): サーバーレスアプリケーション構築用のデプロイツールです。YAMLを使用して、サーバレスアプリケーションのLambda関数、API、データベース、イベントソースマッピングをモデリングします。AWS SAMはCloudFormationと連携してサーバレスアプリケーションを展開します。その際は、SAM が SAM 構文を AWS CloudFormation 構文に変換および拡張することで、サーバーレスアプリケーションの構築を高速化することができます。
+- AWS (DMS)Database Migration Service: オンプレミスにあるデータベースを短期間で安全に AWS に移行できる
+
+## 45.
+
+- EBSのスナップショットはEBSの利用状況に関係なく、非同期に作成することができる。ただし、ベストプラクティスとしてはEBSを停止したうえで実行することが良いとされています。
