@@ -203,3 +203,6 @@
 ## 59.
 - CloudFront エッジロケーションのキャッシュ:
     - ![Screen Shot 2022-08-25 at 6 12 42](https://user-images.githubusercontent.com/61643054/186524722-ea6c42f3-ae8a-4436-b0ea-ebaa700ce686.png)
+
+## 61.
+- 
