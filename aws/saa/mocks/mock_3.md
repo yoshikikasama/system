@@ -213,4 +213,7 @@
 
 ## 63.
 - API Gatewayの特徴:
-    - 
+    - ![Screen Shot 2022-08-25 at 6 22 31](https://user-images.githubusercontent.com/61643054/186526223-90c3cb79-d0cf-47a2-bef0-559e7ff9cc06.png)
+    - ![Screen Shot 2022-08-25 at 6 22 47](https://user-images.githubusercontent.com/61643054/186526264-1cbf3a65-8523-4953-8be9-a53f09d9c44e.png)
+
+        - データストア
