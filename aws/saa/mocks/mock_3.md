@@ -200,3 +200,6 @@
 - Snowball Edge Storage Optimized: デバイスは、大規模なデータ移行と定期的な転送ワークフロー、およびさらに高容量を必要とするローカルコンピューティングに適しています。Snowball Edge Storage Optimized は、ブロックボリュームと Amazon S3 互換オブジェクトストレージに 100TB の HDD 容量を提供します。しかしながら、利用可能なボリュームは80TBほどです。
 - ![Screen Shot 2022-08-25 at 6 06 14](https://user-images.githubusercontent.com/61643054/186523555-efa84da9-70f9-4a67-a3fb-66af6fd94899.png)
 
+## 59.
+- CloudFront エッジロケーションのキャッシュ:
+    - 
