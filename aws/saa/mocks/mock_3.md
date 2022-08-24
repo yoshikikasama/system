@@ -191,3 +191,9 @@
 ## 53.
 - ゲートウェイ一覧:
     - ![Screen Shot 2022-08-25 at 5 52 53](https://user-images.githubusercontent.com/61643054/186521275-8d1894c8-65b6-49f7-b17e-f8206b389e58.png)
+
+## 57.
+- Snowball: 容量80TBのデータ移行。現在は非推奨。
+- Snowball Edge Compute Optimized: 機械学習、フルモーション動画分析、分析、ローカルコンピューティングスタックなどのユースケースに強力なコンピューティングリソースを提供します。このデバイスは、S3 互換オブジェクトストレージまたは EBS 互換ブロックボリューム用に 42 TB の使用可能な HDD 容量を提供します。
+- Snowball Edge Storage Optimized: デバイスは、大規模なデータ移行と定期的な転送ワークフロー、およびさらに高容量を必要とするローカルコンピューティングに適しています。Snowball Edge Storage Optimized は、ブロックボリュームと Amazon S3 互換オブジェクトストレージに 100TB の HDD 容量を提供します。しかしながら、利用可能なボリュームは80TBほどです。
+- 
