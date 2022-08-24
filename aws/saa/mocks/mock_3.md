@@ -190,4 +190,4 @@
 
 ## 53.
 - ゲートウェイ一覧:
-    - 
+    - ![Screen Shot 2022-08-25 at 5 52 53](https://user-images.githubusercontent.com/61643054/186521275-8d1894c8-65b6-49f7-b17e-f8206b389e58.png)
