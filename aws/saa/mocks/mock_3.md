@@ -208,3 +208,9 @@
 - ![Screen Shot 2022-08-25 at 6 18 02](https://user-images.githubusercontent.com/61643054/186525519-be837e47-63cf-4514-8216-b9f8aaa43589.png)
 - ![Screen Shot 2022-08-25 at 6 18 09](https://user-images.githubusercontent.com/61643054/186525536-b0201440-2ce7-45d8-b611-bb3f875e7f50.png)
 
+## 62.
+- Amazon EMR: マネージド型のHadoopフレームワークを提供します。 しかしながら、EC2インスタンスを利用して構成されるため、Amazon EMRを構成するEC2インスタンスのオペレーティングシステムなどにユーザーはアクセス可能となります。
+
+## 63.
+- API Gatewayの特徴:
+    - 
