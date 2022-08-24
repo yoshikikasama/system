@@ -134,3 +134,6 @@
 ## 40.
 - Auto Scaling Group:
     - ![Screen Shot 2022-08-24 at 23 01 16](https://user-images.githubusercontent.com/61643054/186438482-9ab2dc96-24c4-4f8b-b411-9fe038e16144.png)
+
+## 41.
+
