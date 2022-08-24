@@ -102,7 +102,7 @@
 ## 31.
 - OU(Organization Unit): 組織単位。
 - SCP(Service Control Policy): AWSアカウントまたは組織単位(OU)内のアカウントのグループに対してAWSサービスへの権限境界を設定できる。　SCP自体は権限を与えるものではなく、「ここまでは許可できる」という境界を設定するもの。IAMポリシーを利用してIAMユーザーに対してSCP範囲内の権限を設定することができる。
-- 
+- ![Screen Shot 2022-08-24 at 23 13 00](https://user-images.githubusercontent.com/61643054/186441416-afcaee4f-2b5a-4749-b84f-249493a3a7b4.png)
 
 ## 32.
 - ElstiCache:
