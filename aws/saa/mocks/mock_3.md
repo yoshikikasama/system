@@ -70,7 +70,7 @@
 ## 23.
 - DynamoDBストリーム: DynamoDB テーブルに保存された項目の変更をキャプチャする機能。
 - DynamoDB Accelerator(DAX): DynamoDB 専用のインメモリ型のキャッシュクラスタを追加して、キャッシュからのレスポンスをミリ秒単位からマイクロ秒単位まで高速化できる。
-- 
+- ![Screen Shot 2022-08-26 at 6 15 46](https://user-images.githubusercontent.com/61643054/186770294-1fbafdca-17c3-49ef-b8cd-e176ba1453a6.png)
 
 ## 24.
 - 54.240.143.0/24:
