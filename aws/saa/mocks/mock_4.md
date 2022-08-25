@@ -95,4 +95,4 @@
 - Amazon FSx for Windows ファイルサーバー: Access Control Lists (ACLs)、シャドウコピー、ユーザークォータなど、Windows ネイティブファイルシステムの機能をサポートしているストレージタイプ。
 
 ## 47.
-- Redshift Spectrum: 
+- Redshift Spectrum: ![Screen Shot 2022-08-26 at 6 23 56](https://user-images.githubusercontent.com/61643054/186771688-705d9458-ce34-46bd-bcf5-00f875d59031.png)
