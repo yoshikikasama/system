@@ -105,5 +105,3 @@
 - AWS Directory Service AD Connector: ディレクトリリクエストをオンプレミスの Microsoft Active Directory へリダイレクトするのに使用するディレクトリゲートウェイ。つまり、オンプレミスのActive DirectoryとAWSを繋ぐサービス。
     - ![Screen Shot 2022-08-26 at 6 39 34](https://user-images.githubusercontent.com/61643054/186773906-14f69465-3f2b-4fd2-8a30-8c4532076bd4.png)
 - ![Screen Shot 2022-08-26 at 6 39 44](https://user-images.githubusercontent.com/61643054/186773925-efc8df85-c3dc-4a21-abda-0b5c0f11f610.png)
-
-    - ![Screen Shot 2022-08-26 at 6 39 34](https://user-images.githubusercontent.com/61643054/186773906-14f69465-3f2b-4fd2-8a30-8c4532076bd4.png)
