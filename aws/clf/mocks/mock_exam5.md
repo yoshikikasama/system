@@ -165,7 +165,6 @@
 - Amazon DynamoDB Accelerator(DAX)
     - フルマネージド型高可用性インメモリキャッシュで、DynamoDB用に特化。
     - 1秒あたりのリクエスト数が数百万件になる場合でも、milli secondからmicro secondへと最大 10 倍のパフォーマンス向上を実現
-    - 
 
 ## 61.
 - AWS Local Zone: レイテンシーの影響を受けやすいアプリケーションをエンドユーザーにより近い場所で実行することができる特別なゾーン。
