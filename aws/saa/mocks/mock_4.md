@@ -71,4 +71,4 @@
 
 ## 29.
 - S3バケットで利用可能なイベント通知先: SQS, Lambda
-- 
+- ![Screen Shot 2022-08-25 at 22 57 08](https://user-images.githubusercontent.com/61643054/186684496-18024cae-d4cc-4dda-972d-e3850ea8e35c.png)
