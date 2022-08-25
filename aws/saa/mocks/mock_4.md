@@ -26,4 +26,5 @@
 - ポリシーの種類:![Screen Shot 2022-08-25 at 21 31 20](https://user-images.githubusercontent.com/61643054/186665458-a6a8703d-0f3c-4e03-882c-6aa2a10d8371.png)
 
 ## 15.
-- EC2の利用コスト:
+- EC2の利用コスト:![Screen Shot 2022-08-25 at 21 39 54](https://user-images.githubusercontent.com/61643054/186667022-f134f903-9d14-47b8-b677-fc69ecf10b72.png)
+
