@@ -96,3 +96,12 @@
 
 ## 47.
 - Redshift Spectrum: ![Screen Shot 2022-08-26 at 6 23 56](https://user-images.githubusercontent.com/61643054/186771688-705d9458-ce34-46bd-bcf5-00f875d59031.png)
+
+## 48.
+- SQSデフォルトのデータ保持期間: 4日間
+- SQSデッドレターキュー: 正常に処理 (消費) できないメッセージの送信先として他の (ソース) キューが使用できるキュー。
+
+## 50.
+- AWS Directory Service AD Connector: ディレクトリリクエストをオンプレミスの Microsoft Active Directory へリダイレクトするのに使用するディレクトリゲートウェイ。つまり、オンプレミスのActive DirectoryとAWSを繋ぐサービス。
+    - 
+- 
