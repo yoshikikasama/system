@@ -43,4 +43,4 @@
 
 ## 11.
 - AWS Application Migration Service (AWS MGN): オンプレミスにある物理インフラ、仮想インフラおよびAzureなどの他のクラウドサービスにあるサーバーや 仮想マシンのサーバーソフトウェアを AWS クラウドで利用可能なように変換して、移行を自動化します。
-- Migration Service:
+- Migration Service:![Screen Shot 2022-08-26 at 15 43 14](https://user-images.githubusercontent.com/61643054/186839229-7c6fa1dd-0d9d-48df-af38-e85d30dc7d0f.png)
