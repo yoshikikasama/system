@@ -186,4 +186,4 @@
 
 ## 44.
 - Route53のフェールオーバールーティング: 異なるリージョンでプライマリー、セカンダリー構成が可能
-    - 
+    - ![Screen Shot 2022-08-26 at 18 19 29](https://user-images.githubusercontent.com/61643054/186871975-2655eee8-bdd0-4179-a338-469a1f85c64e.png)
