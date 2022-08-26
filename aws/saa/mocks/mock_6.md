@@ -31,4 +31,4 @@
     - ![Screen Shot 2022-08-27 at 5 54 12](https://user-images.githubusercontent.com/61643054/186989234-22a29eca-cfb8-47ae-a33d-c1c599def2ad.png)
 - フリート: EC2インスタンスを統制する機能
 - EC2フリート: オンデマンドインスタンス、リザーブドインスタンス、スポットインスタンスの購入オプションを一緒に使用して、複数のアベイラビリティーゾーンにまたがって複数のインスタンスタイプを起動できます。
-    - 
+    - ![Screen Shot 2022-08-27 at 5 57 11](https://user-images.githubusercontent.com/61643054/186989557-c479c402-d7cf-4724-a0a4-b6886947d99b.png)
