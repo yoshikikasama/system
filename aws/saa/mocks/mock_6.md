@@ -64,3 +64,11 @@
 - AWS Global Accelerator: ALB、NLB、EC2の前段に置いてアプリケーションの可用性とパフォーマンスを改善するサービス
 - Amazon S3 Transfer Acceleration: Clientへの長距離にわたるファイル転送を高速に安全に実施できます。
 - Amazon S3 マルチパートアップロード API: 大容量オブジェクトをいくつかに分けてアップロードできるようになります。
+
+## 35.
+- Route53による地理的制限: 位置情報ルーティングを使用
+- CloudFrontによる地理的制限
+- AWS WAF Geolocation機能: 特定の国のみのアクセスを除外することができる
+
+## 36.
+- AWS Transit Gateway: 複数のVPCやVPCピアリングをハブ＆スポークス方式で接続することができるVPCを拡張するサービスです。
