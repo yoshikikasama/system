@@ -44,3 +44,6 @@
 ## 11.
 - AWS Application Migration Service (AWS MGN): オンプレミスにある物理インフラ、仮想インフラおよびAzureなどの他のクラウドサービスにあるサーバーや 仮想マシンのサーバーソフトウェアを AWS クラウドで利用可能なように変換して、移行を自動化します。
 - Migration Service:![Screen Shot 2022-08-26 at 15 43 14](https://user-images.githubusercontent.com/61643054/186839229-7c6fa1dd-0d9d-48df-af38-e85d30dc7d0f.png)
+
+## 12.
+- AWS Global Accelerator : AWS 上のアプリケーションに対して固定エントリポイントとなる静的 IP アドレスを提供することで様々な AWS リージョン、アベイラビリティーゾーンの特定の IP アドレスの管理における複雑さを排除しつつ、アプリケーションアクセスを効率化します。
