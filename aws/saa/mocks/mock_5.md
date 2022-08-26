@@ -47,3 +47,4 @@
 
 ## 12.
 - AWS Global Accelerator : AWS 上のアプリケーションに対して固定エントリポイントとなる静的 IP アドレスを提供することで様々な AWS リージョン、アベイラビリティーゾーンの特定の IP アドレスの管理における複雑さを排除しつつ、アプリケーションアクセスを効率化します。
+- ![Screen Shot 2022-08-26 at 15 48 33](https://user-images.githubusercontent.com/61643054/186840253-0a1a1860-6e4f-42a5-a65f-9e0f10aeb3b6.png)
