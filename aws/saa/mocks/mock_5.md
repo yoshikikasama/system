@@ -162,4 +162,4 @@
 
 ## 38.
 - RDSのScailing: データ容量のScailingであり、RDSインスタンスではない。
-- RDS  + ElastiCache:
+- RDS  + ElastiCache:![Screen Shot 2022-08-26 at 17 50 36](https://user-images.githubusercontent.com/61643054/186866060-7afd887e-3c72-40ae-a65c-54c6dcbdee4b.png)
