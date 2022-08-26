@@ -244,4 +244,4 @@
 
 ## 58.
 - Oracle RAC（Oracle Real Application Clusters）: 複数のコンピュータを束ねて一体のシステムを構成するOracleのクラスタリング機能です。.これにより複数のサーバーで一つのデータベースを構成して、「負荷分散」「拡張性向上」「耐久性向上」を実施させることができます。これはRDSでは実現できないため、EC2インスタンスにOracleをインストールして構成することが必要です。
-- 
+- ![Screen Shot 2022-08-26 at 19 32 33](https://user-images.githubusercontent.com/61643054/186885553-64f0579d-7be9-4841-819d-ee7fd3b0dd43.png)
