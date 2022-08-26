@@ -38,7 +38,7 @@
 
 ## 22.
 - S3 Cross-Origin Resource Sharing: アプリケーション上で複数ドメインからのコンテンツアクセスをS3バケットに許可する際に利用する仕組み
-    - 
+    - ![Screen Shot 2022-08-27 at 7 15 48](https://user-images.githubusercontent.com/61643054/186997610-1b23551f-5ae4-4704-b263-c66326ac36a9.png)
 - S3 Transfer Acceleration: 海外リージョンなど、送信元から遠く離れたS3へのデータ転送をAWSのエッジロケーションとネットワークプロトコルの最適で高速化するサービス
 
 ## 24.
