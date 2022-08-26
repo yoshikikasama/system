@@ -196,4 +196,4 @@
 - Amazon QuickSight:クラウド型のBIツールを提供する可視化ツール。機械学習（ML）と自然言語機能を活用してデータからより深い洞察を得るのに役立つML Insights機能がある。
 
 ## 47.
-- S3のライフサイクル管理: 
+- S3のライフサイクル管理: ![Screen Shot 2022-08-26 at 18 38 38](https://user-images.githubusercontent.com/61643054/186875904-e9d4dd43-8ed0-47bc-a3c2-989b07833e02.png)
