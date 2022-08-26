@@ -203,4 +203,4 @@
 
 ## 50.
 - Amazon Redshiftの拡張VPC ルーティング: クラスターとデータリポジトリ間のすべての COPY と UNLOAD トラフィックが Amazon VPC を通るよう強制します。これにより、VPC セキュリティグループ、ネットワークアクセスコントロールリスト (ACL)、VPC エンドポイント、VPC エンドポイントポリシー、インターネットゲートウェイ、ドメインネームシステム (DNS) サーバーなどのVPCの 機能をRedshiftで使用することができます。 これらの機能を使用して、Amazon Redshift クラスターと他のリソースの間のデータフローを詳細に管理できるようになり、VPC フローログを使って COPY と UNLOAD トラフィックを監視することができます。
-- 
+- ![Screen Shot 2022-08-26 at 18 47 09](https://user-images.githubusercontent.com/61643054/186877735-b86aa091-1d52-4742-a177-69a72d5a5957.png)
