@@ -72,3 +72,4 @@
 
 ## 36.
 - AWS Transit Gateway: 複数のVPCやVPCピアリングをハブ＆スポークス方式で接続することができるVPCを拡張するサービスです。
+- ![Screen Shot 2022-08-27 at 7 23 49](https://user-images.githubusercontent.com/61643054/186998323-6121057a-0a00-40f1-85de-4fb1114f1e97.png)
