@@ -197,3 +197,10 @@
 
 ## 47.
 - S3のライフサイクル管理: ![Screen Shot 2022-08-26 at 18 38 38](https://user-images.githubusercontent.com/61643054/186875904-e9d4dd43-8ed0-47bc-a3c2-989b07833e02.png)
+- S3 Glacier Flexible Retribal: 標準取り出して５時間程度でデータを取得
+- S3 Glacier Instant Retribal: m秒単位のデータの取り出し
+- Glacier Deep Archive: 12時間以内にデータを取得。
+
+## 50.
+- Amazon Redshiftの拡張VPC ルーティング: クラスターとデータリポジトリ間のすべての COPY と UNLOAD トラフィックが Amazon VPC を通るよう強制します。これにより、VPC セキュリティグループ、ネットワークアクセスコントロールリスト (ACL)、VPC エンドポイント、VPC エンドポイントポリシー、インターネットゲートウェイ、ドメインネームシステム (DNS) サーバーなどのVPCの 機能をRedshiftで使用することができます。 これらの機能を使用して、Amazon Redshift クラスターと他のリソースの間のデータフローを詳細に管理できるようになり、VPC フローログを使って COPY と UNLOAD トラフィックを監視することができます。
+- 
