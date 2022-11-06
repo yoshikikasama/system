@@ -169,4 +169,4 @@
 
 ## 22.
 - AWSのサポートサービス:
-    - 
+    - ![Screenshot 2022-11-06 at 9 52 24](https://user-images.githubusercontent.com/61643054/200148937-42e9bdc7-31bf-4ca5-9462-a59b048dbf2d.png)
