@@ -227,3 +227,4 @@
     - 機械学習を利用した不正検知が可能
     - VPCフローログを解析できる
     - IPアドレスやドメインリストを解析できる。
+    - ![Screenshot 2022-11-07 at 6 24 30](https://user-images.githubusercontent.com/61643054/200195959-f4cbf417-fbd1-4a64-9370-f69ca90de01d.png)
