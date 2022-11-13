@@ -475,3 +475,13 @@
 - ![Screenshot 2022-11-13 at 17 06 15](https://user-images.githubusercontent.com/61643054/201512227-0bdff6f3-bdbf-4b32-a093-65f2bf6bc4cd.png)
 - ![Screenshot 2022-11-13 at 17 06 45](https://user-images.githubusercontent.com/61643054/201512238-a5f45859-a7a2-4275-856b-af9c74d159c8.png)
 
+- Direct Connect: オンプレミス側からS3へとデータを移動することは可能ですが、今回はオンプレミスとクラウドストレージの両方に保存されている企業ドキュメントの永続的なバックアップおよびアーカイブシステムをセットアップする必要があります。AWS Storage Gatewayはバックアップに必要な様々な機能を有しており、そちらを利用することが効率的です。 
+- Snowball: 大量データを移行する際に利用する一時的なデバイス。
+
+## 62.
+- CloudFormationスタックにおいて、最新のWindows AMIが適用されるように設定:
+    - CloudFormationテンプレートにAWS Systems Manager パラメータストアを連携させることで、CloudFormationテンプレートのパラメーターセクションを構成して、最新のWindowsのAMI IDを指定してAMIの更新を管理することができます。テンプレートやパラメータなど何も変更せずにCloudFormationスタックを更新するだけでリソースの要件に応じて、その時点で最新のAMI IDに更新されます。
+
+## 63.
+- S3クラスの種類:
+    - 
