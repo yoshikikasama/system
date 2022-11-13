@@ -471,4 +471,7 @@
 
 ## 61.
 - AWS Storage Gateway: オンプレミス環境にファイルゲートウェイを接続することで、オンプレミスサーバからiSCSIを利用してEBSに接続したり、NFSを利用してS3に接続したりして、オンプレミス環境のストレージをAWSのストレージに接続してデータを移行することが可能となります。
-    - 
+    - ![Screenshot 2022-11-13 at 17 06 03](https://user-images.githubusercontent.com/61643054/201512209-9caca8e5-5337-4d68-a256-f2b198b01387.png)
+- ![Screenshot 2022-11-13 at 17 06 15](https://user-images.githubusercontent.com/61643054/201512227-0bdff6f3-bdbf-4b32-a093-65f2bf6bc4cd.png)
+- ![Screenshot 2022-11-13 at 17 06 45](https://user-images.githubusercontent.com/61643054/201512238-a5f45859-a7a2-4275-856b-af9c74d159c8.png)
+
