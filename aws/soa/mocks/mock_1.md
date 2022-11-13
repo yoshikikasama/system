@@ -456,4 +456,4 @@
 
 ## 58.
 - AWSリソースへのアクセス制限:
-    - 
+    - ![Screenshot 2022-11-13 at 15 50 43](https://user-images.githubusercontent.com/61643054/201509654-36a48748-4a4c-4f23-ac21-0e5c4af8fb4d.png)
