@@ -484,4 +484,4 @@
 
 ## 63.
 - S3クラスの種類:
-    - 
+    - ![Screenshot 2022-11-13 at 17 46 42](https://user-images.githubusercontent.com/61643054/201513517-5bea1f55-bd0d-4fd1-9d40-3c9c849b3659.png)
