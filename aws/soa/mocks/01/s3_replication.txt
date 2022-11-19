@@ -1,0 +1,10 @@
+aws iam create-role --role-name replicationRole --assume-role-policy-document file://s3-role-trust-policy.json
+
+
+aws iam put-role-policy --role-name replicationRole --policy-document file://s3-role-permissions-policy.json --policy-name replicationRolePolicy
+
+aws iam get-role --role-name replicationRole
+
+aws s3api put-bucket-replication \\n--replication-configuration file://replication.json \\n--bucket kasama-tmp-bucket1
+
+aws s3api get-bucket-replication \\n--bucket kasama-tmp-bucket1

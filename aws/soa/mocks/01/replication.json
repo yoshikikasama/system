@@ -1,0 +1,14 @@
+{
+   "Role": "arn:aws:iam::068788852374:role/replicationRole",
+   "Rules": [
+     {
+       "Status": "Enabled",
+       "Priority": 1,
+       "DeleteMarkerReplication": { "Status": "Disabled" },
+       "Filter" : { "Prefix": "Tax"},
+       "Destination": {
+         "Bucket": "arn:aws:s3:::kasama-tmp-bucket2"
+       }
+     }
+   ]
+ } 
