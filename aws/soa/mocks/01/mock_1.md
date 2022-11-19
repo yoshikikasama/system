@@ -529,5 +529,12 @@
 - AssumeRole: IAMロールを引き受けるためのアクション。スイッチロール（ひいては AssumeRole）を行ったあとは、IAM ユーザーではなく「 STS によりロールを引き受けたセッション」が操作を行う主体となります。
     https://dev.classmethod.jp/articles/iam-role-passrole-assumerole/
 
-## 75.
+## 73.
 
+- 発行されたSSLサーバ証明書:
+    - Webサーバにインストール
+    - ロードバランサにインストール
+- AWS Certificate Manager (ACM): サーバー証明書をプロビジョン、管理、およびデプロイします。
+- ACMがサポートされていないリージョンでは、IAM を Certificate Manager として使用する必要があります。
+    - get-server-certificateコマンド: 証明書のARNを取得。
+    - set-load-balancer-listener-ssl-certificateコマンド: 証明書を設定。
