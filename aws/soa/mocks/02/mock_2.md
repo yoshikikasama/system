@@ -116,4 +116,4 @@
     - ![Screenshot 2022-11-20 at 17 56 37](https://user-images.githubusercontent.com/61643054/202893911-17406f74-8160-4c6e-b5cd-58ce5f259bac.png)
 
 ## 24.
-- VPCフローログ: 
+- VPCフローログ: ![Screenshot 2022-11-20 at 19 50 39](https://user-images.githubusercontent.com/61643054/202900343-17d3147c-e1fe-4b44-928e-a099a7fc4fb6.png)
