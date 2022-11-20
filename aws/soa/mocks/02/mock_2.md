@@ -146,7 +146,7 @@
 
 ## 31.
 - EC2インスタンス立ち上げた際のボリュームステータス:
-    - 
+-   ![Screenshot 2022-11-21 at 7 38 13](https://user-images.githubusercontent.com/61643054/202930220-aa18cfa4-8f15-4f31-bdbd-5819b57f97bc.png)
 
 ## 32.
 - CloudTrailのログファイル: デフォルトでSSE-S3によって暗号化されている。
