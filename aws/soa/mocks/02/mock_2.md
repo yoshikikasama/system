@@ -146,7 +146,7 @@
 
 ## 31.
 - EC2インスタンス立ち上げた際のボリュームステータス:
--   ![Screenshot 2022-11-21 at 7 38 13](https://user-images.githubusercontent.com/61643054/202930220-aa18cfa4-8f15-4f31-bdbd-5819b57f97bc.png)
+    - ![Screenshot 2022-11-21 at 7 38 13](https://user-images.githubusercontent.com/61643054/202930220-aa18cfa4-8f15-4f31-bdbd-5819b57f97bc.png)
 
 ## 32.
 - CloudTrailのログファイル: デフォルトでSSE-S3によって暗号化されている。
@@ -154,4 +154,9 @@
 ## 33.
 - パワーユーザー: 管理者権限以外の全てのAWSリソースに対する権限を有したユーザー。
 
-## 
+## 34.
+- 
+- 基本的にはAWS Shield Standard/AWS Shied Advanced/AWS WAFの３対策
+    - AWS Shield Standard：Route 53またはCloudFrontで使用する。無料。L3/L4の防御。
+    - AWS Shield Advanced：Route 53、CloudFront、ELB、EC2、AWS Global Acceleratorで使用する。有料。L7、ネットワークACLを使った防御。
+    - AWS WAF：CloudFront、ALB、APIGatewayで使用。有料。IPアドレス、HTTP、クエリ文字列でのアクセス制限に加え、SQLインジェクション、クロスサイトスクリプティングにも有効。
