@@ -114,3 +114,6 @@
 ## 23.
 - CloudTrail: AWSマネジメントコンソールでの操作とAWS APIコールを記録することができる。これにより、ユーザーおよびリソースのAPIアクティビティを把握することができる。
     - ![Screenshot 2022-11-20 at 17 56 37](https://user-images.githubusercontent.com/61643054/202893911-17406f74-8160-4c6e-b5cd-58ce5f259bac.png)
+
+## 24.
+- VPCフローログ: 
