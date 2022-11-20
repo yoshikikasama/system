@@ -155,7 +155,7 @@
 - パワーユーザー: 管理者権限以外の全てのAWSリソースに対する権限を有したユーザー。
 
 ## 34.
-- 
+- ![Screenshot 2022-11-21 at 8 01 15](https://user-images.githubusercontent.com/61643054/202931330-e8ef58b8-720d-40e7-bac7-f3bd5ed3c003.png)
 - 基本的にはAWS Shield Standard/AWS Shied Advanced/AWS WAFの３対策
     - AWS Shield Standard：Route 53またはCloudFrontで使用する。無料。L3/L4の防御。
     - AWS Shield Advanced：Route 53、CloudFront、ELB、EC2、AWS Global Acceleratorで使用する。有料。L7、ネットワークACLを使った防御。
