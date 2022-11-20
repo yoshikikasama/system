@@ -97,7 +97,9 @@
 
 ## 22.
 - CloudWatchの機能:
-  -   
+  -   ![Screenshot 2022-11-20 at 17 55 29](https://user-images.githubusercontent.com/61643054/202893897-1385275f-3dc7-4674-a455-b7d7e37b09c1.png)
+  -   ![Screenshot 2022-11-20 at 17 56 17](https://user-images.githubusercontent.com/61643054/202893904-0972cbf6-73c9-43f8-a6b2-1b321c245b8a.png)
+
 - CloudWatchによるEC2のモニタリングタイプ:
     - CPUなどは見れるが、メモリやディスク容量などは見れない。
     - 基本モニタリング:
@@ -111,4 +113,4 @@
 
 ## 23.
 - CloudTrail: AWSマネジメントコンソールでの操作とAWS APIコールを記録することができる。これにより、ユーザーおよびリソースのAPIアクティビティを把握することができる。
-    - 
+    - ![Screenshot 2022-11-20 at 17 56 37](https://user-images.githubusercontent.com/61643054/202893911-17406f74-8160-4c6e-b5cd-58ce5f259bac.png)
