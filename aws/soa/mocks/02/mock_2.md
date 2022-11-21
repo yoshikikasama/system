@@ -230,3 +230,4 @@
 
 ## 42.
 - S3の暗号化方式: 
+    - ![Screenshot 2022-11-21 at 23 23 48](https://user-images.githubusercontent.com/61643054/203078858-f22d5cad-410c-4f4b-b7c7-a251d90e772b.png)
