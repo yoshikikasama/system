@@ -306,4 +306,4 @@ CloudWatch: アプリケーションエラーに関連するキーワードをCl
 ## 59.
 - パーティションプレイスメントグループ: HDFS、HBase、Cassandra などの大規模な分散および複製ワークロードを異なるラック間でデプロイするために使用できます。
 - H1インスタンス: ビッグデータ解析に特化して設計されています。
-- 
+- ![Screenshot 2022-11-22 at 22 23 18](https://user-images.githubusercontent.com/61643054/203324948-973a9a1a-0ff6-4e40-84dc-19dda3eb4065.png)
