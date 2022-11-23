@@ -284,7 +284,9 @@ CloudWatch: アプリケーションエラーに関連するキーワードをCl
     - SCP(Service Control Policy): AWSアカウントまたはグループに統一されたポリシーを適用するための機能です。
         - 「SCPとIAMで明示的に許可され」なおかつ「いずれでも明示的に拒否されていない」場合に権限を有していると評価されます。
         - 「ざっくりとした」制限をSCPで実施し、細かい制御をIAMで実施する、というアプローチが適切かと思います。
-    - 
+    - ![Screenshot 2022-11-23 at 9 33 50](https://user-images.githubusercontent.com/61643054/203450104-8b13678e-2e1a-4ec7-96ff-e481e872cebd.png)
+    - ![Screenshot 2022-11-23 at 9 36 24](https://user-images.githubusercontent.com/61643054/203450125-6d282f87-1410-4c32-9d0c-98d34389fbc7.png)
+
 
 
 ## 54.
