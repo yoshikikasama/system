@@ -45,9 +45,7 @@
     - ![Screen Shot 2022-08-25 at 6 30 47](https://user-images.githubusercontent.com/61643054/186527499-830f331a-e110-4bca-bb41-4b3bca63c6c7.png)
     - Conditions: エンティティが作成または設定される状況を定義することができます。たとえば、条件を作成し、それをリソースまたは出力に関連付けることで、条件が true の場合にのみ AWS CloudFormation がリソースまたは出力を作成するようにできます。
     - Mappings: キーと名前付きの一連の値とが対応付けられます。たとえば、リージョンに基づく値を設定する場合、リージョン名をキーとしてAMI IDなどの値をマッピングすることが可能です。
-        - 
-
-
+        - ![Screenshot 2022-11-27 at 7 05 49](https://user-images.githubusercontent.com/61643054/204110709-b36ea053-18b5-4d6a-bf28-a2fb652093bb.png)
 
 
 ## 51.
