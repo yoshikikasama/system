@@ -182,9 +182,7 @@ CloudFormationのスロットリングエラー: スタック作成用のAPIが�
 ## 20.
 
 - Auto Scalingのスケーリング方法:
-    - 
-
-
+    - ![Screenshot 2022-11-28 at 6 04 34](https://user-images.githubusercontent.com/61643054/204159661-8d0855fa-989a-48a6-ba98-d6bb9d7813e9.png)
 
 
 
