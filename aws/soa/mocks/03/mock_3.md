@@ -274,7 +274,7 @@ CloudFormationのスロットリングエラー: スタック作成用のAPIが�
     - スレーブ(セカンダリ): マスターの変更を自動的に反映するバックアップ。
     - リードレプリカ: マスターからレプリケーションされた読み込み専用のデータベース。リードレプリカを使用する設計だとデータ読み込み（SELECTクエリ）を行う場合はリードレプリカが処理する。
     - <img width="654" alt="Screen Shot 2022-08-20 at 12 22 33" src="https://user-images.githubusercontent.com/61643054/185727194-264ade1f-bcb4-4632-aa7c-4e71e62e4a8e.png">
-
+    - ![Screenshot 2022-11-28 at 12 58 52](https://user-images.githubusercontent.com/61643054/204251589-a8d643d5-fb6e-4bc2-98f8-03064477694e.png)
 
 
 
