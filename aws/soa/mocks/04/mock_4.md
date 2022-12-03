@@ -84,7 +84,8 @@
 ## 10.
 - AWS Encryption SDK: 業界標準とベストプラクティスに基づいて簡単にデータを暗号化および復号化できるように設計されたクライアント側の暗号化ライブラリ。ELBで送受信されるデータを保護することができます。 
 - AWS Certificate Manager(ACM): CloudFrontに設定し、転送中データを暗号化データ転送時の暗号化を実施することができます。AWS Certificate Manager は、AWS サービスとユーザーの内部接続リソースで使用するパブリックとプライベートの Secure Sockets Layer/Transport Layer Security (SSL/TLS) 証明書のプロビジョニング、管理、デプロイを簡単にします。このACMで生成した証明書を CloudFrontに設定して、転送中データを暗号化します。
-- 
+- ![Screenshot 2022-12-03 at 10 11 43](https://user-images.githubusercontent.com/61643054/205421132-96941efd-47a1-4b95-95e7-19ecfca3c4b5.png)
+
 ## 11.
 - AWS Chatbot: Slack チャンネルや Amazon Chime チャットルームで AWS のリソースを簡単にモニタリングおよび操作できるようにしてくれるインタラクティブエージェントです。
 
