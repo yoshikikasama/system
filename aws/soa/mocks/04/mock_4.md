@@ -136,3 +136,5 @@
 
 ## 22.
 - この会社では既にオンプレミス環境においてMicrosoft Active Directoryを使用しているため、AD Connectorを使用してオンプレミスのMicrosoft Active DirectoryドメインとAWSのIAMによるユーザー管理を連携することができます。その上で、シングルサインオンを有効にすることで、AWSマネジメントコンソールとAWSコマンドラインインターフェイス（CLI）へのSSOを設定できます。
+- ![Screenshot 2022-12-03 at 15 13 51](https://user-images.githubusercontent.com/61643054/205427565-9e6281fc-f0d9-4b69-8d3b-5be7a01a09cd.png)
+- ![Screenshot 2022-12-03 at 15 14 04](https://user-images.githubusercontent.com/61643054/205427607-5fcc2730-80ec-4191-bd2d-2b7ae3969437.png)
