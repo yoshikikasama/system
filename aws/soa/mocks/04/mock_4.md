@@ -113,3 +113,8 @@
     - 仮想プライベートゲートウェイ: 単一の VPC にアタッチできる Amazon 側の Site-to-Site VPN 接続の VPN エンドポイントです。
     -  転送ゲートウェイ: 複数の VPC とオンプレミスネットワークを相互接続するために使用でき、Site-to-Site VPN 接続の Amazon 側の VPN エンドポイントとして使用できる転送ハブ。
 - BGP(Border Gateway Protocol): 現在のインターネットにおいて、ISPなどの相互接続時にお互いの経路情報をやり取りするために使われる経路制御プロトコル。
+- ![Screenshot 2022-12-03 at 12 44 07](https://user-images.githubusercontent.com/61643054/205421761-51eff40a-e83b-4336-95b9-592ef4aff06d.png)
+- ![Screenshot 2022-12-03 at 12 47 15](https://user-images.githubusercontent.com/61643054/205421766-e05452f5-7ec8-48d2-8306-a5dc1d3e921d.png)
+- ![Screenshot 2022-12-03 at 12 49 29](https://user-images.githubusercontent.com/61643054/205421772-fc550b2d-dff0-4b42-9d2d-e17736cc600b.png)
+- ![Screenshot 2022-12-03 at 12 52 57](https://user-images.githubusercontent.com/61643054/205421775-d5b1c8f0-b0d5-4ccb-b417-c92925f5ade6.png)
+- ![Screenshot 2022-12-03 at 12 53 43](https://user-images.githubusercontent.com/61643054/205421779-e36a4190-2006-49bb-856c-aece3615c927.png)
