@@ -61,7 +61,8 @@
 - IDS(Intrusion Detection System): 不正侵入検知システム。
 - IPS(Intrusion Prevention System): 不正侵入防止システム。
 - AWS Network Firewall:IPS / IDSを提供。同VPC内のリソースのインターネット宛の通信を検査する。
-- AWS Gateway Load Balancer
+    -  ![Screenshot 2022-12-29 at 8 11 44](https://user-images.githubusercontent.com/61643054/209883831-f05d3e65-90cc-4297-9a86-54be0825cb26.png)
+    -  AWS Gateway Load Balancer
     - シンプル化を通じてアプライアンス導入を迅速に
     - 伸縮性を持つスケーラビリティでコストパフォーマンス改善
     - アプライアンスの可用性を向上
