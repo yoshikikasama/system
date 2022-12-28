@@ -41,7 +41,7 @@
 - SurgeQueueLength: 正常なインスタンスへのルーティングを保留中のリクエスト (HTTP リスナー) または接続 (TCP リスナー) の合計数です。
 
 ## 7.
-- AWS Systems Manager のSystems Manager Automation: Amazon EC2インスタンスおよび他の AWSリソースの一般的なメンテナンスとデプロイに関する運用タスクを自動化することが可能です。
+- AWS Systems Manager Automation: Amazon EC2インスタンスおよび他の AWSリソースの一般的なメンテナンスとデプロイに関する運用タスクを自動化することが可能です。
 - 自動化ワークフローの設定ステップ
     - Amazon CloudWatch Events を使用して自動化タスクおよびワークフローに関する通知を受信します。
     - Amazon EC2 または AWS Systems Manager コンソールを使用して、自動化の進捗状況および実行の詳細を監視します。
