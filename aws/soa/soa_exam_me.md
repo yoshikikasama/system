@@ -4,10 +4,10 @@
 ## RDS
 - RDSのマルチAZ DBクラスター構成:
     - <img width="812" alt="Screenshot 2022-12-04 at 9 17 48" src="https://user-images.githubusercontent.com/61643054/205467780-f1450cab-a074-4dc8-b764-88b08b435484.png">
-
 - RDSのマルチAZDBインスタンス構成とAuroraのマルチAZ構成:
     - <img width="805" alt="Screenshot 2022-12-30 at 12 48 17" src="https://user-images.githubusercontent.com/61643054/210032740-d4468371-cad3-4787-be5e-b86100d4a462.png">
-
+- RDSののマルチAZDBインスタンス構成とマルチAZ DBクラスター構成の比較:
+    - <img width="907" alt="Screenshot 2022-12-30 at 12 59 53" src="https://user-images.githubusercontent.com/61643054/210033238-3a8e06d2-29b5-4778-ba58-2becbc20df07.png">
 
 ## 水平スケーリングと垂直スケーリングの違いを明確にする
 - 水平スケーリング: EC2インスタンスの数を増やす
