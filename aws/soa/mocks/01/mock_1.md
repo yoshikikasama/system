@@ -508,7 +508,7 @@
 - RDSのマルチAZDBインスタンス構成とAuroraのマルチAZ構成
     - <img width="805" alt="Screenshot 2022-12-30 at 12 48 17" src="https://user-images.githubusercontent.com/61643054/210032740-d4468371-cad3-4787-be5e-b86100d4a462.png">
 - RDSののマルチAZDBインスタンス構成とマルチAZ DBクラスター構成の比較:
-    - 
+    - <img width="907" alt="Screenshot 2022-12-30 at 12 59 53" src="https://user-images.githubusercontent.com/61643054/210033238-3a8e06d2-29b5-4778-ba58-2becbc20df07.png">
 ## 65.
 
 - AWS Key Management Service: データ保護に使用される暗号化キーを一元管理できます。
