@@ -9,10 +9,14 @@
 - RDSののマルチAZDBインスタンス構成とマルチAZ DBクラスター構成の比較:
     - <img width="907" alt="Screenshot 2022-12-30 at 12 59 53" src="https://user-images.githubusercontent.com/61643054/210033238-3a8e06d2-29b5-4778-ba58-2becbc20df07.png">
 
-## Route53のフェールオーバー構成
+## Route53のフェールオーバー構成とELBとAuto Scaling
 - Route53のフェールオーバールーティングとELB: 異なるリージョンでプライマリー、セカンダリー構成が可能、あくまでリージョン単位。
+   - Route53はELBのヘルスチェックを行い、障害時にsorryページへ行く
    - <img width="771" alt="Screenshot 2022-12-31 at 9 21 49" src="https://user-images.githubusercontent.com/61643054/210119551-0ea870da-a7ca-4513-b926-91f2988d006a.png">
-
+- ELBの主な役割: 
+    - ![Screen Shot 2022-08-24 at 6 31 10](https://user-images.githubusercontent.com/61643054/186270230-b8f65570-63b7-486f-ae08-5721b141977f.png)
+- Auto Scalingのスケーリング方法:
+    - ![Screenshot 2022-11-28 at 6 04 34](https://user-images.githubusercontent.com/61643054/204159661-8d0855fa-989a-48a6-ba98-d6bb9d7813e9.png)
 
 ## 水平スケーリングと垂直スケーリングの違いを明確にする
 - 水平スケーリング: EC2インスタンスの数を増やす
