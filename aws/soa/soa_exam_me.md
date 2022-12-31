@@ -11,7 +11,7 @@
 
 ## Route53のフェールオーバー構成
 - Route53のフェールオーバールーティングとELB: 異なるリージョンでプライマリー、セカンダリー構成が可能、あくまでリージョン単位。
-   - 
+   - <img width="771" alt="Screenshot 2022-12-31 at 9 21 49" src="https://user-images.githubusercontent.com/61643054/210119551-0ea870da-a7ca-4513-b926-91f2988d006a.png">
 
 
 ## 水平スケーリングと垂直スケーリングの違いを明確にする
