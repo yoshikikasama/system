@@ -154,6 +154,26 @@
 - URLに基づいてリクエストをフィルタリングできる。
 - <img width="684" alt="Screenshot 2022-12-31 at 9 15 21" src="https://user-images.githubusercontent.com/61643054/210119335-3a5cd292-874e-41ee-955b-1f042dbdb360.png">
 
+## AWS Organizations
+- AWS Organizations: 複数のAWSアカウントを効率的に管理・統制するためのサービス。
+    - 新しい AWS アカウントを作成しリソースを割り当てる
+    - AWSアカウントをグループ化して整理
+    - AWSアカウントまたはグループに統一されたポリシーを適用
+    - すべてのAWSアカウントに単一の支払い方法を利用することで請求を簡素化
+    - OU(Organization Unit): 組織単位。組織内にある複数AWSアカウントのグループ。
+    - SCP(Service Control Policy): AWSアカウントまたはグループに統一されたポリシーを適用するための機能です。
+        - 「SCPとIAMで明示的に許可され」なおかつ「いずれでも明示的に拒否されていない」場合に権限を有していると評価されます。
+        - 「ざっくりとした」制限をSCPで実施し、細かい制御をIAMで実施する、というアプローチが適切かと思います。
+    - 組織の証跡: OUを作成した場合に、そのOU内の全AWSアカウントの全イベントを記録する証跡を作成できる。
+    - 利用可能な機能セット:
+        - 全ての機能: 一括請求機能も含む、高度なアカウント管理機能。
+        - 一括請求機能: OU内のアカウント管理を一元化する基本的な機能。
+    - ![Screenshot 2022-11-23 at 9 33 50](https://user-images.githubusercontent.com/61643054/203450104-8b13678e-2e1a-4ec7-96ff-e481e872cebd.png)
+    - ![Screenshot 2022-11-23 at 9 36 24](https://user-images.githubusercontent.com/61643054/203450125-6d282f87-1410-4c32-9d0c-98d34389fbc7.png)
+
 ##  実技試験：
-    - eventbridgeでec2 spotインスタンスの終了を見る
-    - 15分に一回lambdaを起動するrule
+- RDSの立ち上げ
+- S3 Bucketのレプリケーション
+- eventbridgeでec2 spotインスタンスの終了を見る
+- 15分に一回lambdaを起動するrule
+
