@@ -10,8 +10,8 @@
     - <img width="907" alt="Screenshot 2022-12-30 at 12 59 53" src="https://user-images.githubusercontent.com/61643054/210033238-3a8e06d2-29b5-4778-ba58-2becbc20df07.png">
 
 ## Route53のフェールオーバー構成
-- Route53のフェールオーバールーティング: 異なるリージョンでプライマリー、セカンダリー構成が可能、あくまでリージョン単位
-    - ![Screen Shot 2022-08-26 at 18 19 29](https://user-images.githubusercontent.com/61643054/186871975-2655eee8-bdd0-4179-a338-469a1f85c64e.png)
+- Route53のフェールオーバールーティングとELB: 異なるリージョンでプライマリー、セカンダリー構成が可能、あくまでリージョン単位。
+   - 
 
 
 ## 水平スケーリングと垂直スケーリングの違いを明確にする
@@ -147,6 +147,7 @@
 - AWS Single Sign-On (AWS SSO): オンプレとのSAML認証連携によるシングルサインオンとMFA認証が可能になります。SSOとオンプレのActiveDirectoryとの連携に AD Connector（またはAWSDirectoryService for Microsoft ActiveDirectory）が必要です。
 
 ## Proxyサーバー
+- URLに基づいてリクエストをフィルタリングできる。
 - <img width="684" alt="Screenshot 2022-12-31 at 9 15 21" src="https://user-images.githubusercontent.com/61643054/210119335-3a5cd292-874e-41ee-955b-1f042dbdb360.png">
 
 ##  実技試験：
