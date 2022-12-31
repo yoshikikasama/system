@@ -147,7 +147,7 @@
 - AWS Single Sign-On (AWS SSO): オンプレとのSAML認証連携によるシングルサインオンとMFA認証が可能になります。SSOとオンプレのActiveDirectoryとの連携に AD Connector（またはAWSDirectoryService for Microsoft ActiveDirectory）が必要です。
 
 ## Proxyサーバー
-
+- <img width="684" alt="Screenshot 2022-12-31 at 9 15 21" src="https://user-images.githubusercontent.com/61643054/210119335-3a5cd292-874e-41ee-955b-1f042dbdb360.png">
 
 ##  実技試験：
     - eventbridgeでec2 spotインスタンスの終了を見る
