@@ -177,12 +177,16 @@
 ## 仮想プライベートゲートウェイ
 - [AWSによる仮想プライベートゲートウェイのわかりやすい説明](https://docs.aws.amazon.com/ja_jp/vpn/latest/s2svpn/how_it_works.html)
 
+## Event Bridge
+- Event Bus: 
+    - https://dev.classmethod.jp/articles/cloudwatch-events-event-bus/
+    - https://pages.awscloud.com/rs/112-TZM-766/images/20200122_BlackBelt_EventBridge.pdf
 
 ##  実技試験：
 - RDSの立ち上げ
 - S3 Bucketのレプリケーション
-- eventbridgeでec2 spotインスタンスの終了を見る
-- eventbridgで15分に一回lambdaを起動するruleを作成
-- albとauto scalingの設定をする
+- EventBridgeでEC2 spot fleetインスタンスの終了を見る
+- EventBridgで15分に一回lambdaを起動するruleを作成
+- EC2+ALB+Auto Scaling構成
 - AWS Organizations操作
 
