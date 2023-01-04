@@ -174,10 +174,15 @@
     - ![Screenshot 2022-11-23 at 9 33 50](https://user-images.githubusercontent.com/61643054/203450104-8b13678e-2e1a-4ec7-96ff-e481e872cebd.png)
     - ![Screenshot 2022-11-23 at 9 36 24](https://user-images.githubusercontent.com/61643054/203450125-6d282f87-1410-4c32-9d0c-98d34389fbc7.png)
 
+## 仮想プライベートゲートウェイ
+- [AWSによる仮想プライベートゲートウェイのわかりやすい説明](https://docs.aws.amazon.com/ja_jp/vpn/latest/s2svpn/how_it_works.html)
+
+
 ##  実技試験：
 - RDSの立ち上げ
 - S3 Bucketのレプリケーション
 - eventbridgeでec2 spotインスタンスの終了を見る
-- 15分に一回lambdaを起動するrule
+- eventbridgで15分に一回lambdaを起動するruleを作成
+- albとauto scalingの設定をする
 - AWS Organizations操作
 

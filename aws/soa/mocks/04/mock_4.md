@@ -123,6 +123,7 @@
 - ![Screenshot 2022-12-03 at 12 52 57](https://user-images.githubusercontent.com/61643054/205421775-d5b1c8f0-b0d5-4ccb-b417-c92925f5ade6.png)
 - ![Screenshot 2022-12-03 at 12 53 43](https://user-images.githubusercontent.com/61643054/205421779-e36a4190-2006-49bb-856c-aece3615c927.png)
 - AWS Direct Connect: インターネット回線を利用しないAWSが提供する専用接続サービスであり、ユーザーのネットワーク環境からAWSまでインターネットを経由せずプライベートな接続を確立することができます。
+- [AWSによる仮想プライベートゲートウェイのわかりやすい説明](https://docs.aws.amazon.com/ja_jp/vpn/latest/s2svpn/how_it_works.html)
 
 ## 16.
 - AWS Billing and Cost Management: 請求アラートを有効化することで、CloudWatchにおいて請求額をモニタリングし、請求メトリクスデータを使用してアラームを作成できるようになります。
