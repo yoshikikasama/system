@@ -116,6 +116,7 @@
     - AWS VPNはBGP ASNを使用して動的ルーティングの接続を確立します。
     - カスタマーゲートウェイデバイスの静的なインターネットルーティング可能なIPアドレスを設定します。   
 - BGP(Border Gateway Protocol): 現在のインターネットにおいて、ISPなどの相互接続時にお互いの経路情報をやり取りするために使われる経路制御プロトコル。
+- お客様ルーター = カスタマーゲートウェイ
 - ![Screenshot 2022-12-03 at 12 44 07](https://user-images.githubusercontent.com/61643054/205421761-51eff40a-e83b-4336-95b9-592ef4aff06d.png)
 - ![Screenshot 2022-12-03 at 12 47 15](https://user-images.githubusercontent.com/61643054/205421766-e05452f5-7ec8-48d2-8306-a5dc1d3e921d.png)
 - ![Screenshot 2022-12-03 at 12 49 29](https://user-images.githubusercontent.com/61643054/205421772-fc550b2d-dff0-4b42-9d2d-e17736cc600b.png)

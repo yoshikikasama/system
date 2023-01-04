@@ -282,7 +282,7 @@ CloudFormationのスロットリングエラー: スタック作成用のAPIが�
     - <img width="654" alt="Screen Shot 2022-08-20 at 12 22 33" src="https://user-images.githubusercontent.com/61643054/185727194-264ade1f-bcb4-4632-aa7c-4e71e62e4a8e.png">
     - ![Screenshot 2022-11-28 at 12 58 52](https://user-images.githubusercontent.com/61643054/204251589-a8d643d5-fb6e-4bc2-98f8-03064477694e.png)
 
-- WEC2インスタンスとAmazon RDSで構成されたWebサイトが一部の顧客に対して正しくロードされないときに確認するEC2のメトリクス:
+- EC2インスタンスとAmazon RDSで構成されたWebサイトが一部の顧客に対して正しくロードされないときに確認するEC2のメトリクス:
     - NetworkPacketsOut: 特定のインスタンスから送信されたパケット数を取得する。インスタンスから適切なパケット処理がネットワークインターフェースを通過しているかを確認。
     - NetworkIn: 1 つのインスタンスへの受信ネットワークトラフィックの量。インスタンスでの適切なデータ受信状況を確認。
     - CPUUtilization: CPUの使用率を取得するメトリクス。選択したインスタンスでアプリケーションを実行するのに必要な処理能力を特定。

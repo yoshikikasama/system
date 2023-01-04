@@ -127,7 +127,9 @@
 - AssumeRole: IAMロールを引き受けるためのアクション。スイッチロール（ひいては AssumeRole）を行ったあとは、IAM ユーザーではなく「 STS によりロールを引き受けたセッション」が操作を行う主体となります。
     https://dev.classmethod.jp/articles/iam-role-passrole-assumerole/
 - プリンシパル: エンティティ (ユーザーまたはロール) を使用してリクエストを送信するユーザーまたはアプリケーション。プリンシパルに関する情報には、プリンシパルがサインインに使用したエンティティに関連付けられたポリシーが含まれます。
-
+- Pass Role: ユーザーがAWSサービスにロールをPass(わたす)権限。
+- Get Role: ユーザーがわたすロールの詳細を得るために使用する。
+- Principal: アクションを実行する主体。依頼者。
 - Route53のALIASレコード: DNS機能に対するRoute 53固有の拡張機能を提供する。 IPアドレスまたはドメイン名の代わりに、ALIASレコードにはCloudFront、Elastic Beanstalk環境、ELB 、静的Webサイトとして設定されているAmazon S3バケットへのポインタ、または 同じホストゾーン内の別のRoute 53レコードを設定することができる。
     - ![Screen Shot 2022-08-22 at 22 16 14](https://user-images.githubusercontent.com/61643054/185930340-4e3baa6a-e680-40ca-8011-f5eabe048c92.png)
 
@@ -177,4 +179,5 @@
 - S3 Bucketのレプリケーション
 - eventbridgeでec2 spotインスタンスの終了を見る
 - 15分に一回lambdaを起動するrule
+- AWS Organizations操作
 
