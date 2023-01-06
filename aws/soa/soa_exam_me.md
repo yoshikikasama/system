@@ -1,21 +1,19 @@
 # soa試験のメモ
 
 ## 第 1 分野: モニタリング、ロギング、および修復
-1.1 AWS のモニタリングおよびロギングサービスを使用して、メトリクス、アラーム、およびフィル
+- 1.1 AWS のモニタリングおよびロギングサービスを使用して、メトリクス、アラーム、およびフィル
 ターを実装する
-• ログの特定、収集、分析、およびエクスポートを行う (例: Amazon CloudWatch Logs、
-CloudWatch Logs Insights、AWS CloudTrail ログなど)
-• CloudWatch エージェントを使用して、メトリクスとログを収集する
-• CloudWatch アラームを作成する
-• メトリクスフィルターを作成する
-• CloudWatch ダッシュボードを作成する
-• 通知を設定する (例: Amazon Simple Notification Service [Amazon SNS]、Service
-Quotas、CloudWatch アラーム、AWS Health Events など)
-1.2 モニタリングと可用性のメトリクスに基づいて問題を修復する
-• 通知とアラームに基づいてトラブルシューティングまたは是正措置を講じる
-• アクションをトリガーするように Amazon EventBridge ルールを設定する
-• AWS Systems Manager Automation のドキュメントを使用し、AWS Config ルールに基づいて
-アクションを実行する
+    -  ログの特定、収集、分析、およびエクスポートを行う (例: Amazon CloudWatch Logs、
+    - CloudWatch Logs Insights、AWS CloudTrail ログなど)
+    -  CloudWatch エージェントを使用して、メトリクスとログを収集する
+    -  CloudWatch アラームを作成する
+    - メトリクスフィルターを作成する
+    - CloudWatch ダッシュボードを作成する
+    - 通知を設定する (例: Amazon Simple Notification Service [Amazon SNS]、Service Quotas、CloudWatch アラーム、AWS Health Events など)
+- 1.2 モニタリングと可用性のメトリクスに基づいて問題を修復する
+    - 通知とアラームに基づいてトラブルシューティングまたは是正措置を講じる
+    - アクションをトリガーするように Amazon EventBridge ルールを設定する
+    - AWS Systems Manager Automation のドキュメントを使用し、AWS Config ルールに基づいてアクションを実行する
 - CloudWatchによるEC2のモニタリングタイプ:
     - CPUなどは見れるが、メモリやディスク容量などは見れない。
     - 基本モニタリング:
@@ -35,107 +33,93 @@ Quotas、CloudWatch アラーム、AWS Health Events など)
 
 
 ## 第 2 分野: 信頼性とビジネス継続性
-2.1 スケーラビリティと伸縮性を実装する
-• AWS Auto Scaling プランを作成および保守する
-• キャッシュを実装する
-• Amazon RDS レプリカと Amazon Aurora レプリカを実装する
-• 疎結合アーキテクチャを実装する
-• 水平スケーリングと垂直スケーリングの違いを明確にする
-2.2 高可用性と回復性に優れた環境を実装する
-• Elastic Load Balancing と Amazon Route 53 ヘルスチェックを設定する
-• 単一のアベイラビリティーゾーンとマルチ AZ 配置 (例: Amazon EC2 Auto Scaling グルー
-プ、Elastic Load Balancing、Amazon FSx、Amazon RDS など) の使用の違いを明確にする
-バージョン 2.2 SOA-C02 5 | ページ
-• 耐障害性のあるワークロードを実装する (例: Amazon Elastic File System [Amazon
-EFS]、Elastic IP アドレスなど)
-• Route 53 ルーティングポリシーを実装する (例: フェイルオーバー、重み付け、レイテン
-シーベースなど)
-2.3 バックアップと復元の戦略を実装する
-• ユースケース (例: RDS スナップショット、AWS Backup、RTO および RPO、Amazon Data
-Lifecycle Manager、リテンションポリシーなど) に基づいてスナップショットとバックア
-ップを自動化する
-• データベースを復元する (例: ポイントインタイム復元、リードレプリカの昇格など)
-• バージョニングとライフサイクルのルールを実装する
-• Amazon S3 クロスリージョンレプリケーションを設定する
-• 災害対策の手順を実行する
+- 2.1 スケーラビリティと伸縮性を実装する
+    - AWS Auto Scaling プランを作成および保守する
+    - キャッシュを実装する
+    - Amazon RDS レプリカと Amazon Aurora レプリカを実装する
+    - 疎結合アーキテクチャを実装する
+    - 水平スケーリングと垂直スケーリングの違いを明確にする
+        - 水平スケーリング: EC2インスタンスの数を増やす
+        - 垂直スケーリング: EC2インスタンスのスペックアップ
+- 2.2 高可用性と回復性に優れた環境を実装する
+    - Elastic Load Balancing と Amazon Route 53 ヘルスチェックを設定する
+    - 単一のアベイラビリティーゾーンとマルチ AZ 配置 (例: Amazon EC2 Auto Scaling グループ、Elastic Load Balancing、Amazon FSx、Amazon RDS など) の使用の違いを明確にする
+    - 耐障害性のあるワークロードを実装する (例: Amazon Elastic File System (AmazonEFS)、Elastic IP アドレスなど)
+    - Route 53 ルーティングポリシーを実装する (例: フェイルオーバー、重み付け、レイテンシーベースなど)
+- 2.3 バックアップと復元の戦略を実装する
+    - ユースケース (例: RDS スナップショット、AWS Backup、RTO および RPO、Amazon Data Lifecycle Manager、リテンションポリシーなど) に基づいてスナップショットとバックアップを自動化する
+    - データベースを復元する (例: ポイントインタイム復元、リードレプリカの昇格など)
+    - バージョニングとライフサイクルのルールを実装する
+    - Amazon S3 クロスリージョンレプリケーションを設定する
+    - 災害対策の手順を実行する
+
+- ELBの主な役割:
+    - 負荷を複数のサーバーに分散することにより、1つのサーバーに負荷が集中することを防ぐ。
+    - ターゲットグループ: ロードバランサーのヘルスチェック設定は、ターゲットグループ単位で定義します。ロードバランシングする対象群のこと。
+    - ![Screen Shot 2022-08-24 at 6 31 10](https://user-images.githubusercontent.com/61643054/186270230-b8f65570-63b7-486f-ae08-5721b141977f.png)
+    - [AWS ALB の設定方法は？リスナー？ターゲットグループ？](https://www.kanzennirikaisita.com/posts/aws-alb-concepts)
+- Auto Scalingのスケーリング方法:
+    - ![Screenshot 2022-11-28 at 6 04 34](https://user-images.githubusercontent.com/61643054/204159661-8d0855fa-989a-48a6-ba98-d6bb9d7813e9.png)
+
+
 
 ## 第 3 分野: デプロイ、プロビジョニング、およびオートメーション
-3.1 クラウドリソースのプロビジョニングおよび保守を行う
-• AMI を作成および管理する (例: EC2 Image Builder など)
-• AWS CloudFormation の作成、管理、およびトラブルシューティングを行う
-• 複数の AWS リージョンとアカウント (例: AWS Resource Access Manager、CloudFormation
-StackSets、IAM クロスアカウントロールなど) にわたってリソースをプロビジョニングす
-る
-• デプロイのシナリオとサービスを選択する (例: ブルー/グリーン、ローリング、canary な
-ど)
-• デプロイの問題 (例: サービスクォータ、サブネットのサイジング、CloudFormation およ
-び AWS OpsWorks のエラー、アクセス許可など) を特定および修復する
-3.2 手動または反復可能なプロセスを自動化する
-• AWS のサービス (例: OpsWorks、Systems Manager、CloudFormation など) を使用してデプ
-ロイのプロセスを自動化する
-• 自動パッチ管理を実装する
-• AWS のサービス (例: EventBridge、AWS Config) を使用して自動タスクのスケジューリン
-グを行う
+- 3.1 クラウドリソースのプロビジョニングおよび保守を行う
+    - AMI を作成および管理する (例: EC2 Image Builder など)
+    - AWS CloudFormation の作成、管理、およびトラブルシューティングを行う
+    - 複数の AWS リージョンとアカウント (例: AWS Resource Access Manager、CloudFormation StackSets、IAM クロスアカウントロールなど) にわたってリソースをプロビジョニングする
+    - デプロイのシナリオとサービスを選択する (例: ブルー/グリーン、ローリング、canary など)
+    - デプロイの問題 (例: サービスクォータ、サブネットのサイジング、CloudFormation および AWS OpsWorks のエラー、アクセス許可など) を特定および修復する
+- 3.2 手動または反復可能なプロセスを自動化する
+    - AWS のサービス (例: OpsWorks、Systems Manager、CloudFormation など) を使用してデプロイのプロセスを自動化する
+    - 自動パッチ管理を実装する
+    - AWS のサービス (例: EventBridge、AWS Config) を使用して自動タスクのスケジューリングを行う
 ## 第 4 分野: セキュリティとコンプライアンス
-4.1 セキュリティポリシーとコンプライアンスポリシーを実装および管理する
-• IAM の機能 (例: パスワードポリシー、MFA、ロール、SAML、フェデレーションアイデンテ
-ィティ、リソースポリシー、ポリシー条件など) を実装する
-• AWS のサービス (例: CloudTrail、IAM Access Analyzer、IAM Policy Simulator など) を
-使用して、アクセス問題のトラブルシューティングおよび監査を行う
-• サービスコントロールポリシーとアクセス許可の境界を検証する
-• AWS Trusted Advisor セキュリティチェックを確認する
-• コンプライアンス要件に基づいて、選択した AWS リージョンとサービスを検証する
-• 安全なマルチアカウント戦略を実装する (例: AWS Control Tower、AWS Organizations な
-ど)
-4.2 データとインフラストラクチャの保護戦略を実装する
-• データ分類スキームを強化する
-• 暗号化キーを作成、管理、および保護する
-• 保存時の暗号化を実装する (例: AWS Key Management Service [AWS KMS] など)
-• 転送時の暗号化を実装する (例: AWS Certificate Manager、VPN など)
-• AWS のサービス (例: AWS Secrets Manager、Systems Manager パラメータストアなど) を
-使用してシークレットを安全に保管する
-• レポートまたは調査結果を確認する (例: AWS Security Hub、Amazon GuardDuty、AWS
-Config、Amazon Inspector など)
+- 4.1 セキュリティポリシーとコンプライアンスポリシーを実装および管理する
+    - IAM の機能 (例: パスワードポリシー、MFA、ロール、SAML、フェデレーションアイデンティティ、リソースポリシー、ポリシー条件など) を実装する
+    - AWS のサービス (例: CloudTrail、IAM Access Analyzer、IAM Policy Simulator など) を使用して、アクセス問題のトラブルシューティングおよび監査を行う
+    - サービスコントロールポリシーとアクセス許可の境界を検証する
+    - AWS Trusted Advisor セキュリティチェックを確認する
+    - コンプライアンス要件に基づいて、選択した AWS リージョンとサービスを検証する
+    - 安全なマルチアカウント戦略を実装する (例: AWS Control Tower、AWS Organizations など)
+- 4.2 データとインフラストラクチャの保護戦略を実装する
+    - データ分類スキームを強化する
+    - 暗号化キーを作成、管理、および保護する
+    - 保存時の暗号化を実装する (例: AWS Key Management Service [AWS KMS] など)
+    - 転送時の暗号化を実装する (例: AWS Certificate Manager、VPN など)
+    - AWS のサービス (例: AWS Secrets Manager、Systems Manager パラメータストアなど) を使用してシークレットを安全に保管する
+    - レポートまたは調査結果を確認する (例: AWS Security Hub、Amazon GuardDuty、AWSConfig、Amazon Inspector など)
 
 ## 第 5 分野: ネットワークとコンテンツ配信
-5.1 ネットワーク機能と接続性を実装する
-• VPC を設定する (例: サブネット、ルートテーブル、ネットワーク ACL、セキュリティグル
-ープ、NAT ゲートウェイ、インターネットゲートウェイなど)
-• プライベート接続を設定する (例: Systems Manager Session Manager、VPC エンドポイン
-ト、VPC ピアリング、VPN など)
-• AWS ネットワーク保護サービスを設定する (例: AWS WAF、AWS Shield など)
-5.2 ドメイン、DNS サービス、およびコンテンツ配信を設定する
-• Route 53 ホストゾーンとレコードを設定する
-• Route 53 ルーティングポリシーを実装する (例: 位置情報、地理的近接性) を実装する
-• DNS を設定する (例: Route 53 Resolver)
-• Amazon CloudFront と S3 オリジンアクセスアイデンティティ (OAI) を設定する
-• S3 の静的ウェブサイトホスティングを設定する
-5.3 ネットワーク接続問題のトラブルシューティングを行う
-• VPC の設定 (例: サブネット、ルートテーブル、ネットワーク ACL、セキュリティグループ
-など) を解釈する
-• ログの収集と解釈を行う (例: VPC フローログ、Elastic Load Balancing のアクセスロ
-グ、AWS WAF ウェブ ACL ログ、CloudFront ログなど)
-• CloudFront キャッシュの問題を特定および修復する
-• ハイブリッド接続とプライベート接続に関する問題のトラブルシューティングを行う
+- 5.1 ネットワーク機能と接続性を実装する
+    - VPC を設定する (例: サブネット、ルートテーブル、ネットワーク ACL、セキュリティグループ、NAT ゲートウェイ、インターネットゲートウェイなど)
+    - プライベート接続を設定する (例: Systems Manager Session Manager、VPC エンドポイント、VPC ピアリング、VPN など)
+    - AWS ネットワーク保護サービスを設定する (例: AWS WAF、AWS Shield など)
+- 5.2 ドメイン、DNS サービス、およびコンテンツ配信を設定する
+    - Route 53 ホストゾーンとレコードを設定する
+    - Route 53 ルーティングポリシーを実装する (例: 位置情報、地理的近接性) を実装する
+    - DNS を設定する (例: Route 53 Resolver)
+    - Amazon CloudFront と S3 オリジンアクセスアイデンティティ (OAI) を設定する
+    - S3 の静的ウェブサイトホスティングを設定する
+- 5.3 ネットワーク接続問題のトラブルシューティングを行う
+    - VPC の設定 (例: サブネット、ルートテーブル、ネットワーク ACL、セキュリティグループなど) を解釈する
+    - ログの収集と解釈を行う (例: VPC フローログ、Elastic Load Balancing のアクセスログ、AWS WAF ウェブ ACL ログ、CloudFront ログなど)
+    - CloudFront キャッシュの問題を特定および修復する
+    - ハイブリッド接続とプライベート接続に関する問題のトラブルシューティングを行う
 
 ## 第 6 分野: コストとパフォーマンスの最適化
-6.1 コスト最適化戦略を実装する
-• コスト割り当てタグを実装する
-• AWS のサービスとツール (例: Trusted Advisor、AWS Compute Optimizer、Cost Explorer
-など) を使用して、使用率の低いリソースまたは未使用のリソースを特定および修復する
-• AWS Budgets と請求アラームを設定する
-• リソースの使用パターンを評価して、EC2 スポットインスタンスのワークロードを見極める
-• マネージドサービスを使用する機会を特定する (例: Amazon RDS、AWS Fargate、EFS など)
-6.2 パフォーマンス最適化戦略を実装する
-• パフォーマンスメトリクスに基づいてコンピューティングリソースを提案する
-• Amazon EBS のメトリクスをモニタリングし、パフォーマンス効率を向上させるために設定
-を変更する
-• S3 のパフォーマンス機能を実装する (例: S3 Transfer Acceleration、マルチパートアッ
-プロードなど)
-• RDS メトリクスをモニタリングし、パフォーマンス効率を向上させるために設定を変更する
-(例: Performance Insights、RDS Proxy など)
-• EC2 の拡張機能を有効にする (例: 拡張ネットワークアダプター、インスタンスストア、プ
-レイスメントグループなど)
+- 6.1 コスト最適化戦略を実装する
+    - コスト割り当てタグを実装する
+    - AWS のサービスとツール (例: Trusted Advisor、AWS Compute Optimizer、Cost Explorerなど) を使用して、使用率の低いリソースまたは未使用のリソースを特定および修復する
+    - AWS Budgets と請求アラームを設定する
+    - リソースの使用パターンを評価して、EC2 スポットインスタンスのワークロードを見極める
+    - マネージドサービスを使用する機会を特定する (例: Amazon RDS、AWS Fargate、EFS など)
+- 6.2 パフォーマンス最適化戦略を実装する
+    - パフォーマンスメトリクスに基づいてコンピューティングリソースを提案する
+    - Amazon EBS のメトリクスをモニタリングし、パフォーマンス効率を向上させるために設定を変更する
+    - S3 のパフォーマンス機能を実装する (例: S3 Transfer Acceleration、マルチパートアップロードなど)
+    - RDS メトリクスをモニタリングし、パフォーマンス効率を向上させるために設定を変更する(例: Performance Insights、RDS Proxy など)
+    - EC2 の拡張機能を有効にする (例: 拡張ネットワークアダプター、インスタンスストア、プレイスメントグループなど)
 
 
 ## RDS
@@ -150,14 +134,7 @@ Config、Amazon Inspector など)
 - Route53のフェールオーバールーティングとELB: 異なるリージョンでプライマリー、セカンダリー構成が可能、あくまでリージョン単位。
    - Route53はELBのヘルスチェックを行い、障害時にsorryページへ行く
    - <img width="771" alt="Screenshot 2022-12-31 at 9 21 49" src="https://user-images.githubusercontent.com/61643054/210119551-0ea870da-a7ca-4513-b926-91f2988d006a.png">
-- ELBの主な役割: 
-    - ![Screen Shot 2022-08-24 at 6 31 10](https://user-images.githubusercontent.com/61643054/186270230-b8f65570-63b7-486f-ae08-5721b141977f.png)
-- Auto Scalingのスケーリング方法:
-    - ![Screenshot 2022-11-28 at 6 04 34](https://user-images.githubusercontent.com/61643054/204159661-8d0855fa-989a-48a6-ba98-d6bb9d7813e9.png)
 
-## 水平スケーリングと垂直スケーリングの違いを明確にする
-- 水平スケーリング: EC2インスタンスの数を増やす
-- 垂直スケーリング: EC2インスタンスのスペックアップ
 
 ##  Amazon Route 53 ヘルスチェックを設定する
 - Route53のヘルスチェック:
