@@ -7,7 +7,13 @@
     - CloudWatch Logs Insights、AWS CloudTrail ログなど)
     -  CloudWatch エージェントを使用して、メトリクスとログを収集する
     -  CloudWatch アラームを作成する
+        - 名前空間：Cloud Watchメトリクスのコンテナのこと。
+        - ディメンジョン：メトリクスを一位に識別する名前/値のペア。
     - メトリクスフィルターを作成する
+        - <img width="1016" alt="Screenshot 2023-01-06 at 22 38 53" src="https://user-images.githubusercontent.com/61643054/211024234-cb23b25f-3935-471d-96ae-7d583105ed0c.png">
+        - 標準メトリクス：デフォルトで取得される
+        - カスタムメトリクス：拡張枠という有料枠で取得できる。メモリの利用量などを取得。
+        - 拡張モニタリング：DBインスタンスのカスタムメトリクスを取得できる
     - CloudWatch ダッシュボードを作成する
     - 通知を設定する (例: Amazon Simple Notification Service [Amazon SNS]、Service Quotas、CloudWatch アラーム、AWS Health Events など)
 - 1.2 モニタリングと可用性のメトリクスに基づいて問題を修復する
@@ -30,7 +36,7 @@
         - https://dev.classmethod.jp/articles/cloudwatch-events-event-bus/
         - https://pages.awscloud.com/rs/112-TZM-766/images/20200122_BlackBelt_EventBridge.pdf
 
-- <img width="1016" alt="Screenshot 2023-01-06 at 22 38 53" src="https://user-images.githubusercontent.com/61643054/211024234-cb23b25f-3935-471d-96ae-7d583105ed0c.png">
+
 
 ## 第 2 分野: 信頼性とビジネス継続性
 - 2.1 スケーラビリティと伸縮性を実装する
