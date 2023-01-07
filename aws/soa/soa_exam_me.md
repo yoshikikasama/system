@@ -99,8 +99,9 @@
 ## 第 5 分野: ネットワークとコンテンツ配信
 - 5.1 ネットワーク機能と接続性を実装する
     - VPC を設定する (例: サブネット、ルートテーブル、ネットワーク ACL、セキュリティグループ、NAT ゲートウェイ、インターネットゲートウェイなど)
-        - NATゲートウェイ：
-        - NATインスタンス：
+        - NATゲートウェイ：<img width="774" alt="Screenshot 2023-01-07 at 12 14 24" src="https://user-images.githubusercontent.com/61643054/211129031-fd47269f-332a-4fd5-95d9-3c6ec3ec2eb5.png">
+        - NATインスタンス：<img width="761" alt="Screenshot 2023-01-07 at 12 15 10" src="https://user-images.githubusercontent.com/61643054/211129044-f54d089e-33ae-4c92-9b4e-33b45776c74b.png">
+
     - プライベート接続を設定する (例: Systems Manager Session Manager、VPC エンドポイント、VPC ピアリング、VPN など)
     - AWS ネットワーク保護サービスを設定する (例: AWS WAF、AWS Shield など)
 - 5.2 ドメイン、DNS サービス、およびコンテンツ配信を設定する
