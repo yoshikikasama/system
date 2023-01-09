@@ -60,11 +60,18 @@
     - 災害対策の手順を実行する
 
 - ELBの主な役割:
-    - 負荷を複数のサーバーに分散することにより、1つのサーバーに負荷が集中することを防ぐ。
+    - 負荷を複数のサーバーに分散wすることにより、1つのサーバーに負荷が集中することを防ぐ。
     - ターゲットグループ: ロードバランサーのヘルスチェック設定は、ターゲットグループ単位で定義します。ロードバランシングする対象群のこと。
+        - インスタンス
+        - IP
+        - Lambda
     - ![Screen Shot 2022-08-24 at 6 31 10](https://user-images.githubusercontent.com/61643054/186270230-b8f65570-63b7-486f-ae08-5721b141977f.png)
     - [AWS ALB の設定方法は？リスナー？ターゲットグループ？](https://www.kanzennirikaisita.com/posts/aws-alb-concepts)
 - Auto Scalingのスケーリング方法:
+    - Auto Scalingのヘルスチェック:
+        - EC2のステータス: EC2インスタンスのステータスがrunnning以外の時
+        - ELB: ELBのヘルスチェック機能でELBが異常の時にスケーリング
+    - Auto Scaling Group: 
     - ![Screenshot 2022-11-28 at 6 04 34](https://user-images.githubusercontent.com/61643054/204159661-8d0855fa-989a-48a6-ba98-d6bb9d7813e9.png)
 
 
