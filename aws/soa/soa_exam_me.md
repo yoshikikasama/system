@@ -148,6 +148,8 @@
 - Route53のフェールオーバールーティングとELB: 異なるリージョンでプライマリー、セカンダリー構成が可能、あくまでリージョン単位。
    - Route53はELBのヘルスチェックを行い、障害時にsorryページへ行く
    - <img width="771" alt="Screenshot 2022-12-31 at 9 21 49" src="https://user-images.githubusercontent.com/61643054/210119551-0ea870da-a7ca-4513-b926-91f2988d006a.png">
+   - <img width="856" alt="Screenshot 2023-01-27 at 22 36 03" src="https://user-images.githubusercontent.com/61643054/215100045-4061f796-12ec-4546-af48-9d80d85f7f07.png">
+
 
 
 ##  ヘルスチェック
