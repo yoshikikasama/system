@@ -321,4 +321,4 @@
 - AWS SSO: アクセス権限セットを使用して管理アカウントからユーザーごとのアクセス権限を一元管理する。IDストア、既存のAWS Active Directory、既存の外部プロバイダーから接続先のIDプロバイダーを通して、IAMロールにAssumeする。
     - IDストア: ユーザーやグループの格納場所
     - アクセス権限セット: IAMロールのポリシーを定義。
-    - 
+    - ![Screenshot 2023-02-01 at 7 55 02](https://user-images.githubusercontent.com/61643054/215902469-a1e9cc7e-7ef3-4a52-a048-93adc282e756.png)
