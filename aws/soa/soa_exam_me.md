@@ -219,8 +219,8 @@
     - IPアドレスやドメインリストを解析できる。
     - ![Screenshot 2022-11-07 at 6 24 30](https://user-images.githubusercontent.com/61643054/200195959-f4cbf417-fbd1-4a64-9370-f69ca90de01d.png)
 - AWS Shield: マネージド型の分散サービス妨害 (DDoS) を防御するAWSサービスです。
-    - Standard: 無料。CloudFrontとRoute53に対して自動適用する無料サービス。
-    - Advanced: 有料。高レベルな保護。
+    - AWS Shield Standard：Route 53またはCloudFrontで使用する。無料。L3/L4の防御。
+    - AWS Shield Advanced：Route 53、CloudFront、ELB、EC2、AWS Global Acceleratorで使用する。有料。L7、ネットワークACLを使った防御。
 - AWS Config: AWS リソースの設定が継続的にモニタリングおよび記録され、望まれる設定に対する記録された設定の評価を自動化します。これにより、S3バケットの構成内容を履歴管理したり、変更管理することが可能となり、コンプライアンス監査、セキュリティ分析、変更管理、運用上のトラブルシューティングを簡素化できます。 
     - config ruleを設定し、ruleに外れたリソース変更があれば通知を出したり、ssm automationと連携した自動改善を行ったりする。
 - Amazon Inspector: 自動化されたアプリケーションのセキュリティ評価サービスで、EC2にデプロイしたアプリケーションのセキュリティとコンプライアンスを向上させることができます。アプリケーション自体の不正利用を検知。
