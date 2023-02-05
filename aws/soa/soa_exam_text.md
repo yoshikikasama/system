@@ -333,6 +333,7 @@
 
 - ALBの加重ターゲットグループ: ターゲットグループに対するトラフィックの重みを変える。
 
+- Amazon Elastic Cache　for Memcached:
 - Amazon Elastic Cache　for Redis:
     - クラスターモードが無効なスケーリング:
         - ノードタイプをサイズの大きいものに変更する垂直スケーリング
@@ -365,3 +366,9 @@
     - AD ConnectorまたはAWS Managed Microsoft ADと接続するAWS SSOでAWSマネジメントコンソールアクセスを設定する。
     - OpenID ConnectまたはSAML2.0を提供するIdPとのIDフェデレーションをIAMのIDプロバイダー・IAMロールで設定する。
     - IAMのIDプロバイダー以外の外部サービス(IdPなどを介して連携したAmazon Cognito IDプールやカスタムIDブローカーなど)で認証し、認証後に発行するIAM STSでAWSマネジメントコンソールへのフェデレーションログイン用URLを発行する。
+
+- 1Gbpsの回線で1日に移行できるデータ量が約10TB
+- AWS Snowcone: 使用可能な8TBのHDDと14TBのSSDストレージを持つ。
+- AWS Snowball Edge Storage Optimized: 使用可能な80TBのHDDと1TBのSSDストレージを持つ。
+- AWS Snowball Edge Compute Optimized: 使用可能な42TBのHDDと7.68TBのSSDストレージを持つ。
+- AWS Snowmobile: 使用可能な100PBのHDDストレージを持つ。
