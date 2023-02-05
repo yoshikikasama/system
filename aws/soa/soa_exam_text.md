@@ -70,7 +70,7 @@
     - EBS
     - S3
     - RDS
-    - Storage gatewa
+    - Storage gateway
     - EFS
 - AWS Backup Audit Manager: 全ての対象のリソースで毎日Backupができているか、そのBackupが暗号化されているかなどを確認できる。
 - AWS Data Lificycle Manager(DLM): EBSスナップショットとAMIの作成、保持、削除を自動化できる。backupに失敗した時に、設定した世代管理の数だけ直近のbackupが残るが、明確に世代管理する必要がない場合は。AWS Backupで良い。
@@ -339,6 +339,7 @@
         - マルチスレッド動作
         - Memcachedのクラスターは単純にノードを追加したり減らしたりして負荷を分散することができます（水平スケーリング、スケールアウト/イン）。
     - for Redis:
+        - マルチAZ
         - シングルスレッド動作
         - クラスターモードが無効なスケーリング:
             - ノードタイプをサイズの大きいものに変更する垂直スケーリング
