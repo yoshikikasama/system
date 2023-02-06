@@ -362,6 +362,7 @@
     - すべての機能を有効化した上で管理アカウントで組織の証跡を作成することでS3 bucketにCloudTrail証跡が残る。
 
 - AWS Direct Connect Gateway: AWS Direct Connectで作成したプライベート仮想インターフェイスを接続することで、複数リージョンのVPCに接続することができる。
+    - ![Screenshot 2023-02-07 at 7 45 32](https://user-images.githubusercontent.com/61643054/217104887-408fdae6-6f7c-41e9-b767-17c3ec6a0f39.png)
 
 - IAMポリシー:
     - Sid: ステートメントIDでポリシー内で一意となる任意の文字列を追加する。
