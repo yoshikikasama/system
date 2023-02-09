@@ -348,7 +348,7 @@
         - 正しくないネットワーク、起動設定
         - メモリの枯渇
         - 破損したファイルシステム
-        - ![Screenshot 2023-02-08 at 6 17 10](https://user-images.githubusercontent.com/61643054/217369231-6e55b124-9495-4378-bf9e-b918a7a74c13.png)
+    - ![Screenshot 2023-02-08 at 6 17 10](https://user-images.githubusercontent.com/61643054/217369231-6e55b124-9495-4378-bf9e-b918a7a74c13.png)
         
 
 

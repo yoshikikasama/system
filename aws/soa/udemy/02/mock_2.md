@@ -162,8 +162,8 @@
     - AWS Shield Standard：Route 53またはCloudFrontで使用する。無料。L3/L4の防御。
     - AWS Shield Advanced：Route 53、CloudFront、ELB、EC2、AWS Global Acceleratorで使用する。有料。L7、ネットワークACLを使った防御。
     - AWS WAF：CloudFront、ALB、APIGatewayで使用。有料。IPアドレス、HTTP、クエリ文字列でのアクセス制限に加え、SQLインジェクション、クロスサイトスクリプティングにも有効。
-- Amazon Instruction Detection System(IDS): 侵入検知システム。悪意のあるアクティビティ、ポリシー違反、またはシステムの侵入または侵害を試みるユーザーからのネットワーク & システム攻撃を検出したときにアラートを送信します。
-- Amazon Instruction Prevention System(IPS): ネットワークトラフィックを監視および分析し、悪意のあるパターンや潜在的に有害なパケットを検出し、脆弱性の悪用を防止するアプライアンスです。SQLインジェクション、クロスサイトスクリプティング（XSS）、DDoS攻撃への対応としてはWAFによる対応が優先されます。
+- Amazon Intrusion Detection System(IDS): 侵入検知システム。悪意のあるアクティビティ、ポリシー違反、またはシステムの侵入または侵害を試みるユーザーからのネットワーク & システム攻撃を検出したときにアラートを送信します。
+- Amazon Intrusion Prevention System(IPS): ネットワークトラフィックを監視および分析し、悪意のあるパターンや潜在的に有害なパケットを検出し、脆弱性の悪用を防止するアプライアンスです。SQLインジェクション、クロスサイトスクリプティング（XSS）、DDoS攻撃への対応としてはWAFによる対応が優先されます。
 
 ## 35.
 - プロキシサーバー: クライアントマシンからの要求をフィルタリングするためのロジックに利用。
