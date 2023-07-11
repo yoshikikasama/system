@@ -90,4 +90,4 @@
     - 同様に AWS においても、複数のインスタンスをグループ化して RTT が小さくなるよう配置することで、同一 AZ 内のインスタンス同士の通信速度を向上させるプレイスメントグループと呼ばれる機能が存在します。
     - ![Screenshot 2023-07-12 at 7 17 03](https://github.com/yoshikikasama/network-and-server/assets/61643054/271a7c2f-4470-425b-84cb-ad176c8de91d)
     - test
-
+    - hoge
