@@ -67,3 +67,5 @@
       - なんらかのゲートウェイを経由するとデータ転送量に応じた料金が発生する
 
 - Amazon EC2:
+  - ![Screenshot 2023-07-12 at 6 46 54](https://github.com/yoshikikasama/network-and-server/assets/61643054/a74721bc-d317-449a-8002-30aef0279c89)
+  
