@@ -180,7 +180,7 @@
 
 - AWS Orgaizations:
 
-  - ![PXL_20230729_092759839 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/8058ddb6-d92b-458d-82f0-8c8e5464393d)
+  - ![Screenshot 2023-07-29 at 19 02 56](https://github.com/yoshikikasama/network-and-server/assets/61643054/405b998d-88c1-4074-a235-a7f65d83dbfe)
   - 一括請求のメリット:
     - 1 つの請求書、統合請求データ
     - 合計量によるボリュームディスカウント: 複数アカウントの合計容量による従量制の割引が受けられる。S3 のストレージ量やデータ転送量などボリューム料金階層がある料金についてメリットがある。
@@ -196,3 +196,5 @@
     - Audit Account: 各アカウントから SNS TOPIC への通知を集約して監査担当者へ通知
   - Sandbox Ou: 検証、開発などのアカウントを構築
   - Control Tower ダッシュボード: Config ルールによって抽出された非準拠リソースを抽出できる。
+  - <img width="954" alt="Screenshot 2023-07-29 at 19 02 39" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/bc20d264-9f6e-4602-9964-cde01f473153">
+
