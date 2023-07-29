@@ -179,3 +179,5 @@
   - アウトバウンドエンドポイント: VCP から他のネットワーク、例えばオンプレミス DNS に対しての DNS クエリを使用できる。
 
 - AWS Orgaizations:
+- ![PXL_20230729_092759839 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/8058ddb6-d92b-458d-82f0-8c8e5464393d)
+
