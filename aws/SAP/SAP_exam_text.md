@@ -179,5 +179,20 @@
   - アウトバウンドエンドポイント: VCP から他のネットワーク、例えばオンプレミス DNS に対しての DNS クエリを使用できる。
 
 - AWS Orgaizations:
-- ![PXL_20230729_092759839 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/8058ddb6-d92b-458d-82f0-8c8e5464393d)
 
+  - ![PXL_20230729_092759839 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/8058ddb6-d92b-458d-82f0-8c8e5464393d)
+  - 一括請求のメリット:
+    - 1 つの請求書、統合請求データ
+    - 合計量によるボリュームディスカウント: 複数アカウントの合計容量による従量制の割引が受けられる。S3 のストレージ量やデータ転送量などボリューム料金階層がある料金についてメリットがある。
+    - リザーブドインスタンス、Saving Plans の共有: 組織のアカウント合計使用量として適用できる。
+  - CloudFormation StackSets: 複数 region、複数アカウントにスタックを作成して、変更、削除、管理できる機能。
+  - CloudTrail: Organizations のマスターアカウントで組織内の全てのアカウントについて CloudTrail を有効化できる。このとき書き出される S3 オブジェクトの prefix には組織 ID が含まれる。
+  - AWS Service Catalog: ポートフォリオと製品を作成でき、Organizations 組織で OU を指定して共有できる。製品は CloudFormation スタックによる AWS リソースにより構成された、ユーザーが事前に準備したソフトウェアサービス。
+
+- AWS Control Tower:
+  - Landing zone: 複数アカウントのベストプラクティスを自動構築。
+  - Security OU:
+    - Log Account:ログを集約。
+    - Audit Account: 各アカウントから SNS TOPIC への通知を集約して監査担当者へ通知
+  - Sandbox Ou: 検証、開発などのアカウントを構築
+  - Control Tower ダッシュボード: Config ルールによって抽出された非準拠リソースを抽出できる。
