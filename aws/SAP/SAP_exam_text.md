@@ -120,3 +120,59 @@
   - Kinesis Data Firehose: 最低 60 秒のバッファでデータを S3 などに簡単に格納する。
   - Kinesis Data Analytics: ストリーミングデータを SQL など使い慣れた言語を使ってリアルタイムに抽出検索する。
   - Kinesis Video Streams: 監視カメラなどからリアルタイム検知のための動画データをストリーミング upload する。
+
+## 2. 組織の複雑さに対する設計
+
+- 混乱した代理問題: IAM Role の ARN 登録ごとに一意の外部 ID を発行
+
+- AD Connector:
+  - オンプレミスなどのデータセンターなどで稼働している Active Directory の認証をそのまま使用できる
+  - VPN や Direct Connect で VPC とオンプレミスのネットワークを接続して使用する。
+- Simple AD:
+  - Samba 4 Active Directory Compatible Server
+  - 最大 5000 ユーザー
+- AWS Managed Microsoft AD:
+  - 5000 を越えるユーザー
+  - 他ドメインとの信頼関係
+- SSO パターン:
+
+  - ADFS(Active Directory Federation Services)を使用した AWS への SSO:
+    - SAML2.0 互換につきコーディングの必要なし
+    - AD セキュリティグループと IAM Role をマッピング
+  - SAMPL サポートの IdP との SSO 構成:
+    - SAML 対応の ID プロバイダーを設定できる
+  - AWS SSO で ID ソースを AWS SSO とした構成:
+
+    - SAML プロバイダーと IAM ロールの設定が AWS SSO によって自動化
+    - AWS SSO にサインインすれば許可されたアカウントに許可された権限でアクセスできる。
+
+  - VPC エンドポイント:
+    - ゲートウェイエンドポイント: VPC サービス専用のゲートウェイをアタッチ。対象サービスは S3 と DynamoDB
+    - インターフェースエンドポイント:
+      - VPC のサブネットに ENI を作成、ENI に割り当てられたプライベート IP アドレスを使用してサービスにアクセス。
+      - エンドポイントポリシーがあり、エンドポイントを使用したリクエストのアクションやリソースを絞ることができる。デフォルトは全てのリソース、アクション。
+
+- AWS Site-to-Site VPN: VPC に仮想プライベートゲートウェイをアタッチして、データセンターなどのオンプレミスのルーターと、インターネットプロトコルセキュリティ(IPsec)VPN 接続が可能。
+
+  - カスタマーゲートウェイ: オンプレミス側のルーターなど、動的ルーティングでは BGP(ボーダーゲートウェイプロトコル)ASN の指定が可能。
+  - VPN 接続を作成すると仮想プライベートゲートウェイは 2 つの AZ にそれぞれトンネルを作成する。トンネルにはそれぞれ publicIP を使用する。カスタマーゲートウェイで 2 つのトンネルを設定することで冗長性が確保され、どちらかのトンネルが使用できなくなったときは、もう一方へ自動ルーティングされる。
+
+- AWS Direct Connect(DX): ユーザーまたはパートナーのルーター(Customer Router)から Direct Connect のルーター(DX Router)に、標準のイーサネット光ファイバケーブルを介して接続するサービス。
+- 仮想インターフェース(VIF): AWS Direct Connect 接続を使用するのに必要。
+  - プライベート仮想インターフェース:
+    - VPC にアタッチされた仮想プライベートゲートウェイ、または Direct Connect Gateway に接続する仮想インターフェース。
+    - プライベート IP アドレスを使用。
+    - 同一 region の仮想プライベートゲートウェイ → VIF
+    - 異なる region の仮想プライベートゲートウェイ → Direct Connect Gateway
+  - パブリック仮想インターフェース:
+    - public な AWS サービス(S3, DynamoDB など)にアクセスできる。
+  - トランジット仮想インターフェース:
+    - Direct Connect Gateway に関連付けられた TransitGateway にアクセスできる。
+- AWS Transit Gateway: 最大 5000 の VPC やオンプレミス環境の接続を簡素化。
+
+  - VPC のサブネットにアタッチメントとして ENI を作成し、Transit Gateway と関連づける
+  - オンプレミスとの接続には VPN 接続や Direct Connect と接続する。
+
+- Route53 Resolver:
+  - インバウンドエンドポイント: 他のネットワーク、例えばオンプレミスから Route53 プライベートホストゾーンに対しての DNS クエリを使用できる。
+  - アウトバウンドエンドポイント: VCP から他のネットワーク、例えばオンプレミス DNS に対しての DNS クエリを使用できる。
