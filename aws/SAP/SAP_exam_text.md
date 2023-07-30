@@ -198,3 +198,24 @@
   - Control Tower ダッシュボード: Config ルールによって抽出された非準拠リソースを抽出できる。
   - <img width="954" alt="Screenshot 2023-07-29 at 19 02 39" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/bc20d264-9f6e-4602-9964-cde01f473153">
 
+練習問題：
+
+1. D
+2. B❌ C
+3. A
+4. B
+5. D
+6. A,D
+7. C
+8. D❌A
+9. C❌D
+10. D❌A
+11. B❌D
+12. B❌C,D
+13. D
+14. A
+15. D
+16. A,D
+17. D
+
+## 3. 新しいソリューションの設計
