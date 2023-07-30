@@ -253,3 +253,5 @@
 
 - RPO(Recovery Point Objective): 目標復旧時点
 - RPO(Recovery Time Objective): 目標復旧時間
+- ![Screenshot 2023-07-30 at 19 03 10](https://github.com/yoshikikasama/network-and-server/assets/61643054/8cb92837-c5d9-4ed6-89a6-648c4eae05ec)
+
