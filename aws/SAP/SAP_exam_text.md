@@ -115,12 +115,6 @@
     - バケット所有者の AWS アカウントからバケットにアクセスする場合: アイデンティティベースのポリシーの設定が必要
     - 上記以外からバケットにアクセスする場合: アイデンティティベースとリソースベース両方のポリシーの設定が必要
 
-- Amazon Kinesis: 以下のものがあります。どの機能もニアリアルタイム(なるべくすぐ)にデータが発生するごとに処理を行なっていく、ストリーミング処理のためのサービス。
-  - Kinesis Data Streams: 秒あたり数 GB のデータをリアルタイムにストリーミング処理する。
-  - Kinesis Data Firehose: 最低 60 秒のバッファでデータを S3 などに簡単に格納する。
-  - Kinesis Data Analytics: ストリーミングデータを SQL など使い慣れた言語を使ってリアルタイムに抽出検索する。
-  - Kinesis Video Streams: 監視カメラなどからリアルタイム検知のための動画データをストリーミング upload する。
-
 ## 2. 組織の複雑さに対する設計
 
 - 混乱した代理問題: IAM Role の ARN 登録ごとに一意の外部 ID を発行
@@ -242,7 +236,20 @@
 - AWS Certificate Manager: Public, Private 証明書の保存、更新を提供する無料のサービス。
 
 - Amazon Cognito: web application や mobile application に安全に認証を提供するサービス。
+
   - Cognito ユーザープール: 認証基盤を開発しなくても web application や mobile application からのサインアップ、サインインのために使用できる。
     - <img width="957" alt="Screenshot 2023-07-30 at 16 45 37" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/a3162858-90ad-448f-997d-cd98774c0588">
   - ID プール: mobile application やクライアントサイド JavaScript が動作しているアプリケーションで AWS のサービスに対して安全にリクエストを実行できる。
     - <img width="973" alt="Screenshot 2023-07-30 at 16 49 24" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/5cf0b889-5081-42a2-915c-472456256711">
+
+- Amazon Kinesis: 以下のものがあります。どの機能もニアリアルタイム(なるべくすぐ)にデータが発生するごとに処理を行なっていく、ストリーミング処理のためのサービス。
+
+  - Kinesis Data Streams:
+    - 秒あたり数 GB のデータをリアルタイムにストリーミング処理する。送信データには partition key を使用。
+    - シャード一つで 1 秒あたり 1MB, 1000 レコードの取り込みと、1 秒あたり最大 2MB の読み込みが可能。
+  - Kinesis Data Firehose: 最低 60 秒のバッファでデータを S3 などに簡単に格納する。送信前に AWS Glue や Lambda での加工ができる。streams より遅い。
+  - Kinesis Data Analytics: Kiesis Streams や Firehose のストリーミングデータを SQL など使い慣れた言語を使ってリアルタイムに抽出検索する。
+  - Kinesis Video Streams: 監視カメラなどからリアルタイム検知のための動画データをストリーミング upload する。
+
+- RPO(Recovery Point Objective): 目標復旧時点
+- RPO(Recovery Time Objective): 目標復旧時間
