@@ -242,6 +242,6 @@
 - AWS Certificate Manager: Public, Private 証明書の保存、更新を提供する無料のサービス。
 
 - Amazon Cognito: web application や mobile application に安全に認証を提供するサービス。
-  - Cognito ユーザープール: 認証基盤を開発しなくてもモバイルアプリケーションや web アプリケーションからのサインアップ、サインインのために使用できる。
+  - Cognito ユーザープール: 認証基盤を開発しなくても web application や mobile application からのサインアップ、サインインのために使用できる。
     - <img width="957" alt="Screenshot 2023-07-30 at 16 45 37" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/a3162858-90ad-448f-997d-cd98774c0588">
-
+  - ID プール: mobile application やクライアントサイド JavaScript が動作しているアプリケーションで AWS のサービスに対して安全にリクエストを実行できる。
