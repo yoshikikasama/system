@@ -243,4 +243,5 @@
 
 - Amazon Cognito: web application や mobile application に安全に認証を提供するサービス。
   - Cognito ユーザープール: 認証基盤を開発しなくてもモバイルアプリケーションや web アプリケーションからのサインアップ、サインインのために使用できる。
-    -
+    - <img width="957" alt="Screenshot 2023-07-30 at 16 45 37" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/a3162858-90ad-448f-997d-cd98774c0588">
+
