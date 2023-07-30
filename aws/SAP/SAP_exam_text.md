@@ -245,5 +245,4 @@
   - Cognito ユーザープール: 認証基盤を開発しなくても web application や mobile application からのサインアップ、サインインのために使用できる。
     - <img width="957" alt="Screenshot 2023-07-30 at 16 45 37" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/a3162858-90ad-448f-997d-cd98774c0588">
   - ID プール: mobile application やクライアントサイド JavaScript が動作しているアプリケーションで AWS のサービスに対して安全にリクエストを実行できる。
-   - <img width="973" alt="Screenshot 2023-07-30 at 16 49 24" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/5cf0b889-5081-42a2-915c-472456256711">
-  
+    - <img width="973" alt="Screenshot 2023-07-30 at 16 49 24" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/5cf0b889-5081-42a2-915c-472456256711">
