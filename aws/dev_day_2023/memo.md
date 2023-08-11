@@ -8,6 +8,10 @@
   - <img width="1237" alt="Screenshot 2023-08-11 at 16 16 05" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/48212423-147c-4427-9fec-eb8082c05008">
   - <img width="1234" alt="Screenshot 2023-08-11 at 16 16 18" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/876fc601-ff14-483f-bddb-d475c5ab772e">
   - <img width="1264" alt="Screenshot 2023-08-11 at 22 15 59" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/8e8b54df-d96f-49ba-b86a-bba6812f8777">
+  - <img width="1265" alt="Screenshot 2023-08-11 at 22 17 11" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/ec157f75-f8f4-49eb-9ee4-2e499104d505">
+  - <img width="1281" alt="Screenshot 2023-08-11 at 22 17 20" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/232fb0e4-1cd9-4583-97c5-419064dd23ce">
+
+
 
 
 
