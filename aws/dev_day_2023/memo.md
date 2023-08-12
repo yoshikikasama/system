@@ -11,12 +11,14 @@
   - <img width="1265" alt="Screenshot 2023-08-11 at 22 17 11" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/ec157f75-f8f4-49eb-9ee4-2e499104d505">
   - <img width="1281" alt="Screenshot 2023-08-11 at 22 17 20" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/232fb0e4-1cd9-4583-97c5-419064dd23ce">
 - AWS Lambda:
+
   - https://pages.awscloud.com/rs/112-TZM-766/images/C-1_AWSDevDay2023Tokyo.pdf
   - <img width="1311" alt="Screenshot 2023-08-12 at 10 04 27" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/c9d1dbd4-62cd-4ffc-b5a6-a13900820b4a">
   - <img width="1276" alt="Screenshot 2023-08-12 at 10 05 01" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/706ff138-b5a5-4eed-8f9b-2870724202a7">
   - <img width="1274" alt="Screenshot 2023-08-12 at 10 05 16" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/12ec3204-f8f2-454d-858e-864474b8a7fc">
 
 - マイクロサービス時代のセルフサービスデータレイク基盤の作り方:
+  - https://pages.awscloud.com/rs/112-TZM-766/images/IM-2_AWSDevDat2023Tokyo.pdf
   - <img width="1277" alt="Screenshot 2023-08-12 at 10 19 48" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/a80dfb5e-2eae-4a7f-b1cb-33a7e6cd2b4e">
   - <img width="1252" alt="Screenshot 2023-08-12 at 10 19 59" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/55ef428c-bffe-4b0d-b15f-70f6b7cb84c9">
   - <img width="1265" alt="Screenshot 2023-08-12 at 10 20 12" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/e43dbfea-55fb-43cb-9a43-8995551d77c7">
@@ -30,20 +32,3 @@
   - <img width="1255" alt="Screenshot 2023-08-12 at 10 28 08" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/70d343a6-b6c3-417d-9c4c-ebc71626edde">
   - <img width="1239" alt="Screenshot 2023-08-12 at 10 54 45" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/d233e2f5-5d01-42c4-a2b2-e42145dad5c9">
   - <img width="1287" alt="Screenshot 2023-08-12 at 10 54 52" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/4055d743-42d6-4002-bc9e-f74bbfb15944">
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-
