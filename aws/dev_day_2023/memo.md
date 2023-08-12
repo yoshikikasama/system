@@ -1,4 +1,4 @@
-# AWS Dev Day 2023
+<img width="1287" alt="Screenshot 2023-08-12 at 10 54 52" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/1c0d5570-6e07-4818-bfe2-b64c5e1312a2"># AWS Dev Day 2023
 
 - 失敗知識から学ぶ！クラウドアプリ設計で避けるべき事例とその対策:
   - https://speakerdeck.com/twingob/shi-bai-zhi-shi-karaxue-bu-kuraudoapurishe-ji-debi-kerubekishi-li-tosonodui-ce?slide=17
@@ -24,6 +24,19 @@
   - <img width="1259" alt="Screenshot 2023-08-12 at 10 21 24" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/334c0e74-0692-4f4b-a0af-25271dcd0671">
   - <img width="1288" alt="Screenshot 2023-08-12 at 10 21 57" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/7a558ea3-92f6-4f17-af1b-dccc02435f79">
   - <img width="1271" alt="Screenshot 2023-08-12 at 10 22 12" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/5c4caeaf-c6c4-4914-a8d3-39af53d4d4ff">
+  - <img width="1286" alt="Screenshot 2023-08-12 at 10 27 35" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/5bc39a9c-07a5-4ac6-b408-ed1b55ae0afb">
+  - <img width="1273" alt="Screenshot 2023-08-12 at 10 27 47" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/8a7935a7-623f-4e61-8b7f-165a3d7fb69b">
+  - <img width="1239" alt="Screenshot 2023-08-12 at 10 27 57" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/ecd58e19-1862-4e20-89bb-9f69a00aa793">
+  - <img width="1255" alt="Screenshot 2023-08-12 at 10 28 08" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/70d343a6-b6c3-417d-9c4c-ebc71626edde">
+  - <img width="1239" alt="Screenshot 2023-08-12 at 10 54 45" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/d233e2f5-5d01-42c4-a2b2-e42145dad5c9">
+  - <img width="1287" alt="Screenshot 2023-08-12 at 10 54 52" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/4055d743-42d6-4002-bc9e-f74bbfb15944">
+
+
+
+
+
+
+
 
 
 
