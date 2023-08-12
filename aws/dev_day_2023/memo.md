@@ -16,5 +16,21 @@
   - <img width="1276" alt="Screenshot 2023-08-12 at 10 05 01" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/706ff138-b5a5-4eed-8f9b-2870724202a7">
   - <img width="1274" alt="Screenshot 2023-08-12 at 10 05 16" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/12ec3204-f8f2-454d-858e-864474b8a7fc">
 
+- マイクロサービス時代のセルフサービスデータレイク基盤の作り方:
+  - <img width="1277" alt="Screenshot 2023-08-12 at 10 19 48" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/a80dfb5e-2eae-4a7f-b1cb-33a7e6cd2b4e">
+  - <img width="1252" alt="Screenshot 2023-08-12 at 10 19 59" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/55ef428c-bffe-4b0d-b15f-70f6b7cb84c9">
+  - <img width="1265" alt="Screenshot 2023-08-12 at 10 20 12" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/e43dbfea-55fb-43cb-9a43-8995551d77c7">
+  - <img width="1247" alt="Screenshot 2023-08-12 at 10 21 10" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/37bf8ced-8a8f-49b6-a497-3bc6b0a10cc8">
+  - <img width="1259" alt="Screenshot 2023-08-12 at 10 21 24" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/334c0e74-0692-4f4b-a0af-25271dcd0671">
+  - <img width="1288" alt="Screenshot 2023-08-12 at 10 21 57" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/7a558ea3-92f6-4f17-af1b-dccc02435f79">
+  - <img width="1271" alt="Screenshot 2023-08-12 at 10 22 12" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/5c4caeaf-c6c4-4914-a8d3-39af53d4d4ff">
+
+
+
+
+
+
+  
+  
 
 
