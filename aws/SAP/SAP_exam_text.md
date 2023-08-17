@@ -414,12 +414,38 @@ Elastic Beanstalk を使用した Blue-Green Deployment: 個別の環境に新�
     - 継続的なリクエストかつゆるやかな増減
 
 - DynamoDB Accelerator(DAX):
+
   - VPC 内で DynamoDB のキャッシュにアクセスできる。
   - DynamoDB table へは数ミリ秒でのリクエストができるがマイクロ秒の応答が必要なケースで DAX を検討できる。
   - ノードの集合のクラスタを作成して複数の AZ に配置でき、ノードの時間単位で料金が発生する。
   - 同じ GET リクエストを何度も DynamoDB table へ実行しているのであれば、DAX で読み込みリクエストを低減でき。全体のコストとパフォーマンスを最適化できる。
 
+- データの region 外への転送にはコストが発生するので、Lambda 関数などで必要なサイズにリサイズし、メディア配信することも考える。
+
 ## 6.
+
+- Amazon GuardDuty: CloudTrail, S3 Data log, VPC Flow log, DNS Query log を分析して脅威を検出する。
+- Amazon Macie: S3 Bucket に保存された機密データを機械学習とパターンマッチングで検出・監視できる。
+- SNS + SQS + Lambda + DynamoDB による疎結合化
+- RDS Proxy: データベース接続プールを確立し、再利用することで効率的な接続を提供する。
+- CloudFront:
+
+  - Distribution: 配信設定やリソースのこと。
+  - エンドユーザーが CloudFront で構成された Web コンテンツにアクセスしたとき、レイテンシーの面から最寄りの POP(Point of Presence)エッジロケーションにルーティングされる。
+  - Presense: 名詞でで「目の前」
+  - その POP に対象のコンテンツがあればユーザーに返されるが、なければビヘイビアに設定されたパスパターンに応じてオリジンへリクエストされ、オリジンから POP へファイルが転送され、保存される。
+  - そして POP からユーザーにファイルが返される。
+  - オリジンへのアクセスを制限する 3 つの方法:
+    - OAI: OAI という CloudFront で作成できるユーザーを作成してオリジン設定に関連づけ、S3 Bucket policy で OAI からの GetObject のみを許可する。
+    - カスタムヘッダー: オリジンが ALB などの場合に有効。Distribution のオリジン設定に任意の key とカスタムヘッダーを追加。ALB のルーティングで指定した HTTP ヘッダーがリクエストに含まれる場合のみ正常なターゲットルーティングする。含まれない場合は、403(Access Denied)
+    - IP アドレス制限: オリジン側で IP アドレスによって CloudFront からのリクエストを判定する。
+  - フィールドレベルの暗号化: CloudFront はフィールドレベルの暗号化が可能。公開鍵と秘密鍵を使用した非対称暗号化で指定したフィールドを暗号化できる。例えばユーザーが入力した電話番号を CloudFront distribution で登録された公開鍵で暗号化し、オリジンの API Gateyway に POST します。API Gateway は暗号化された電話番号を DynamoDB へ保存します。秘密鍵はパラメータストアで SecureString として KMS で暗号化して保存する。Lambda は GetParameter した秘密鍵を使用して DynamoDB table から GetItem した暗号化された電話番号を復号して Amazon Connect を呼び出し、自動で電話番号発信できる。アプリケーション開発者も電話番号を知る必要はなく Secure に保存することができる。
+  - CloudFront Functions: CloudFront の機能で、JavaScript で実装する。Viewer へのリクエスト、レスポンス処理のみをサポートしていて、オリジンへのリクエスト、レスポンスはサポートしていない。リクエスト URL を変換することでキャッシュキーの正規化によってキャッシュヒット率を向上したり、ヘッダーを追加したりリクエストのトークン検証をするためなどに使用できる。
+  - Lambda@Edge: AWS Lambda の拡張機能で Node.js、Python がサポートされている。CloudFront Functions ではできない処理に使用する。
+
+- AWS Global Accelerator:
+
+  - エンドユーザーがアクセラレーターにアクセスすると最も近いエッジロケーションでリクエストが受け付けられ、ヘルスチェックに合格したエンドポイントの内、近い場所や重みづけした設定によってルーティングされる。
 
 - Amazon ElastiCache: フルマネージドインメモリデータベース。
 
@@ -456,6 +482,7 @@ Elastic Beanstalk を使用した Blue-Green Deployment: 個別の環境に新�
   - for Memcached:
     - マルチスレッド動作
     - Memcached のクラスターは単純にノードを追加したり減らしたりして負荷を分散することができます（水平スケーリング、スケールアウト/イン）。
+    - データは永続的ではない
   - for Redis:
 
     - マルチ AZ
@@ -466,6 +493,7 @@ Elastic Beanstalk を使用した Blue-Green Deployment: 個別の環境に新�
       - レプリカノードの追加と削除によるスケールアウト/スケールイン
       - プライマリへの書き込み
       - Multi AZ & 自動フェイルオーバー
+      - 構造化データ
       - ![Screenshot 2023-06-12 at 22 17 05](https://github.com/yoshikikasama/network-and-server/assets/61643054/c03fbce6-3d5f-4983-a293-38ebbc2c7403)
     - Cluster Mode Enabled:
       - スケールアップ/ダウンしてノードタイプを増減する
@@ -473,6 +501,7 @@ Elastic Beanstalk を使用した Blue-Green Deployment: 個別の環境に新�
       - シャードの追加/削除
       - 1 つのプライマリーノードと シャードごとに 0~5 個のレプリカ
       - 最大 500 ノード
+      - データは永続的
       - ![Screenshot 2023-06-12 at 22 22 43](https://github.com/yoshikikasama/network-and-server/assets/61643054/9b69384e-ba0a-403a-920e-613ceac1f746)
 
 - Amazon DynamoDB Accelerator(DAX)は Amazon ElasticCache for Memcached よりも優れたキャッシュを提供。
@@ -664,6 +693,59 @@ Canary はエンドポイントの可用性とレイテンシーをチェック�
   - AWS WAF: カスタムヘッダーの存在を検証するルールで WebACL を作成し、ALB に関連づける。
 
 - AWS WAF:
-  - リクエストの送信元 IP アドレス
-  - クエリ文字列の値
-  - 送信元の国
+
+  - AWS WAF は Web Application Firewall です。CloudFront、API Gateway、Application Load Balancer、AppSync GraphQL API へのリクエストに対応できます。リクエストの条件に対して、許可、ブロック、カウントを設定できます。それぞれのサービスリソースに WebACL をアタッチするだけなので、アプリケーションへの変更や影響を与えることなく開始できます。よくある攻撃に対してはマネージドルールが用意されていて、それを選択するだけで始めることができます。個別の設定が必要な場合はもちろん独自のルール設定も可能です。API レベルでの設定が可能なので、脅威のイベントに対して自動で設定できます。条件だけではなく、「5 分間に指定した数を超えた場合にブロック」やカウントできるレートベースルールも可能です。
+  - AWS WAF の料金
+    - Web ACL: 5USD/月
+    - ルール:1USD/月
+    - リクエスト:0.6USD/100 万リクエスト
+    - Bot Control : 10USD/月
+    - Bot Control リクエスト: 1USD/100 万リクエスト
+    - Web ACL やルールを同じリージョンの複数のリソースで使用できます。
+  - AWS WAF の代表的なマネージドルール: AWS WAF でマネージドルールを使用すると、一般的な攻撃を目的とした不要なトラフィックを排除することができます。すぐに始めることができます。以下は代表的なマネージドルールです。
+
+    - ベースラインルールグループ: 一般的な各種脅威に対する保護ルールです。
+    - コアルールセット:OWASP に記載されている高リスクの脆弱性や一般的な脆弱性などに対する保護。
+    - 管理者保護:sqlmanager など管理用の URI パスへの攻撃からの保護。
+    - 既知の不正な入力: localhost、web-inf などのパス、PROPFIND、未承諾の JWT からの保護。
+    - SQL データベース:SQL インジェクションなど、SQL データベースを使用しているアプリケーションに対しての脅威からの保護。
+    - Linux、POSIX、Windows オペレーティングシステム:各 OS 固有の脆弱性悪用攻撃からの保護。
+    - PHP、WordPress アプリケーション:fsockopen や$\_GET などの関数や、
+    - WordPress コマンドや xmlrpc.php へのリクエストなどからの保護。
+    - IP 評価ルールグループ: Amazon IP 評価リスト:Amazon の内部脅威インテリジェンスによってボットと識別された IP アドレスのリストからの保護。
+    - 匿名 IP リスト:クライアントの情報を匿名化することがわかっているソース(TCP ノード、一時プロキシ、その他のマスキングサービスなど)の IP アドレスのリスエンドユーザートラフィックのソースになる可能性が低いホスティングプロバイダーとクラウドプロバイダーの IP アドレスのリストからの保護。
+    - AWS WAF ボットコントロールルールグループ: ボットからのリクエストをブロックおよび管理するルールが含まれています。広告目的、アーカイブ目的、コンテンツ取得、壊れたリンクのチェック、監視目的、Web スクレイピング、検索エンジン、Web ブラウザ以外などボットらのリクエストを管理、保護します。
+
+  - AWS WAF のカスタムルール: カスタムルールで使用できる Web リクエストのプロパティです。
+    - リクエスト送信元 IP アドレス
+    - リクエスト送信元の国
+    - リクエストヘッダー
+    - リクエストに含まれる文字列(正規表現も可)
+    - リクエストの長さ
+    - SQL インジェクションの有無
+    - クロスサイトスクリプティングの有無
+  - AWS WAF のメトリクスとログ:AWS WAF のメトリクスでは、ルールごとと、すべての AllowedRequests、それに BlockRequests がモニタリングできます。サンプリングログ(過去 3 時間)は、Web ACL の概要ビューから確認できます。すべてのフルログは Kinesis Data Firehose を「aws-waf-logs-」で始まる名前をつけて作成して送信します。リクエスト送信元の IP アドレス、国、ヘッダー、メソッド、送信先の URI などを含めた許可·拒否両方のログが送信されます。ログのフィルタリング、フィールド除外が可能です。
+
+- AWS Shield: AWS Shield は DDoS 攻撃から保護するサービスです。Standard と Advanced があります。Standard は無料で有効で、AWS サービスへの悪意のあるトラフィックから保護しています。CloudFront、Route 53 へのベーシックなネットワークレイヤー攻撃を自動的に緩和しています。より高いレベルで保護するためには Advanced を使用します。
+
+  - AWS Shield Advanced で可能になること
+    - CloudFront、Route 53、Global Accelerator、Elastic Load Balancing、 EC2Elastic IP の各リソースを指定しての保護。
+    - EC2 の Elastic IP を保護する場合、数テラバイトのトラフィックを処理できるようにネットワーク ACL を昇格してデプロイ。
+    - 24 時間 365 日対応の DDoS レスポンスチーム(Shield Response Team、SRT)が対応。
+    - 正常性ベースの検出により、脅威イベントを検出、検出精度を向上。
+    - AWS WAF の使用料金も含まれる。
+    - DDoS 攻撃によるスケーリング料金のサービスクレジット。
+    - レイヤー 3/4 攻撃の通知、フォレンジックレポート(発生元 IP、攻撃ベクトルなど)。
+
+- AWS Shield Engagement Lambda:
+
+  - DDoS 攻撃を自動検知して、エスカレーションアクションを自動化する設計パターンです。DDoSDetected、DDoSAttackBitsPerSecond、DDoSAttackPacketsPerSecond、DDoSAttackRequestsPerSecond メトリクスなどの攻撃の有無や攻撃の量に応じて CloudWatch アラームを設定します。SNS トピックへ送信して、サブスクリプション E メールで関係者へ送信します。もう一方のサブスクリプションで Lambda 関数を実行し、Shield Advanced API ヘリクエストして、AttackDetail など詳細情報を取得し、エスカレーションアクションを実行します。エスカレーションアクションには、AWS サポートケースの作成や、サードパーティサービスでインシデントチケットを作成するなどが考えられます。
+
+- Amazon API Gateway
+
+  - エッジ最適化 API: エッジロケーション POP を経由してルーティングされるので全世界のユーザーが使用するような API に最適
+  - Regional Endpoint: 使用するユーザーが特定の地域に集中している場合
+  - プライベートエンドポイント: VPC のみから使用する場合
+  - Cognito ユーザープールでサインインした JWT(JSON Web Token)を Authorization ヘッダーに含めて、API Gateway にリクエストを実行する。Cognito ユーザープールで認証済みの JWT がなければ、API を実行することはできない。
+
+- AWS Secret Manager: データベースなどの認証情報を保持し、取得には Secret Manager API を使用する。認証情報のローテーション更新が必要となった際には Secret Manager が DB の認証状号(パスワード)を更新して保持する。アプリケーションからは GetSecretValue リクエストを実行することで、常に現在の認証情報を取得することができる。
