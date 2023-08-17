@@ -750,6 +750,9 @@ Canary はエンドポイントの可用性とレイテンシーをチェック�
 
 - AWS Secret Manager: データベースなどの認証情報を保持し、取得には Secret Manager API を使用する。認証情報のローテーション更新が必要となった際には Secret Manager が DB の認証状号(パスワード)を更新して保持する。アプリケーションからは GetSecretValue リクエストを実行することで、常に現在の認証情報を取得することができる。
 
-
-
-- <img width="800" alt="Screenshot 2023-08-18 at 7 17 49" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/079d56a5-2a94-4007-98c8-f71ff9bff0c3">
+- AWS Network Firewall:
+  - VPC 向けのステートフルなマネージドネットワークファイアウォールおよび IPS サービスです。Network Firewall はトラフィック量に応じて自動的にスケールし、複数の AZ(アベイラビリティゾーン)
+    にエンドポイントをデプロイすることで高可用性を実現できます。ネットワーク ACL、セキュリティグループだけでは設定できない、カスタマイズルールを実装できます。ドメインリストで不正なドメインへのアクセスを防いだり、既知の不正な IP アドレスをブロックしたり、署名ベースの検出が行えます。VPC イングレスルーティングと組み合わせることで、インバウンド、アウトバウンドリクエストは必ず AWS Network Firewall を通過するように設定できます。Transit Gateway と組み合わせることで、検査用 VPC として NetworkFirewall を構築して、大規模ネットワークにおいてすべてのインバウンド、アウトバウンドを検査するよう設定することも可能です。ステートレスルールとステートフルルールを作成して、ファイアウォールポリシーでルールに対しての動作を定義します。作成したポリシーは NetworkFirewall に関連付けます。Network Firewall エンドポイントを配置する VPC とサブネットを指定します。Firewall エンドポイントを設置したサブネットを通るようにルートテーブルのルートを設定します。Suricata 互換のルールセットをインポートして利用することができます。
+  - <img width="800" alt="Screenshot 2023-08-18 at 7 17 49" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/079d56a5-2a94-4007-98c8-f71ff9bff0c3">
+- AWS Firewall Manager:
+  - AWS Firewall Manager は、複数アカウントで AWS WAF、AWS ShieldAdvanced、 VPC セキュリティグループ、AWS Network Firewall、Amazon Route53 Resolver DNS ファイアウォールを一元管理できます。AWS Organizations、AWS Config と連携し、AWS Config で非準拠リソースを抽出することもできます。複数アカウントの CloudFront ディストリビューションなど、特定のタイプのすべてのリソースを保護することができます。特定のタグでまとめて適用することも可能です。アカウントに追加されたリソースへの保護を自動的に追加します。AWS Organizations 組織内のすべてのメンバーアカウントを AWS Shield Advanced に登録することができ、組織に参加する新しい対象アカウントを自動的に登録することもできます。
