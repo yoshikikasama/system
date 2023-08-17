@@ -749,3 +749,7 @@ Canary はエンドポイントの可用性とレイテンシーをチェック�
   - Cognito ユーザープールでサインインした JWT(JSON Web Token)を Authorization ヘッダーに含めて、API Gateway にリクエストを実行する。Cognito ユーザープールで認証済みの JWT がなければ、API を実行することはできない。
 
 - AWS Secret Manager: データベースなどの認証情報を保持し、取得には Secret Manager API を使用する。認証情報のローテーション更新が必要となった際には Secret Manager が DB の認証状号(パスワード)を更新して保持する。アプリケーションからは GetSecretValue リクエストを実行することで、常に現在の認証情報を取得することができる。
+
+
+
+- <img width="800" alt="Screenshot 2023-08-18 at 7 17 49" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/079d56a5-2a94-4007-98c8-f71ff9bff0c3">
