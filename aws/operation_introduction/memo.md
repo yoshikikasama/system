@@ -73,3 +73,5 @@
 - マグネティックは下位互換のために用意されているため、基本的には汎用 SSD かプロビジョンド IOPS SSD を選択する。
 - IOPS(Input/Output Per Second)とは、ストレージに 1 秒間に読み書きできる回数のことで値が大きいほど性能は高くなる。
 - 頻繁に読み書きが発生する場合は、プロビジョンド IOPS SSD を使用し、ストレージの処理がボトルネックにならないようにする。
+- RDS フェールオーバーの仕組み: <img width="995" alt="Screenshot 2023-10-08 at 21 30 50" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/8b771380-dc91-41ba-aa99-f759733db8a2">
+
