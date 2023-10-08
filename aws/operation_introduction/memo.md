@@ -51,3 +51,7 @@
   - <img width="875" alt="Screenshot 2023-10-08 at 11 29 23" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/5f552c76-eb5c-4e53-97c9-f3788fd0094b">
 
 - EBS: ディスクサイズで課金される。
+## S3
+
+- <img width="855" alt="Screenshot 2023-10-08 at 21 07 18" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/c65883ca-1c7a-46e2-9582-16992aff8431">
+
