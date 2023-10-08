@@ -85,3 +85,5 @@
 
 - ALB: 主に web サーバーの負荷分散に利用。
   - パスベースルーティングの負荷分散が可能。接続先 URLhttp://example.comに対してパスにcorpとrecruitが含まれるときにcorpは左、recruiteは右のサーバーに転送するようにURL中に含まれるパスによって転送するサーバーを変えることができる。
+  - <img width="1018" alt="Screenshot 2023-10-09 at 8 33 48" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/1d6c33a0-dc54-415b-b59a-9232fbf88470">
+
