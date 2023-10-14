@@ -99,6 +99,7 @@
   - アカウントごとに料金を管理できる。
   - アカウントごとに利用者のアクセスを管理できる。
   - アカウントをわけることで、ユーザーの誤操作を防ぐ。
-- ![1000001629](https://github.com/yoshikikasama/network-and-server/assets/61643054/e17f23c0-cf1d-4c09-ba1b-394cf1d4755d)
-- ![1000001628](https://github.com/yoshikikasama/network-and-server/assets/61643054/45929508-2f5e-490d-95fc-4a2e7554e4c1)
+- 踏み台アカウント運用
+  - ![1000001628](https://github.com/yoshikikasama/network-and-server/assets/61643054/45929508-2f5e-490d-95fc-4a2e7554e4c1)
+  - ![1000001629](https://github.com/yoshikikasama/network-and-server/assets/61643054/e17f23c0-cf1d-4c09-ba1b-394cf1d4755d)
 
