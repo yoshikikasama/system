@@ -107,4 +107,4 @@
 - アカウント運用のサンプルアーキテクチャ:
   - ![1000001631](https://github.com/yoshikikasama/network-and-server/assets/61643054/66ff9166-d587-4d45-bede-cfa020cbc930)
 
-
+- IAM Policy simulator: 付与した権限を評価する対象のIAMエンティティとAWSサービス・リソースやアクションを選択しシミュレーションを実行することで、評価対象のIAMエンティティが対象AWSサービス·リソースへのアクションが許可されているか否かを検証することができる。
