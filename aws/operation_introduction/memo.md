@@ -125,3 +125,8 @@
   - ログ利用:
     - ログの閲覧、分析
     - ログの利用
+- AWSアカウントに関する取得可能なログの一例:
+  - ![1000001632](https://github.com/yoshikikasama/network-and-server/assets/61643054/ac2732e9-938e-46db-8e49-f1bb30182ad5)
+- AWSリソースに関する取得可能なログの一例
+  - ![1000001633](https://github.com/yoshikikasama/network-and-server/assets/61643054/afc1773a-0263-425c-9293-87871f2ba939)
+
