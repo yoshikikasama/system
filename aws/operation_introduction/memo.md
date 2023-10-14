@@ -87,3 +87,16 @@
   - パスベースルーティングの負荷分散が可能。接続先 URLhttp://example.comに対してパスにcorpとrecruitが含まれるときにcorpは左、recruiteは右のサーバーに転送するようにURL中に含まれるパスによって転送するサーバーを変えることができる。
   - <img width="1018" alt="Screenshot 2023-10-09 at 8 33 48" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/1d6c33a0-dc54-415b-b59a-9232fbf88470">
 
+## IAM
+
+- 信頼ポリシーの設定
+  - ![1000001626](https://github.com/yoshikikasama/network-and-server/assets/61643054/30da8b35-e6f3-46d2-96e1-9a27a0173022) 
+- IAM policyの3分類
+  - ![1000001627](https://github.com/yoshikikasama/network-and-server/assets/61643054/e0b3baca-3855-4fb2-9569-8256ffa7e38c)
+
+
+- 複数のAWSアカウントを所有するメリット
+  - アカウントごとに料金を管理できる。
+  - アカウントごとに利用者のアクセスを管理できる。
+  - アカウントをわけることで、ユーザーの誤操作を防ぐ。
+ 
