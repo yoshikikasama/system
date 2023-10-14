@@ -177,3 +177,16 @@
 | 通信ログ     | 端末とサーバー間、AWS リソース間の通信内容を記録 | VPC Flow Logs<br>AWS WAF                            |
 | 設定変更ログ | AWS リソースで設定変更した際の内容を記録         | Amazon EC2<br>Amazon RDS                            |
 | エラーログ   | AWS リソース上でエラーが発生した時の記録         | Amazon EC2<br>Amazon RDS                            |
+
+- 4 つの観点と関連する AWS サービス
+
+| 項目     | 記録する AWS ツール                                     |
+| -------- | ------------------------------------------------------- |
+| ログ収集 | • Amazon CloudWatch Logs (統合 CloudWatch モニタリング) |
+| ログ転送 | • Amazon Kinesis Data Firehose                          |
+| ログ保管 | • Amazon S3 <br>• Amazon CloudWatch Logs                |
+| ログ利用 | • Amazon CloudWatch Logs Insights<br>• Amazon Athena    |
+
+### Amazon CloudWatch
+
+- EC2 インスタンスをはじめとした AWS リソースと AWS 上で稼働しているアプリケーションをモニタリングし、システムのパフォーマンスやリソース使用率の最適化を行うために必要な判断材料(データ)を提供する。
