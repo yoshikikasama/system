@@ -241,5 +241,18 @@
   | Amazon Kinesis Video Streams  | AWS によって用意されている SDK を利用して防犯カメラ・スマートフォン・ドローン・センサーなどの動画撮影デバイスからストリーミングデータをキャプチャ・処理・保存することが可能                                                                                        |
 
 - Amazon Kinesis Data Firehose:
+
   - <img width="876" alt="Screenshot 2023-11-05 at 15 34 35" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/30770ff1-1147-4736-91c0-2226fd0e6763">
-    
+  - distination に応じて配信ストリームを個別に作成する。転送するデータを振り分ける管のようなもの。
+
+  ### Amazon Athena
+
+  - 標準的な SQL を使用して S3 Bucket 内のデータソースに対してクエリを実行することができるサービス。
+  - Athena で S3 Bucket 上のデータを参照するには:
+    - データを S3 Bucket に保存
+    - DB および table を定義する
+    - SerDe(Serialize/Deserialize)というデータ処理をする。
+      - Serialize: オブジェクトをバイト列に変換する処理
+      - Deserialize: バイト列から元のオブジェクトを復元する処理
+    - Athena がサポートしている圧縮形式。
+    - 実行した table 定義の情報は AWS Glue Data Catalog と呼ばれるメタデータを管理する場所に保存される。
