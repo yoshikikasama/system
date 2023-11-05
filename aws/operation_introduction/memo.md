@@ -220,4 +220,7 @@
     - Internet Gateway や NAT Gateway を利用して EC2 インスタンスがインターネットと通信することができるネットワーク経路を確保する。
     - EC2 インスタンスから CloudWatch および CloudWatch Logs に対する一部操作を許可する必要がある。
 
-- CloudWatch Logs の利用料金：　ログデータの保管料より取り込み料金の方が高くなる。
+- CloudWatch Logs の利用料金：
+  - ログデータの保管料より取り込み料金の方が高くなる。
+  - <img width="532" alt="Screenshot 2023-11-05 at 14 15 16" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/1e2fee2b-1991-4051-83e2-49b100f3add2">
+
