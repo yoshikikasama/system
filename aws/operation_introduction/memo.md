@@ -263,4 +263,5 @@
 
 ### ログ運用のサンプルアーキテクチャ
 
--
+- <img width="868" alt="Screenshot 2023-11-05 at 16 16 34" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/299cb98c-d4aa-4738-ac14-0961adef431d">
+
