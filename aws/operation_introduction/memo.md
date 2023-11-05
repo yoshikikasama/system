@@ -256,3 +256,6 @@
       - Deserialize: バイト列から元のオブジェクトを復元する処理
     - Athena がサポートしている圧縮形式。
     - 実行した table 定義の情報は AWS Glue Data Catalog と呼ばれるメタデータを管理する場所に保存される。
+- CloudWatch Logs InsightsとAthenaの使い分け:
+  - <img width="544" alt="Screenshot 2023-11-05 at 16 09 55" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/e28978a0-4078-4e71-b705-6635c5c62aa9">
+  - <img width="545" alt="Screenshot 2023-11-05 at 16 09 47" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/b0bb35d0-51b0-4b05-af4f-5940fe62e9bd">
