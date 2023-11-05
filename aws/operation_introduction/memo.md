@@ -241,3 +241,5 @@
   | Amazon Kinesis Video Streams  | AWS によって用意されている SDK を利用して防犯カメラ・スマートフォン・ドローン・センサーなどの動画撮影デバイスからストリーミングデータをキャプチャ・処理・保存することが可能                                                                                        |
 
 - Amazon Kinesis Data Firehose:
+  - <img width="876" alt="Screenshot 2023-11-05 at 15 34 35" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/30770ff1-1147-4736-91c0-2226fd0e6763">
+    
