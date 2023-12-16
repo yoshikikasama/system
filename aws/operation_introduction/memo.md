@@ -355,4 +355,6 @@
 - 例えば期間が 3 分で Evaluation Period が 10 の場合、評価対象期間は直近の 3\*10=30 分となります。
 - Datapoints to Alarm を 8 とすると 3 分おきメトリクスが評価され直近 30 分の評価対象期間のうち 8 回閾値の範囲外となればアラームの状態が変化することになる。
 - ![PXL_20231216_224433689 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/0fde75a7-0cb7-445f-ab02-ebc667a734ee)
+- ![PXL_20231216_231746824 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/90e4a794-05a1-45e3-a44d-90060bd72dda)
+
 
