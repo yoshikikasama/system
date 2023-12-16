@@ -354,7 +354,16 @@
 
 - 例えば期間が 3 分で Evaluation Period が 10 の場合、評価対象期間は直近の 3\*10=30 分となります。
 - Datapoints to Alarm を 8 とすると 3 分おきメトリクスが評価され直近 30 分の評価対象期間のうち 8 回閾値の範囲外となればアラームの状態が変化することになる。
-- ![PXL_20231216_224433689 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/0fde75a7-0cb7-445f-ab02-ebc667a734ee)
-- ![PXL_20231216_231746824 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/90e4a794-05a1-45e3-a44d-90060bd72dda)
+- CloudWatch Metrics:
+  - ![PXL_20231216_224433689 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/0fde75a7-0cb7-445f-ab02-ebc667a734ee)
+- CloudWatch Logs Metrics Filter:
+  - ![PXL_20231216_231746824 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/90e4a794-05a1-45e3-a44d-90060bd72dda)
+- CloudWatch Logs Subscription Filter: メトリクスフィルターと同じく CloudWatch Logs が受信したログをフィルターする機能ですが、フィルターしたログを CloudWatch Metrics ではなく、AWS Lambda や Amazon Kinesis へ送信して、AWS Lambda を介して SNS 発報できる。
 
+### EC2 のステータスチェックとオートリカバリー
 
+- ステータスチェック： EC2 インスタンスの稼働に対して影響を与える問題を自動でチェックする機能。
+- インスタンスステータスチェック：それぞれのインスタンスのネットワークやリソースをチェック。ENI に対して API リクエストを送信しチェックする。CPU やメモリの枯渇、ネットワーク設定の誤り。
+- システムステータスチェック：インスタンスが稼働する AWS 基盤をチェック。AWS 基盤の障害。
+
+- オートリカバリー： CloudWatch Alarm をトリガーに自動で EC2 を停止・起動・復旧する機能。
