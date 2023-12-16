@@ -265,3 +265,92 @@
 
 - <img width="868" alt="Screenshot 2023-11-05 at 16 16 34" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/299cb98c-d4aa-4738-ac14-0961adef431d">
 
+  - インターネット公開する web アプリケーションをデプロイする環境を Web3 層アーキテクチャで構築することを想定しています。
+  - Protected Subnet: NAT Gateway を経由してインターネットと接続可能なネットーワーク(DMZ)。
+  - 各 AWS サービスから出力されるログに関しては、のちのログ利用を想定し、コストパフォーマンスが高い S3 への長期保管を意識した設計としています。
+  - EC2 と Amazon Aurora は S3 と統合されていないため、Kinesis Data Firehose 経由で CloudWatch Logs から S3 Bucket へログを転送している。
+  - VPC Flow Logs は直近出力された少量のログ利用ならびにログの長期保管の観点から、CloudWatch Logs と S3 の両方にログを出力する設計としています。
+  - AWS 利用料の観点で、S3 のライフサイクルポリシーを設定し、必要に応じて S3 Glacier Flexible Retrieval をはじめとしたストレージクラスにアーカイブしたり、一定期間保管後にオブジェクトを削除したりすることを推奨します。
+
+| ログ取得対象  | 取得用途                              | ログ保管場所                         | ログ利用方法                                            |
+| ------------- | ------------------------------------- | ------------------------------------ | ------------------------------------------------------- |
+| ALB           | アクセスログ                          | S3                                   | Athena                                                  |
+| EC2           | OS ログの取得<br>アプリケーションログ | CloudWatch Logs<br> S3（長期保管用） | CloudWatch Logs <br>CloudWatch Logs Insights<br> Athena |
+| Amazon Aurora | DB ログ                               | CloudWatch Logs<br> S3（長期保管用） | CloudWatch Logs <br>CloudWatch Logs Insights<br> Athena |
+| VPC Flow Logs | 通信ログ                              | CloudWatch Logs<br> S3（長期保管用） | CloudWatch Logs <br>CloudWatch Logs Insights<br> Athena |
+
+- EC2 インスタンスの台数が多い場合の「EC2 のログ取得設定」：
+
+  - EC2 インスタンスが SSM のマネージドノードである必要がある。
+    - SSM の管理下に置かれたマネージドノードは SSM のフリートマネージャーで確認可能。
+  - SSM と EC2 インスタンス間でコマンドを送受信するための通信経路の確保が必要。
+  - EC2 インスタンスに SSM エージェントをインストールすること。
+  - SSM の region endpoint との通信経路を確保すること。
+  - IAM Role を利用して EC2 インスタンスが SSM と通信するために必要な権限を付与すること。
+
+- CloudWatch Logs のログを Kinesis Data Firehose を経由して S3 へ出力する:
+
+  - S3 Bucket 作成
+  - Kinesis Data Firehose で配信ストリーム作成
+  - CloudWatch Logs サブスクリプションフィルター作成
+
+- 信頼ポリシー:
+
+  - sts: AWS Security Token Service を示しており、各種 AWS リソースへのアクセスをコントロールする一時的な認証情報を発行するサービス。
+  - AssumeRole: STS に対して一時的な認証情報(IAM Role にアタッチされた IAM policy)の提供をリクエストする操作。一時的な認証情報を用いて AWS リソースが別のリソースを操作する。
+
+- CloudWatch Logs が Kinesis Data Firehose の配信ストリームに対して操作を許可するための信頼ポリシー:
+  - CloudWatch Logs では region の記述を含む
+  - Condition 句で同一アカウント同一 region に存在する CloudWatchLogs に限定している理由は、混乱する代理問題を回避するため。AWS サービス間での不正アクセスに関する問題。
+    - https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/confused-deputy.html
+
+```
+{
+  "version":"2012-10-17",
+  "Statement": {
+    "Effect": "Allow",
+    "Principal":{
+      "Service": "logs.ap-northeast-1.amazonaws.com"
+    },
+    "Action": "sts:AssumeRole",
+    "Condition": {
+      "StringLike": {
+        "aws:SourceArn": "aen:aws:logs:ap-northeast-1:アカウントID:*"
+      }
+    }
+  }
+}
+
+```
+
+### AWS SSM
+
+- AWS Systems Manager Prameter Store: SSM が提供している機能の一つで、設定データおよび機密データをパラメータ(値)として安全に管理するためのストレージを提供している。
+
+  - パラメータの version 管理が可能。
+  - プログラムのコードと設定データを分離して管理できること。
+  - IAM を利用することでパラメータへのアクセス制御が可能。
+
+- AWS Systems manager Run Command: EC2 インスタンスに OS ログインすることなくコマンドやスクリプトをリモートで実行することができる。
+  - AWS-ConfigureAWSPackage: 統合 CloudWatch エージェントをはじめとしたパッケージのインストール、アンインストールを実施するコマンドドキュメント。
+  - AmazonCloudWatch-ManageAgent: Amazon CloudWatch Agent にコマンドを送信する(設定を適用)するコマンドドキュメント
+- SSM エージェント:
+  - EC2 インスタンス、エッジデバイス、オンプレミスサーバー、および仮想マシン上で動作するミドルウェアで、DDM によるサーバーの更新・管理を実現する。
+  - EC2 にインストールされた SSM エージェントは、AWS リージョン後よに存在する SSM の region endpoint に対してポーリングを実行します。このポーリングによって、SSM エージェントは SSM からコマンド実行などの指示を受け付ける。
+  - ポーリングの問い合わせ先となる SSM の region endpoint はインターネット上に存在するため、EC2 インスタンスに Internet Gateway を経由したアウトバウンド通信をあらかじめ許可しておきます。
+  - VPC Endpoint を利用すると VPC 内の AWS リソースと VPC 外のリソースとの通信を、インターネットを経由することなく接続できるようになる。VPC Endpoint を活用して SSM の region endpoint と通信することも可能。
+
+## 監視
+
+- 監視: 各コンポーネントから情報を計測・収集し、問題が起こった場合に意いち早く知ること。
+
+- メトリクス：「いつ」「何が」「どういう状態・値であったのか」の情報。
+
+- CloudWatch Alarm:
+
+  - 期間: アラームの閾値の範囲内か範囲外か評価する間隔。評価された時点は「データポイント」と呼ばれる。
+  - Evaluation Period: アラームの評価の対象となる直近のデータポイント数。
+  - Datapoints to Alarm: Evaluation Period のうちアラームの状態を決定するのに必要なデータポイント数。
+
+- 例えば期間が 3 分で Evaluation Period が 10 の場合、評価対象期間は直近の 3\*10=30 分となります。
+- Datapoints to Alarm を 8 とすると 3 分おきメトリクスが評価され直近 30 分の評価対象期間のうち 8 回閾値の範囲外となればアラームの状態が変化することになる。
