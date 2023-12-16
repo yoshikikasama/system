@@ -367,3 +367,7 @@
 - システムステータスチェック：インスタンスが稼働する AWS 基盤をチェック。AWS 基盤の障害。
 
 - オートリカバリー： CloudWatch Alarm をトリガーに自動で EC2 を停止・起動・復旧する機能。
+
+### 監視のサンプルアーキテクチャ
+
+![PXL_20231216_233752375 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/0ea2f5fd-2a7e-400c-a7b8-af3185ef98fd)
