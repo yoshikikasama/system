@@ -386,4 +386,5 @@
 
 ### パッチ適用のサンプルアーキテクチャ
 
-- <img width="571" alt="Screenshot 2023-12-09 at 10 11 24" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/499e860e-b044-445e-bc96-1a2255e28847">
+- ![PXL_20231218_134623439 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/c25d2ece-c8b3-4964-be96-47c53a8f6280)
+
