@@ -439,3 +439,5 @@
 - EC2 と Aurora でバックアップ/リストア機能の仕様が異なること
 - システムによってバックアップ要件が異なる場合でもバックアッププランやバックアップホールドを分けることで管理が可能。
 - システムごとに AWS リソースにタグ付けする。
+- <img width="571" alt="Screenshot 2023-12-09 at 10 11 24" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/bd0c5945-0874-4e7a-92cb-68b706c823fe">
+
