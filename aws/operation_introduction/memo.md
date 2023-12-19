@@ -433,3 +433,5 @@
   - オンデマンドバックアップも可能。業務時間外にバックアップウィンドウを設定する。
 
 ### バックアップ/リストア運用のサンプルアーキテクチャ
+
+- ![PXL_20231218_134623439 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/be842cdf-f928-4d13-a2c9-c5d1476fc0c3)
