@@ -461,4 +461,5 @@
 - 発見的統制: 早期発見及び迅速な対処。
 - 予防的統制: リスクや脅威が顕在化することを未然に防ぐ。
 
-- Well-Architected フレームワークのセキュリティの柱
+- Well-Architected フレームワークのセキュリティの柱:
+- ![PXL_20231220_135000672 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/1e08afe6-d86e-406e-83d4-12324f2aa621)
