@@ -463,3 +463,6 @@
 
 - Well-Architected フレームワークのセキュリティの柱:
 - ![PXL_20231220_135000672 MP](https://github.com/yoshikikasama/network-and-server/assets/61643054/1e08afe6-d86e-406e-83d4-12324f2aa621)
+- ![Screenshot 2023-12-20 at 22 58 51](https://github.com/yoshikikasama/network-and-server/assets/61643054/f7a131ef-da4d-4957-a088-6104f66d224e)
+- ![Screenshot 2023-12-20 at 22 58 59](https://github.com/yoshikikasama/network-and-server/assets/61643054/02b3ca9d-531a-4eac-8bd2-b324bb23d4a1)
+
