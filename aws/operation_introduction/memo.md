@@ -466,3 +466,6 @@
 - ![Screenshot 2023-12-20 at 22 58 51](https://github.com/yoshikikasama/network-and-server/assets/61643054/f7a131ef-da4d-4957-a088-6104f66d224e)
 - ![Screenshot 2023-12-20 at 22 58 59](https://github.com/yoshikikasama/network-and-server/assets/61643054/02b3ca9d-531a-4eac-8bd2-b324bb23d4a1)
 
+- SSL(Security Sockets Layer): インターネットを経由した通信において二つのシステム間で送受信される情報を保護し、悪意のある第三者が情報を読み取ったり改変したりできないようする技術。
+- TLS(Transport Layer Security): SSL のセキュリティをより強化したもの。
+- HTTPS(Hypertext Transfer Protocol Secure): クライアント端末とサーバー間の通信が SSL/TLS の技術を用いて暗号化されていることを意味する。ここで SSL/TLS 証明書が利用される。
