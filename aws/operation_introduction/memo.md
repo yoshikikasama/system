@@ -483,4 +483,20 @@
 
 - WAF (web Application Firewall): web アプリケーションに対する通信内容(HTTP/HTTPS)を検査し、web アプリケーションの脆弱性を悪用する攻撃などの不正アクセスから web アプリケーションを守るためのセキュリティ対策機能。web サーバーよりも前の通信段階に配置し、ファイアウォールや IDS/IPS(侵入検知/侵入防御)では検知することが難しい SQL インジェクションやクロスサイトスクリプティングといったアプリケーションレベルの攻撃を緩和して、アプリケーションを保護する。
 - <img width="575" alt="image" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/891ecb1e-b05b-42db-b6d1-1f3e1d699dd6">
+  - ユーザーがカスタマイズして利用することもできるが、webサイトへの攻撃は日々変化しており、それらの脅威に対応するために継続的な運用の見直しが必要不可欠。
+  - WafCharmのようなAWS WAF運用支援を行うサードパーティ製品を活用して運用負荷を軽減することが推奨される。
 
+- AWS KMS:
+  - CDK(Customer Data Key):保管データを暗号化する key
+  - CMK(Customer Master Key):CDK を暗号化する key
+    - AWS Managed CMK: AWS 管理
+    - Customer Managed CMK: ユーザー管理
+- リソースベースのポリシーは IAM ポリシーよりも優先される
+
+- AWS Config: Rules でルールに準拠したリソースの構成となっているか。
+
+- Amazon GuardDuty:
+  - DNS クエリログ、VPC Flow Logs, CloudTrail, EKS 監査ログに対して、機械学習技術を用いて分析し、セキュリティの観点から脅威だと考えられるデータをそのリスクによって検出する。
+  - 特に S3 データイベントログは有効化が推奨されている。
+  - 例えばユーザー A という人物は怪しいから気をつけた方が良い。というデータが脅威インテリジェンスに定義されていた場合にユーザー A を脅威と判断する。
+  - 無料かつメンテナンス不要。
