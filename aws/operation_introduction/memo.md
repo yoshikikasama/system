@@ -482,3 +482,5 @@
 - ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/4f566fde-304b-4156-8c7b-aadb5cba973a)
 
 - WAF (web Application Firewall): web アプリケーションに対する通信内容(HTTP/HTTPS)を検査し、web アプリケーションの脆弱性を悪用する攻撃などの不正アクセスから web アプリケーションを守るためのセキュリティ対策機能。web サーバーよりも前の通信段階に配置し、ファイアウォールや IDS/IPS(侵入検知/侵入防御)では検知することが難しい SQL インジェクションやクロスサイトスクリプティングといったアプリケーションレベルの攻撃を緩和して、アプリケーションを保護する。
+- <img width="575" alt="image" src="https://github.com/yoshikikasama/network-and-server/assets/61643054/891ecb1e-b05b-42db-b6d1-1f3e1d699dd6">
+
