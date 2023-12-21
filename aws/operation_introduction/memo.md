@@ -470,3 +470,12 @@
 - TLS(Transport Layer Security): SSL のセキュリティをより強化したもの。
 - HTTPS(Hypertext Transfer Protocol Secure): クライアント端末とサーバー間の通信が SSL/TLS の技術を用いて暗号化されていることを意味する。ここで SSL/TLS 証明書が利用される。
 - ![Screenshot 2023-12-21 at 19 46 59](https://github.com/yoshikikasama/network-and-server/assets/61643054/dbad85e0-403f-4166-ad75-d1c3cbf13ca0)
+
+- public 証明書: 公的に認められた企業が発行する SSL/TLS 証明書
+- private 証明書: 個人や法人が独自に発行する証明書
+
+- ACM: 無償でかつコンソール画面から Amazon Trust Services(認証局)が発行する public 証明書を発行できる。
+
+  - ただ ACM で発行可能なのは、ドメイン認証型 SSL サーバー証明書なので Web サイト運営団体の実在性についても認証・証明する必要がある高度なセキュリティが要求される Web サイトには適していない。
+
+- マネージドプレフィクスで多数の EC2 インスタンスにアタッチされている全てのセキュリティグループに適用できる。
