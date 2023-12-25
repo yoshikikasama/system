@@ -519,3 +519,5 @@
   - 4. Security Hub で集約管理
 
 ## 10. 監査準備
+
+- ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/0524f9f1-84e9-4edb-877e-db84d3535c4c)
