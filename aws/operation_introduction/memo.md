@@ -512,4 +512,5 @@
 
 ### セキュリティのサンプルアーキテクチャ
 
--
+- ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/509e0d8a-6d1e-4dbf-88d3-833e17d28c6d)
+
