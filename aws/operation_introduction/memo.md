@@ -489,8 +489,8 @@
 - AWS KMS:
   - CDK(Customer Data Key):保管データを暗号化する key
   - CMK(Customer Master Key):CDK を暗号化する key
-    - AWS Managed CMK: AWS 管理
-    - Customer Managed CMK: ユーザー管理
+    - AWS Managed CMK: AWS 管理。
+    - Customer Managed CMK: ユーザー管理。アクセス管理をポリシーで厳重に取り決め可能。
 - リソースベースのポリシーは IAM ポリシーよりも優先される
 
 - AWS Config: Rules でルールに準拠したリソースの構成となっているか。
@@ -513,4 +513,9 @@
 ### セキュリティのサンプルアーキテクチャ
 
 - ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/509e0d8a-6d1e-4dbf-88d3-833e17d28c6d)
+  - 1. クライアント端末と ALB ALB 間の HTTP 通信を ACM を利用して HTTPS 通信に。
+  - 2. WAF を使用して ALB に対す外部からの不正アクセス防止。
+  - 3.EBS および Aurora DB インスタンスデータを KMS で暗号化。
+  - 4. Security Hub で集約管理
 
+## 10. 監査準備
