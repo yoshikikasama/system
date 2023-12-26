@@ -590,3 +590,7 @@
 - ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/849acb07-a6bc-4e6c-b388-1426523dfd13)
 
 - Resource Scheduler: 未使用時の EC2 インスタンスの停止のスケジューリング。
+
+### サンプルアーキテクチャ
+
+- ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/595fd08a-c798-4770-89b2-f0a9744525a9)
