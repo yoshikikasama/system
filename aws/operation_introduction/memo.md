@@ -551,3 +551,5 @@
   - 不適正スペックの AWS リソースの発見
   - AWS リソース稼働時間の見直し
   - 常時稼働 AWS リソースの特定
+  - ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/fb24bee7-6b27-4d28-a4ab-30e85c6e9754)
+
