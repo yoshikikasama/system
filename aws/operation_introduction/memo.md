@@ -579,3 +579,5 @@
 - Savings Plans: RI と同様に AWS のコンピューティングリソースを一定期間継続して利用することを前提に大幅な割引を受けることができる。割引適用後の 1 時間あたりの利用料をドルで指定して購入する。
   - Compute Savings Plans: 適用可能な AWS サービス(EC2, Lambda, Fargate)が最も多く、適用条件も柔軟で利用実績が多い。割引効果が最も高いリソースから自動的に適用。
   - EC2 Instance Savings Plans: Compute Savings Plans と比較してよりディスカウント効果が高い Savings Plans。EC2 インスタンスのインスタンスファミリーのみ。
+- ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/a38f1a5a-11d9-454e-8b73-037958e98ebd)
+
