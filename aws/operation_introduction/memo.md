@@ -581,3 +581,14 @@
   - EC2 Instance Savings Plans: Compute Savings Plans と比較してよりディスカウント効果が高い Savings Plans。EC2 インスタンスのインスタンスファミリーのみ。
 - ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/a38f1a5a-11d9-454e-8b73-037958e98ebd)
 
+- ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/507f4cb0-b29a-44f0-9151-4e844f6bbea9)
+- RDSの場合はRIのみ購入可能。
+- RDSはConvertible RIが選択できないため、DBエンジンとDBインスタンスクラスを購入後に変更できない。
+- ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/e002888c-66a3-46cb-a6f3-a15087465d8d)
+- ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/afb5b895-dfe8-44a9-85fb-44b1a9fbd314)
+- ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/5dd3a2de-88d0-4640-b269-a3441ad87dc7)
+- ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/849acb07-a6bc-4e6c-b388-1426523dfd13)
+
+
+
+
