@@ -40,6 +40,11 @@
     "AllowedOrigins":["https//html-css-sample.s3.amazonaws.com"]
     }
     ]
-  - ElastiCache:
+- ElastiCache:
+  - メモリ内にデータを格納するインメモリデータストア
+  - 複数ノードへのデータ分散によるスケーラビリティ: 複数AZに配置できる。
+  - Memchached: マルチスレッドをサポートしているので水平的なスケールアウトをしやすい。
+  - Redis: AZを跨いてリードレプリカを作成し、障害時にフェイルオーバーできる。永続的にデータ保存可能。
   - ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/4bab373a-3e21-4c4c-9ae9-8658889d3027)
 
+- Amazon DynamoDB: 
