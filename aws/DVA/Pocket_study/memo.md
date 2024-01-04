@@ -40,3 +40,6 @@
     "AllowedOrigins":["https//html-css-sample.s3.amazonaws.com"]
     }
     ]
+  - ElastiCache:
+  - ![image](https://github.com/yoshikikasama/network-and-server/assets/61643054/4bab373a-3e21-4c4c-9ae9-8658889d3027)
+
