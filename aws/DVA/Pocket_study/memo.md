@@ -56,8 +56,8 @@
   - Read Capacity Unit(RCU):最大 4KB の項目を 1 秒間に 2 回の結果整合性で読み込むか、1 秒間に一回の強力な整合性で読み込むか。
     Write Capacity Unit (WCU): 最大 1KB の項目を 1 秒間に 1 回書き込む。
   - primary key が一つ目のインデックス。
-  - ローカルセカンダリインデックス: table 作成時に作成。ソートキーを追加。
-  - グローバルセカンダリインデックス: primary key とは無関係な partition key でクエリ検索できる。あとから作成可能。
+  - ローカルセカンダリインデックス: table 作成時に作成。partition key は既存と同じ。ソートキーを追加。強整合性の読み取りオプションを提供する。
+  - グローバルセカンダリインデックス: primary key とは無関係な partition key でクエリ検索できる。あとから作成可能。強整合性の読み取りオプションを提供していない。
   - DynamoDB ストリーム: 項目の更新情報がストリームに格納される。更新情報を lambda に渡して後続処理可能。
   - DynamoDB Global table: 他の region に table レプリカを作成可能。
   - DynamoDB Accelerator(DAX): インメモリキャッシュを使って DynamoDB table への数ミリ秒のレイテンシーを数秒に短縮できる。
