@@ -18,7 +18,11 @@
 
   - マスターデータベース: 書き込み操作のみを support
   - リードレプリカ: マスターデータベースからの copy を取得し、読み込み操作のみを support
+- <img width="460" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/bb7d911a-02ba-4748-b759-b80292221194">
+
 
 - キャッシュ層:
   - 高いレスポンスや頻繁にアクセスされるデータの結果をメモリに保存し、後続のリクエストをより迅速に処理されるようにする一時的な記憶装置。
   - DB を繰り返し呼び出すとアプリケーションの性能に大きな影響を与えるのでキャッシュはこの問題を軽減できる。
+  - <img width="536" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/edb1ac86-7a96-4ba1-9a12-e7d0cc508816">
+
