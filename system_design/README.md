@@ -34,3 +34,5 @@
     - 消去ポリシー:　 LRU(Least-recently-used)は最も一般的なキャッシュポリシー。
 - CDN(Content Delivery Network)
   - 地理的に分散したネットワークであり、静的コンテンツを配信するために使用される。
+  - <img width="953" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/854996ad-1d30-45fa-beec-f4fb1fa940e1">
+
