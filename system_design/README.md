@@ -55,3 +55,5 @@
 - メッセージキュー: producer と consumer は単独でスケールアップできる。メッセージキューのサイズが大きくなれば、ワーカーを追加して処理時間を短縮できる。
 
 - データベースのスケーリング:
+- <img width="826" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/c3fdc90e-1caa-4835-aa82-0a487dab9684">
+
