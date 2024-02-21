@@ -48,5 +48,10 @@
         - オブジェクトのバージョニングを使用して、オブジェクトの異なるバージョンを提供する。
 
 - ステートレスアーキテクチャ:
-- <img width="572" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/097abd19-79e6-4922-9342-aded68ac98b2">
 
+  - <img width="572" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/097abd19-79e6-4922-9342-aded68ac98b2">
+  - 状態データを NoSQL データ、Memcached/Redis などに保持する。
+
+- メッセージキュー: producer と consumer は単独でスケールアップできる。メッセージキューのサイズが大きくなれば、ワーカーを追加して処理時間を短縮できる。
+
+- データベースのスケーリング:
