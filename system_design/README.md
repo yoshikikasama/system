@@ -75,4 +75,5 @@
 | 2^50   | 100 京             | 1 ペタバイト | 1PB        |
 
 - Google のディーン博士が 2010 年における典型的なコンピュータ操作の時間を明らかにしている。レイテンシー数値を可視化。
--
+- ![image](https://github.com/yoshikikasama/system/assets/61643054/d3f719c4-b895-4208-b80c-97982bba5d4a)
+
