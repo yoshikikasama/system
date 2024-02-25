@@ -122,3 +122,11 @@
 
   - フィードの公開: ユーザーが投稿すると、対応するデータがキャッシュ、データベースに書き込まれ、その投稿は友人のニュースフィードに取り込まれる。
   - ニュースフィードの構築: 友人の投稿を逆時系列に集約し、ニュースフィードを構築する。
+  - <img width="538" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/20fbbe18-c544-4467-8037-46532cffe8ec">
+  - <img width="574" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/aa033acb-f615-4cba-8714-57cd16c79f10">
+  - <img width="504" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/c24738e0-e16e-43bf-aaa4-2443f2e797a7">
+  - <img width="560" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/f7b0d301-48e5-48bb-85f2-4a89d3a93f3e">
+
+
+
+
