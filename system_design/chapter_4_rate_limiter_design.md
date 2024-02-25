@@ -23,3 +23,7 @@
     - 各リクエストは 1 つの token を消費する。十分な token がある場合、各リクエストに対して 1 つの token を取り出し、リクエストは通過する。
     - 十分な token がない場合、リクエストは破棄される。
     - 図の例では token の bucket size は 4 で補充レートは 1 分間に 4 です。
+    - <img width="922" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/5002498f-7393-4847-8c46-4f55e11a87b9">
+    - <img width="788" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/8012dd14-f76a-4d31-96c6-c876271eaae7">
+
+
