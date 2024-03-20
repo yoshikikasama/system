@@ -25,5 +25,12 @@
     - 図の例では token の bucket size は 4 で補充レートは 1 分間に 4 です。
     - <img width="922" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/5002498f-7393-4847-8c46-4f55e11a87b9">
     - <img width="788" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/8012dd14-f76a-4d31-96c6-c876271eaae7">
-
-
+    - parameter: bucket size(bucket に入れられる token の最大数), 補充率(1 秒間に bucket に入れられる token の数)
+    - API エンドポイントごとに bucket を用意する必要がある。
+    - 長所:
+      - アルゴリズムの実装が簡単
+      - メモリ効率がいい
+      - token bucket は短時間のバーストトラフィックを可能にする。token が残っている限り、リクエストは通過する。
+    - 短所:
+      - bucket size と token 補充率という 2 つのパラメータがあるが、これらを適切に調整するのは難しいかもしれない。
+  - Leaky Bucket:
