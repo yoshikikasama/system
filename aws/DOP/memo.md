@@ -62,3 +62,5 @@
 - AWS Lambda のバージョンとエイリアス:
   - Lambda 関数のバージョンで 1 つの Lambda 関数に対して複数のバージョンを発行することが可能です。
   - エイリアスごとに異なる Lambda 関数のバージョンを指定できるため、開発環境と本番環境で異なるバージョンを選択することが可能です。
+  - <img width="795" alt="image" src="https://github.com/yoshikikasama/system/assets/61643054/50075baa-1df9-467c-bb18-4e02ed725f62">
+
