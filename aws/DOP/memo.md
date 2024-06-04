@@ -226,3 +226,7 @@
   - 送信は、SNS TOPIC or SSM Run Command
 - Amazon Macie
 - Trusted Advisor
+
+- AWS Organizations: 複数の AWS アカウントを統合・管理するための中核となるサービスです。AWS Organizations を使用することで、複数の AWS アカウントを作成し、それらを階層的なグループに組織化することができます。AWS Organizations を使用すると、中央の AWS アカウントから、すべての子アカウントのセキュリティ設定、コスト管理、リソース共有などを統合的に管理することができます。また、アカウント間でリソースを共有したり、AWS のサービスを利用する際に必要な権限をより細かく制御できます。
+- AWS IAM Identity Center(旧称 AWS SSO):
+- AWS Control Tower:
