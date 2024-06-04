@@ -233,3 +233,5 @@
   - ![image](https://github.com/yoshikikasama/system/assets/61643054/a855cac8-56d0-4899-8dfc-e51617e40d4d)
 - AWS Control Tower(アカウント管理): AWS Organizations をベースとしランディングゾーンを実現するサービスです。AWS が提唱するランディングゾーン（Landing Zone）とは、新しく AWS アカウントを作成する際にセキュリティ、コンプライアンス、オペレーションの観点から最適な状態を維持・管理するための代表的なフレームワーク/設計思想です。ランディングゾーンはマルチアカウント管理における様々なベストプラクティスの集合体であり、それをマネージドサービスとして提供しているのが AWS Control Tower です。AWS Control Tower は、AWS Organizations で階層的に管理されたアカウントに対して、自動的にベストプラクティスにもとづくセキュリティ設定や AWS サービスの利用状況を監視する機能を提供します。また、AWS Control Tower は AWS アカウントを複数のプリセットのルールに従って設定することができる「ガードレール」を提供し、AWS アカウントの標準化やセットアップの効率化が可能です。
   - ![image](https://github.com/yoshikikasama/system/assets/61643054/81f5de13-6fdc-456b-94e2-0ef6912decfa)
+  - ![image](https://github.com/yoshikikasama/system/assets/61643054/54197e7f-0119-4765-b939-a4d845c11bcc)
+
