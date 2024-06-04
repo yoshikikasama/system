@@ -227,11 +227,9 @@
 - Amazon Macie
 - Trusted Advisor
 
-- AWS Organizations: 複数の AWS アカウントを統合・管理するための中核となるサービスです。AWS Organizations を使用することで、複数の AWS アカウントを作成し、それらを階層的なグループに組織化することができます。AWS Organizations を使用すると、中央の AWS アカウントから、すべての子アカウントのセキュリティ設定、コスト管理、リソース共有などを統合的に管理することができます。また、アカウント間でリソースを共有したり、AWS のサービスを利用する際に必要な権限をより細かく制御できます。
+- AWS Organizations(アカウント管理): 複数の AWS アカウントを統合・管理するための中核となるサービスです。AWS Organizations を使用することで、複数の AWS アカウントを作成し、それらを階層的なグループに組織化することができます。AWS Organizations を使用すると、中央の AWS アカウントから、すべての子アカウントのセキュリティ設定、コスト管理、リソース共有などを統合的に管理することができます。また、アカウント間でリソースを共有したり、AWS のサービスを利用する際に必要な権限をより細かく制御できます。
   - ![image](https://github.com/yoshikikasama/system/assets/61643054/beb544d7-d620-44e2-8d9d-1bf7829f7006)
-- AWS IAM Identity Center(旧称 AWS SSO): AWS Identity and Access Management（IAM）の一部で、AWSの認証およびアクセス制御の中央管理システムです。IAM Identity Centerを使用することで、各アカウントで個別作成する必要がなく、中央管理下アカウントにてユーザーやグループ、およびそれらのアクセス許可ポリシーを管理できます。これにより、煩雑なユーザー管理業務から解放されます。また、AWS Directory ServiceやAzure AD、オンプレミスのActive Drectory、サードパーティのIDaaSサービスなど、さまざまなIdPと統合でき、既存のID基盤に組み込めます。
+- AWS IAM Identity Center(旧称 AWS SSO)(アカウントのアクセス権限管理): AWS Identity and Access Management（IAM）の一部で、AWS の認証およびアクセス制御の中央管理システムです。IAM Identity Center を使用することで、各アカウントで個別作成する必要がなく、中央管理下アカウントにてユーザーやグループ、およびそれらのアクセス許可ポリシーを管理できます。これにより、煩雑なユーザー管理業務から解放されます。また、AWS Directory Service や Azure AD、オンプレミスの Active Drectory、サードパーティの IDaaS サービスなど、さまざまな IdP と統合でき、既存の ID 基盤に組み込めます。
   - ![image](https://github.com/yoshikikasama/system/assets/61643054/a855cac8-56d0-4899-8dfc-e51617e40d4d)
-
-- AWS Control Tower: AWS Organizationsをベースとしランディングゾーンを実現するサービスです。AWSが提唱するランディングゾーン（Landing Zone）とは、新しくAWSアカウントを作成する際にセキュリティ、コンプライアンス、オペレーションの観点から最適な状態を維持・管理するための代表的なフレームワーク/設計思想です。ランディングゾーンはマルチアカウント管理における様々なベストプラクティスの集合体であり、それをマネージドサービスとして提供しているのが AWS Control Towerです。AWS Control Towerは、AWS Organizationsで階層的に管理されたアカウントに対して、自動的にベストプラクティスにもとづくセキュリティ設定やAWSサービスの利用状況を監視する機能を提供します。また、AWS Control TowerはAWSアカウントを複数のプリセットのルールに従って設定することができる「ガードレール」を提供し、AWSアカウントの標準化やセットアップの効率化が可能です。
+- AWS Control Tower(アカウント管理): AWS Organizations をベースとしランディングゾーンを実現するサービスです。AWS が提唱するランディングゾーン（Landing Zone）とは、新しく AWS アカウントを作成する際にセキュリティ、コンプライアンス、オペレーションの観点から最適な状態を維持・管理するための代表的なフレームワーク/設計思想です。ランディングゾーンはマルチアカウント管理における様々なベストプラクティスの集合体であり、それをマネージドサービスとして提供しているのが AWS Control Tower です。AWS Control Tower は、AWS Organizations で階層的に管理されたアカウントに対して、自動的にベストプラクティスにもとづくセキュリティ設定や AWS サービスの利用状況を監視する機能を提供します。また、AWS Control Tower は AWS アカウントを複数のプリセットのルールに従って設定することができる「ガードレール」を提供し、AWS アカウントの標準化やセットアップの効率化が可能です。
   - ![image](https://github.com/yoshikikasama/system/assets/61643054/81f5de13-6fdc-456b-94e2-0ef6912decfa)
-
