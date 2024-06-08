@@ -232,6 +232,15 @@
 - AWS IAM Identity Center(旧称 AWS SSO)(アカウントのアクセス権限管理): AWS Identity and Access Management（IAM）の一部で、AWS の認証およびアクセス制御の中央管理システムです。IAM Identity Center を使用することで、各アカウントで個別作成する必要がなく、中央管理下アカウントにてユーザーやグループ、およびそれらのアクセス許可ポリシーを管理できます。これにより、煩雑なユーザー管理業務から解放されます。また、AWS Directory Service や Azure AD、オンプレミスの Active Drectory、サードパーティの IDaaS サービスなど、さまざまな IdP と統合でき、既存の ID 基盤に組み込めます。
   - ![image](https://github.com/yoshikikasama/system/assets/61643054/a855cac8-56d0-4899-8dfc-e51617e40d4d)
 - AWS Control Tower(アカウント管理): AWS Organizations をベースとしランディングゾーンを実現するサービスです。AWS が提唱するランディングゾーン（Landing Zone）とは、新しく AWS アカウントを作成する際にセキュリティ、コンプライアンス、オペレーションの観点から最適な状態を維持・管理するための代表的なフレームワーク/設計思想です。ランディングゾーンはマルチアカウント管理における様々なベストプラクティスの集合体であり、それをマネージドサービスとして提供しているのが AWS Control Tower です。AWS Control Tower は、AWS Organizations で階層的に管理されたアカウントに対して、自動的にベストプラクティスにもとづくセキュリティ設定や AWS サービスの利用状況を監視する機能を提供します。また、AWS Control Tower は AWS アカウントを複数のプリセットのルールに従って設定することができる「ガードレール」を提供し、AWS アカウントの標準化やセットアップの効率化が可能です。
+
   - ![image](https://github.com/yoshikikasama/system/assets/61643054/81f5de13-6fdc-456b-94e2-0ef6912decfa)
   - ![image](https://github.com/yoshikikasama/system/assets/61643054/54197e7f-0119-4765-b939-a4d845c11bcc)
+  - Account Factory で新しい AWS アカウントの作成と初期設定を行う
+  - ドリフト: 管理を逸脱した状態。
+  - ランディングゾーン:マルチアカウントを適切に管理、利用するために整えた環境のことです。ランディングゾーンは、おもに２種類あります。
+    - サービスベースドランディングゾーン: サービスとして提供されるランディングゾーンで、Control Tower が作るランディングゾーンはこれに該当します。AWS のセキュリティサービスを組織全体で管理する Audit アカウントやログを一元保管する LogArchive アカウントを用意します。ほかにもアカウントログインに使用する IAM Identity Center の有効化なども含まれます。
+    - ![image](https://github.com/yoshikikasama/system/assets/61643054/ff2eed85-56b6-46ad-bea1-21c2499c2da0)
+    - 例えるなら空港。新たに空港を作りたいときに、自ら設計・構築するのもひとつの選択肢ですが、ベストプラクティスに応じた設計で構築してくれる。そのようなサービスベースドランディングゾーンを作る機能を Control Tower は持っています。
+  - カスタムランディングゾーン: 自身で構築するランディングゾーンです。
 
+- AWS のディザスタリカバリ (DR) アーキテクチャ、パート II: 迅速なリカバリによるバックアップと復元:
