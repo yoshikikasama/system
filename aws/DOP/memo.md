@@ -316,9 +316,22 @@
   - CodePipeline でデプロイ時に CloudFormation スタックが IAM ロールを作成する権限がない場合は InsufficientCapabilitiesException エラーが出る。そのため、　 DeployCloudFormation ステージアクションで IAM の機能を有効にする。
 
 - Elastic Beanstalk
+
   - Blue/Green デプロイメントのためには、アプリケーションの Zip ファイルを S3 に保存して、その場所を指定して新しいバージョンをデプロイする。
   - Blue/Green デプロイメントでは CNAME スワップのために Lambda 関数を呼び出す必要がある。
   - サポートされていない言語を含む複数のアプリケーションをデプロイするためには、Multi-Docker コンテナ構成を利用し、各アプリケーションをコンテナとして ECR に保存する。
   - ワーカー環境とアプリケーション環境を分離して SQS で連携することで CPU 使用率を軽減させることが可能。
   - Web サーバー環境では Web 層だけを使用可能。Web 層とアプリケーション層の両方は不可。
   - X-RAY を有効にするためには、管理ページで X-RAy デーモンを有効にし、ebExtention で Xray を true にする。
+
+- ECS:
+
+  | デプロイ設定                                       | 説明                                                                                   |
+  | -------------------------------------------------- | -------------------------------------------------------------------------------------- |
+  | CodeDeployDefault.ECSCanary10Percent5Minutes       | 最初の増分でトラフィックの 10%をシフトします。残りの 90%は 5 分後にデプロイされます。  |
+  | CodeDeployDefault.ECSCanary10Percent15Minutes      | 最初の増分でトラフィックの 10%をシフトします。残りの 90%は 15 分後にデプロイされます。 |
+  | CodeDeployDefault.ECSLinear10PercentEvery1Minutes  | すべてのトラフィックがシフトされるまで、トラフィックの 10%を毎分シフトします。         |
+  | CodeDeployDefault.EcSLinear 10PercentEvery3Minutes | すべてのトラフィックがシフトされるまで、トラフイックの 10%を 3 分ごとにシフトします。  |
+
+  - CloudFormation で AutoScaling グループを設定: UserData で「AWS::AutoScaling::LaunchConfiguration」を記載し ECS クラスターで参照する
+  - ライフサイクルイベント
