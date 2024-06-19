@@ -334,4 +334,39 @@
   | CodeDeployDefault.EcSLinear 10PercentEvery3Minutes | すべてのトラフィックがシフトされるまで、トラフイックの 10%を 3 分ごとにシフトします。  |
 
   - CloudFormation で AutoScaling グループを設定: UserData で「AWS::AutoScaling::LaunchConfiguration」を記載し ECS クラスターで参照する
-  - ライフサイクルイベント
+  - ライフサイクルイベント:
+    - ![image](https://github.com/yoshikikasama/system/assets/61643054/dd818984-c0a7-4756-b9ce-651674e81f3d)
+    - タスク定義にawslogsドライバーを含めることでネイティブにCloudWatchにログの書き込みが可能。EC2インスタンスにはIAMインスタンスロールを設定する。
+- CodeDeploy
+  - 
+- DynamoDB
+  - SNSを使用することでDynamoDBストリームをトリガーに複数のLambdaを起動することが可能。
+  - DynamoDBストリームはアイテムレベルのイベントをキャプチャする。
+
+- AWS Trusted Advisor
+  - AWS のベストプラクティスをフォローするためのレコメンデーションを提供
+  - 直接Lambda関数は呼び出せないため、EventBridgeを経由する。
+
+- Kinesis
+  - 各サーバーでAmazon Kinesis Agentを使い、ログをアップロードし、Amazon Kinesis Data　FirehoseでAWS Lambda関数を使用して、Amazon S3に書き込む前にログを正規化することが可能。
+Firehoseでは出力先のS3を集約することでマルチアカウントのログの一元管理が可能。
+
+- ELB
+  - ALBにAZを追加するには、[Edit subnets（サブネットを編集する）]ページの[Availability Zone（アベイラビリティーゾーン）」で、追加するアベイラビリティーゾーンのチェックボックスを選択する
+  - アクセスログの作成は、Elastic Load Balancing のオプション機能であり、デフォルトでは無効化。有効化するとS3に保存される。
+
+- S3
+  - クロスリージョンレプリケーションのSLAは15分、RPOは5秒
+  - クロスリージョンレプリケーションの手順
+    - ソースバケットにIAMロールを作成
+    - ターゲットバケットでソースのIAMを許可
+    - ターゲットバケットでレプリケーションルールを定義
+   
+- Storage Gateway: RefreshCacheでS3ファイルゲートウェイのデータを最新化
+
+- Aurora
+  - 地域が完全に停止した場合でも1分以内に回復可能。
+  - フェイルオーバーの手順。
+    - RDS Event Notificationを使用して、Amazon SNSトピックにステータスアップデートを公開。
+    - トピックにサブスクライブされたAWS Lambda関数を使用して、データベースの健全性を監視。
+    - 障害が発生した場合、Lambda関数は読み取りレプリカを促進し、Route 53を更新して、プライマリ領域からセカンダリ領域へトラフィックをリダイレクトする。
