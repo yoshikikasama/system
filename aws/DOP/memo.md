@@ -426,3 +426,5 @@
 - インスタンスを起動または終了したときにカスタムアクションを実行できるように、ライフサイクルフックを Auto Scaling グループに追加できます。
   - Amazon EC2 Auto Scaling はスケールアウトイベントに応答すると、1 つ以上のインスタンスを起動します。これらのインスタンスは Pending 状態で起動します。Auto Scaling グループに autoscaling:EC2_INSTANCE_LAUNCHING ライフサイクルフックを追加すると、インスタンスは Pending 状態から Pending:Wait 状態に移行します。ライフサイクルアクションを完了したら、インスタンスは Pending:Proceed 状態に移行します。インスタンスが完全に設定されると、Auto Scaling グループにアタッチされて InService 状態へ移行します。
   - Amazon EC2 Auto Scaling はスケールインイベントに応答すると、1 つ以上のインスタンスを終了します。これらのインスタンスは Auto Scaling グループからデタッチされ Terminating 状態へ移行します。Auto Scaling グループに autoscaling:EC2_INSTANCE_TERMINATING ライフサイクルフックを追加すると、インスタンスは Terminating 状態から Terminating:Wait 状態に移行します。ライフサイクルアクションを完了したら、インスタンスは Terminating:Proceed 状態に移行します。インスタンスが完全に終了すると、Terminated 状態へ移行します。
+
+test
