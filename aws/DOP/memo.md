@@ -310,6 +310,9 @@
   - 別の Codepipeline オプションを呼び出せない
   - S3 デプロイステップでアーティファクトを別リージョンのバケットにコピーできる。
   - CodeCommit への変更をトリガーにパイプラインを開始するには CloudWatch イベントと連携する。
+  - CodePipeline では CloudFormation のパラメータを上書きすることが可能
+    - パラメータの上書き機能を使用して、動的パラメータ値のみを指定します。
+    - json を設定する。{"stage":"prod"}
 
 - CloudFormation:
 
@@ -336,37 +339,90 @@
   - CloudFormation で AutoScaling グループを設定: UserData で「AWS::AutoScaling::LaunchConfiguration」を記載し ECS クラスターで参照する
   - ライフサイクルイベント:
     - ![image](https://github.com/yoshikikasama/system/assets/61643054/dd818984-c0a7-4756-b9ce-651674e81f3d)
-    - タスク定義にawslogsドライバーを含めることでネイティブにCloudWatchにログの書き込みが可能。EC2インスタンスにはIAMインスタンスロールを設定する。
+    - タスク定義に awslogs ドライバーを含めることでネイティブに CloudWatch にログの書き込みが可能。EC2 インスタンスには IAM インスタンスロールを設定する。
+
 - CodeDeploy
-  - 
+  - CodeDeploy では CloudWatch アラームを使用した自動ロールバックが可能
+    - アプリケーションにアラームを追加した場合、指定された 1 つ以上のアラームがアクティブ化されたときに、CodeDeploy は最後の正常なデプロイであることがわかっているリビジョンを再デプロイします。
+    - https://docs.aws.amazon.com/ja_jp/codedeploy/latest/userguide/deployment-groups-configure-advanced-options.html
 - DynamoDB
-  - SNSを使用することでDynamoDBストリームをトリガーに複数のLambdaを起動することが可能。
-  - DynamoDBストリームはアイテムレベルのイベントをキャプチャする。
+
+  - SNS を使用することで DynamoDB ストリームをトリガーに複数の Lambda を起動することが可能。
+  - DynamoDB ストリームはアイテムレベルのイベントをキャプチャする。
 
 - AWS Trusted Advisor
+
   - AWS のベストプラクティスをフォローするためのレコメンデーションを提供
-  - 直接Lambda関数は呼び出せないため、EventBridgeを経由する。
+  - 直接 Lambda 関数は呼び出せないため、EventBridge を経由する。
+  - Amazon EventBridge を使用した AWS Trusted Advisor チェック結果のモニタリング
+    - EventBridge を使用して、Trusted Advisor のチェックがステータスを変更するときに検出できます。その後、ルールに指定した値のステータスが変更されたときに、EventBridge は、1 つ以上のターゲットアクションを呼び出します。
+    - https://docs.aws.amazon.com/ja_jp/awssupport/latest/user/cloudwatch-events-ta.html
 
 - Kinesis
-  - 各サーバーでAmazon Kinesis Agentを使い、ログをアップロードし、Amazon Kinesis Data　FirehoseでAWS Lambda関数を使用して、Amazon S3に書き込む前にログを正規化することが可能。
-Firehoseでは出力先のS3を集約することでマルチアカウントのログの一元管理が可能。
+
+  - 各サーバーで Amazon Kinesis Agent を使い、ログをアップロードし、Amazon Kinesis Data 　 Firehose で AWS Lambda 関数を使用して、Amazon S3 に書き込む前にログを正規化することが可能。
+    Firehose では出力先の S3 を集約することでマルチアカウントのログの一元管理が可能。
 
 - ELB
-  - ALBにAZを追加するには、[Edit subnets（サブネットを編集する）]ページの[Availability Zone（アベイラビリティーゾーン）」で、追加するアベイラビリティーゾーンのチェックボックスを選択する
-  - アクセスログの作成は、Elastic Load Balancing のオプション機能であり、デフォルトでは無効化。有効化するとS3に保存される。
+
+  - ALB に AZ を追加するには、[Edit subnets（サブネットを編集する）]ページの[Availability Zone（アベイラビリティーゾーン）」で、追加するアベイラビリティーゾーンのチェックボックスを選択する
+  - アクセスログの作成は、Elastic Load Balancing のオプション機能であり、デフォルトでは無効化。有効化すると S3 に保存される。
 
 - S3
-  - クロスリージョンレプリケーションのSLAは15分、RPOは5秒
+  - クロスリージョンレプリケーションの SLA は 15 分、RPO は 5 秒
   - クロスリージョンレプリケーションの手順
-    - ソースバケットにIAMロールを作成
-    - ターゲットバケットでソースのIAMを許可
+    - ソースバケットに IAM ロールを作成
+    - ターゲットバケットでソースの IAM を許可
     - ターゲットバケットでレプリケーションルールを定義
-   
-- Storage Gateway: RefreshCacheでS3ファイルゲートウェイのデータを最新化
+- Storage Gateway: RefreshCache で S3 ファイルゲートウェイのデータを最新化
 
 - Aurora
-  - 地域が完全に停止した場合でも1分以内に回復可能。
+
+  - 地域が完全に停止した場合でも 1 分以内に回復可能。
   - フェイルオーバーの手順。
-    - RDS Event Notificationを使用して、Amazon SNSトピックにステータスアップデートを公開。
-    - トピックにサブスクライブされたAWS Lambda関数を使用して、データベースの健全性を監視。
-    - 障害が発生した場合、Lambda関数は読み取りレプリカを促進し、Route 53を更新して、プライマリ領域からセカンダリ領域へトラフィックをリダイレクトする。
+    - RDS Event Notification を使用して、Amazon SNS トピックにステータスアップデートを公開。
+    - トピックにサブスクライブされた AWS Lambda 関数を使用して、データベースの健全性を監視。
+    - 障害が発生した場合、Lambda 関数は読み取りレプリカを促進し、Route 53 を更新して、プライマリ領域からセカンダリ領域へトラフィックをリダイレクトする。
+
+- RDS のマルチ AZ 構成をリージョン間で構成するという意味不明な選択肢
+  - マルチ AZ だって書いてあるのに、なぜリージョンが出てくるんですか。
+  - RDS や Aurora でマルチリージョンにする場合、大体はリードレプリカが正解です。
+- CodeDeploy のロールバックは CloudWatch アラームを関連付ける
+  - CloudWatch Events や CloudWatch Logs を関連付けるは間違いです。
+  - CloudWatch アラームを関連付けることで自動ロールバックできます。オペレーションで CodeDeploy 使用しているインスタンスまたは Amazon EC2 Auto Scaling グループの CloudWatch アラームを作成できます。アラームは、指定期間にわたって単一のメトリクスを監視し、その値と複数期間に対するしきい値との比較結果に基づいて 1 つ以上のアクションを実行します。 CloudWatch アラームは、状態が変化したときにアクションを呼び出します (例: から OK）ALARM。
+- CloudTrail や Config をマルチアカウントで有効化する場合は大体 CloudFormation Stace Sets
+
+  - 個別のアカウントごとにスタックをセットアップではなく、マスターアカウントや委任アカウントから Stack Sets での一括セットアップが可能です。
+
+- リクエスト数が多い場合はスロットリングに注意
+
+  - このアプリはリクエスト数が多くなどの記載がある場合、スロットリングに注意が必要です。
+  - Lambda 単体の場合や、Lambda と DynamoDB の連携などが出てくるイメージです。
+  - Lambda 単体なら同時実行の設定や上限緩和、他のリソースとの連携なら Lambda と他のリソースの間に SQS や SNS を挟むというのが正解の場合が多いです。
+
+- Cloudformation：cfn-hup, cfn-init, ネストされたスタックなどが出題
+
+  - cfn-hup :
+    - AWS CF のメタデーターを 1 回実行する。
+    - 通常は(EC2 の)ユーザーデーターの一部として実装される
+  - cfn-init:
+    - AWS CF のメタデーターをモニタリングし、変更を検出した場合に適用される。
+
+- AutoScaling グループのインスタンスの CPU 使用率が一定を超えた場合に展開をロールバックするにはどうすればいい？
+  - Blue/Green デプロイを実行するように System manager を設定する。CPU 使用率を cloudwatch で確認し、超えた場合にアラームを出して自動ロールバックするようにしておく。
+- ECS ウェブ層、ECS アプリ層、データベースの 3 層アプリケーションで、これらの前にあるロードバランサでアプリ層とデータベース層が正常に通信できている場合のみ通信を可能にするには？
+  - アプリ層とデータベース層への接続テストをする web アプリでヘルスチェックエンドポイントを作成。そこにターゲットの URL を指定（エンドポイント）し、ヘルスチェックを行う(正常なら 200)
+- 組織は EKS、ECS とオンプレクラスタ全体でコンテナされたアプリケーションを使っている。機能停止の原因となった問題によってコンテナの状態やエラーを検出する機能が必要。監視と分析のために時系列メトリックを収集集約できるようにするには？
+  - Amazon Managed Service for Prometheus を使ってメトリクスを収集し、視覚化と分析には Amazon Managed Grafana を使う
+  - ※Amazon Managed Service for Prometheus: コンテナ化されたアプリケーションとインフラストラクチャを大規模に監視してアラートを提供するサービス
+  - ※Amazon Managed Grafana: 複数のデータソースにわたって単一のコンソールでインタラクティブなデータの可視化をして運用データの監視ができる
+- セキュリティ強化のために AWS System Manager Session Manager を使用して EC2 を管理しプライベートネットワークで接続したいです。これを実装するのに必要な構成は？
+  - SystemManager に必要なアクセス許可を提供する EC2 に IAM インスタンスプロファイルをアタッチし、インスタンスが実行されているリージョンで Systems Manager の VPC エンドポイントを作成する
+- 複数の AWAS アカウントで潜在的なセキュリティ違反に対処するために監査を行った。そのすべてのログと調査結果を集中管理されたアカウントに収集したい。
+
+  - Amazon GuardDuty で悪意のある攻撃を検知し、その管理アカウントで CloudWatch ルールを作成しその結果を kinesis data 　 firehose から S3 に送信する。
+
+- ライフサイクルフック
+- インスタンスを起動または終了したときにカスタムアクションを実行できるように、ライフサイクルフックを Auto Scaling グループに追加できます。
+  - Amazon EC2 Auto Scaling はスケールアウトイベントに応答すると、1 つ以上のインスタンスを起動します。これらのインスタンスは Pending 状態で起動します。Auto Scaling グループに autoscaling:EC2_INSTANCE_LAUNCHING ライフサイクルフックを追加すると、インスタンスは Pending 状態から Pending:Wait 状態に移行します。ライフサイクルアクションを完了したら、インスタンスは Pending:Proceed 状態に移行します。インスタンスが完全に設定されると、Auto Scaling グループにアタッチされて InService 状態へ移行します。
+  - Amazon EC2 Auto Scaling はスケールインイベントに応答すると、1 つ以上のインスタンスを終了します。これらのインスタンスは Auto Scaling グループからデタッチされ Terminating 状態へ移行します。Auto Scaling グループに autoscaling:EC2_INSTANCE_TERMINATING ライフサイクルフックを追加すると、インスタンスは Terminating 状態から Terminating:Wait 状態に移行します。ライフサイクルアクションを完了したら、インスタンスは Terminating:Proceed 状態に移行します。インスタンスが完全に終了すると、Terminated 状態へ移行します。
