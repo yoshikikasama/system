@@ -1,9 +1,7 @@
 # .devcontainer/Dockerfile
-FROM python:3.12
+FROM mcr.microsoft.com/devcontainers/python:1-3.11-bullseye
 
-# 'vscode' ユーザーを追加
-RUN useradd -m vscode
-
+ENV PYTHONUNBUFFERED 1
 # PostgreSQL クライアントをインストール
 RUN apt-get update && apt-get install -y postgresql-client
 

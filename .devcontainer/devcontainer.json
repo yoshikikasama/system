@@ -1,5 +1,5 @@
 {
-  "name": "PostgreSQL Development Container",
+  "name": "Python 3 & PostgreSQL",
   "dockerComposeFile": "docker-compose.yml",
   "remoteUser": "vscode",
   "service": "dev",
