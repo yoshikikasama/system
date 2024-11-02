@@ -1,15 +1,8 @@
 {
   "name": "Python 3 & PostgreSQL",
   "dockerComposeFile": "docker-compose.yml",
-  "remoteUser": "vscode",
-  "service": "dev",
-  "workspaceFolder": "/workspace",
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
-  "build": {
-    "dockerfile": "./Dockerfile"
-  },
-  // ポート番号
-  "forwardPorts": [5432],
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "remoteEnv": {
     "PATH": "${containerEnv:PATH}:/home/vscode/.local/bin"
   },
@@ -20,7 +13,7 @@
         "ms-azuretools.vscode-docker",
         "mtxr.sqltools",
         "mtxr.sqltools-driver-pg",
-        "sqlfluff.sqlfluff", // SQL FluffのVS Code拡張
+        "dorzey.vscode-sqlfluff",
         // Markdownのリンター
         "davidanson.vscode-markdownlint",
         // Gitの履歴を視覚化
@@ -53,11 +46,6 @@
         "[markdown]": {
           "editor.defaultFormatter": "yzhang.markdown-all-in-one"
         },
-        // SQL固有の設定
-        "[sql]": {
-          "editor.formatOnSave": false,
-          "editor.defaultFormatter": "ReneSaarsoo.sql-formatter-vsc"
-        },
         // フォントリガチャを無効化
         "editor.fontLigatures": false,
         // ワークスペースの信頼設定を無効化
@@ -71,17 +59,27 @@
             "name": "DevContainer PostgreSQL",
             "driver": "PostgreSQL",
             "previewLimit": 50,
-            "server": "db",
+            "server": "localhost",
             "port": 5432,
             "database": "devcontainer_db",
             "username": "postgres",
             "password": "postgres"
           }
         ],
-        "sqlfluff.dialect": "postgres", // PostgreSQLに対応したSQL Fluffの設定
+        "[sql]": {
+          "editor.defaultFormatter": "dorzey.vscode-sqlfluff",
+          "editor.formatOnSave": false
+        },
+        "sqlfluff.config": "/workspaces/system/.devcontainer/.sqlfluff",
+        "sqlfluff.executablePath": "/home/vscode/.local/bin/sqlfluff",
+        // "sqlfluff.dialect": "postgres", // PostgreSQLに対応したSQL Fluffの設定
         "sqlfluff.linter.run": "onSave", // ファイル保存時に自動実行
-        "sqlfluff.formatter.lineLength": 80 // SQLコードの整形ルール
+        "sqlfluff.formatter.lineLength": 80, // SQLコードの整形ルール
+        "sqlfluff.experimental.format.executeInTerminal": true,
+				"sqlfluff.format.enabled": true
+
       }
     }
   }
+
 }
