@@ -287,6 +287,10 @@ ML パイプラインの構成要素 [データ収集、探索的データ分析
 | SageMaker Feature Store   | モデル学習に使用する特徴量を蓄積する機能（Athena を裏側で使う）          | [リンク](https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html)                               | 特徴量管理         |
 | Augmented AI              | 機械学習の結果に対して人間によるチェックを含むワークフローを提供する機能 | [リンク](https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-use-augmented-ai-a2i-human-review-loops.html) | 人間のレビュー支援 |
 
+<img width="1286" alt="image" src="https://github.com/user-attachments/assets/b9af49de-b097-4232-a4ae-b75b599390a5">
+
+
+
 - プロンプトエンジニアリング
 
   - ゼロショット学習: タスクに関する説明のみが与えられ、解答例は全く与えられないケース
