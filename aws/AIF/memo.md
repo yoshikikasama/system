@@ -287,9 +287,16 @@ ML パイプラインの構成要素 [データ収集、探索的データ分析
 | SageMaker Feature Store   | モデル学習に使用する特徴量を蓄積する機能（Athena を裏側で使う）          | [リンク](https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html)                               | 特徴量管理         |
 | Augmented AI              | 機械学習の結果に対して人間によるチェックを含むワークフローを提供する機能 | [リンク](https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-use-augmented-ai-a2i-human-review-loops.html) | 人間のレビュー支援 |
 
-<img width="1286" alt="image" src="https://github.com/user-attachments/assets/b9af49de-b097-4232-a4ae-b75b599390a5">
+- <img width="1286" alt="image" src="https://github.com/user-attachments/assets/b9af49de-b097-4232-a4ae-b75b599390a5">
 
-
+  - Feature Store はそのプロセスの過程で特徴量を作成するため、そちらを保存する機能です。
+  - モデルの学習には正解データが必要となるケースが多く、その正解ラベル付けに Ground Truth を使用できます。
+  - モデル学習後は責任のある AI の透明性の観点からモデルの情報を説明するための Model Card という機能が使用できます。
+  - 最終的に稼働するようになった推論エンドポイントの監視のために Model Monitor を使用します。
+  - 推論エンドポイントの予測結果の信頼性が高くない場合、人間によるレビューを挟むことができ、これを Augmented AI という機能が担います。
+  - こちらは Ground Truth と勘違いしやすいためお気を付けください。
+  - Canvas と JumpStart については割愛しますが、Data Wrangler も Canvas に同梱された前処理のノーコードツールという形で機能を担っています。
+  - あとは Studio が実行環境を提供し、その実行環境の権限管理に使われるのが Role Manager という機能です。
 
 - プロンプトエンジニアリング
 
